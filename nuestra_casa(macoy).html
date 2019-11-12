@@ -15,48 +15,90 @@
 <body>
     <!--TABS DE CATEGORIAS-->
     <div class="tab">
-        <button class="tablinks" onclick="abrir(event, 'CarruselImagenes')">CARRUSEL DE IMAGENES</button>
-        <button class="tablinks" onclick="abrir(event, 'Certificaciones')">CERTIFICACIONES</button>
-        <button class="tablinks" onclick="abrir(event, 'AdquirirProducto')">ADQUIRIR PRODUCTO</button>
-        <button class="tablinks" onclick="abrir(event, 'RecetaInicio')">RECETAS</button>
+        <button class="tablinks" onclick="abrir(event, 'LineaTiempo')">LINEA DE TIEMPO</button>
+        <button class="tablinks" onclick="abrir(event, 'NuestroEquipo')">NUESTRO EQUIPO</button>
+        <button class="tablinks" onclick="abrir(event, 'RecetaInicio')">Trabajos Y FAMILIAS</button>
     </div>
 
     <!--CONTENIDO DE CATEGORIAS-->
 
-    <!--Carrusel de Imagenes-->
-    <section id="CarruselImagenes" class="tabcontent">
+    <!--Linea de tiempo-->
+    <div id="LineaTiempo" class="tabcontent">
         <!--contenido del tab-->
-        <article>
+        <div>
             <a>
                 <figure><img src="img/logo.png" alt="img1"></figure>
             </a>
-            <p>Agregar Imagen</p>
-        </article>
-        <article>
-            <h2>IMAGEN 1</h2>
-            <figure><img src="img/logo.png" alt="img1"></figure>
-            <h3>NUESTRA MIEL</h3>
-            <a onclick="editar()">editar</a>
-            <a onclick="borrar()">borrar</a>
-        </article>
-        <article>
-            <h2>IMAGEN 2</h2>
-            <figure><img src="img/logo.png" alt="img1"></figure>
-            <h3>CULTIVADA ENTRE LA</h3>
-            <a onclick="editar()">editar</a>
-            <a onclick="borrar()">borrar</a>
-        </article>
+            <p>Agregar Acontecimiento</p>
+        </div>
         <div>
-            <h2>IMAGEN 3</h2>
+            <time datetime="2001"></time>
+            <time datetime="Mes"></time>
             <figure><img src="img/logo.png" alt="img1"></figure>
-            <h3>DIVERSIDAD DE LA</h3>
+            <h3>Acontecimiento</h3>
+            <p>Nace la cooperativa Ts’umbal Xitalha’ con 22 familias
+                productoras de café y miel con el objetivo de organizar
+                el trabajo y construir un mejor ingreso económico para
+                los productores.</p>
             <a onclick="editar()">editar</a>
             <a onclick="borrar()">borrar</a>
         </div>
-    </section>
+        <div>
+            <time datetime="2015"></time>
+            <time datetime="Mes"></time>
+            <figure><img src="img/logo.png" alt="img1"></figure>
+            <h3>Acontecimiento</h3>
+            <p>Llega la plaga de la roya a los cafetales y acaba con
+                el 90% de la producción de café de la cooperativa</p>
+            <a onclick="editar()">editar</a>
+            <a onclick="borrar()">borrar</a>
+        </div>
+        <div>
+            <time datetime="2016"></time>
+            <time datetime="Mes"></time>
+            <figure><img src="img/logo.png" alt="img1"></figure>
+            <h3>Acontecimiento</h3>
+            <p>Se incrementan los esfuerzos para impulsar la miel
+                como una alternativa de ingresos para las familias.</p>
+            <a onclick="editar()">editar</a>
+            <a onclick="borrar()">borrar</a>
+        </div>
+
+        <div>
+            <time datetime="2017"></time>
+            <time datetime="Mes"></time>
+            <figure><img src="img/logo.png" alt="img1"></figure>
+            <h3>Acontecimiento</h3>
+            <p>Colaboración con las cafeterias Capeltic para el
+                desarrollo de nuevas bebidas con miel saborizada..</p>
+            <a onclick="editar()">editar</a>
+            <a onclick="borrar()">borrar</a>
+        </div>
+
+        <div>
+            <time datetime="2017"></time>
+            <time datetime="Mes"></time>
+            <figure><img src="img/logo.png" alt="img1"></figure>
+            <h3>Acontecimiento</h3>
+            <p>Se inaugura el nuevo espacio de trabajo para Chabtic.</p>
+            <a onclick="editar()">editar</a>
+            <a onclick="borrar()">borrar</a>
+        </div>
+
+        <div>
+            <time datetime="2017"></time>
+            <time datetime="Mes"></time>
+            <figure><img src="img/logo.png" alt="img1"></figure>
+            <h3>Acontecimiento</h3>
+            <p>Cambio de imagen y posicionamiento del producto para
+                asegurar el pago justo a familas.</p>
+            <a onclick="editar()">editar</a>
+            <a onclick="borrar()">borrar</a>
+        </div>
+    </div>
 
     <!--Certificaciones-->
-    <section id="Certificaciones" class="tabcontent">
+    <div id="NuestroEquipo" class="tabcontent">
         <!--contenido del tab-->
         <div>
             <a>
@@ -66,9 +108,11 @@
         </div>
         <div>
             <figure><img src="img/logo.png" alt="img1"></figure>
-            <p>Certificación orgánica USDA</p>
-            <a onclick="editar()">editar</a>
-            <a onclick="borrar()">borrar</a>
+            <h3>Titulo</p>
+                <p>Víctor López</p>
+
+                <a onclick="editar()">editar</a>
+                <a onclick="borrar()">borrar</a>
         </div>
         <div>
             <figure><img src="img/logo.png" alt="img1"></figure>
@@ -88,10 +132,10 @@
             <a onclick="editar()">editar</a>
             <a onclick="borrar()">borrar</a>
         </div>
-    </section>
+    </div>
 
     <!--Adquirir Producto-->
-    <section id="AdquirirProducto" class="tabcontent">
+    <div id="AdquirirProducto" class="tabcontent">
         <!--contenido del tab-->
         <div>
             <figure><img src="img/logo.png" alt="img1"></figure>
@@ -105,10 +149,10 @@
             <a onclick="editar()">editar</a>
             <a onclick="borrar()">borrar</a>
         </div>
-    </section>
+    </div>
 
     <!--Recetas-->
-    <section id="RecetaInicio" class="tabcontent">
+    <div id="RecetaInicio" class="tabcontent">
         <!--contenido del tab-->
         <div>
             <h3>Imagen 1</h3>
@@ -129,7 +173,7 @@
                 <a onclick="editar()">editar</a>
                 <a onclick="borrar()">borrar</a>
         </div>
-    </section>
+    </div>
     <script>
         function abrir(evt, contenedor) {
             var i, tabcontent, tablinks;
