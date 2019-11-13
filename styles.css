@@ -19,8 +19,22 @@ body {
     grid-template-columns: 1fr 2fr;
 }
 
+.log-in form {
+    background-color: #FFF;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.log-in form input {
+    border: solid #ccc;
+    border-width: 0 0 2px 0;
+    width: 85%;
+}
+
 .log-in a {
-    color: #FFF;
+    color: #000;
     text-decoration: none;
 }
 
@@ -29,10 +43,12 @@ body {
 }
 
 .log-in button {
-    background-color: darkorange;
+    background-color: #fbd744;
     border: none;
     border-radius: 25px;
-    padding: 2px;
+    padding: 4px;
+    width: 65%;
+    font-size: 18px;
 }
 
 .log-in button:hover {
@@ -40,7 +56,6 @@ body {
 }
 
 .log-in article:nth-child(1) {
-    background-color: #ff00ff;
     overflow: hidden;
 }
 
@@ -53,16 +68,13 @@ body {
 }
 
 .log-in article:nth-child(2) {
-    background-color: #333333;
+    background-color: #000;
 }
 
 .log-in article:nth-child(2) div {
     margin: auto;
     width: 25vw;
-    border: solid black;
-    border-radius: 25px;
     height: 25vh;
-    text-align: center;
 }
 
 .log-in article:nth-child(2) figure {
