@@ -9,7 +9,9 @@
             <li><a href="Recetas.php">Recetas</a></li>
             <li><a href="contacto.php">Contacto</a></li>
             <li><a href="redes_sociales.php">Redes Sociales</a></li>
-            <!-- <li><a href="colaboradores.php">Colaboradores</a></li> -->
+            <li>
+                <figure><img src="img/ajustes.svg" alt="usuario"></figure>
+            </li>
         </ul>
     </nav>
 </header>

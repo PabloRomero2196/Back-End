@@ -16,7 +16,7 @@
 
 
     <section class="recetas">
-        <h2>Inicio</h2>
+        <h2>Pagina de Inicio</h2>
 
         <ul class="tabs">
             <li>CARRUSEL DE IMÁGENES</li>
@@ -29,7 +29,7 @@
         <div class="contenedor">
 
             <div class="anadir">
-            <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirInicioCarrusel()" class="manita"></figure>
+                <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirInicioCarrusel()" class="manita"></figure>
                 <p>Agregar Imagen</p>
             </div>
 

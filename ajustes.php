@@ -16,7 +16,7 @@
 
 
     <section class="recetas">
-        <h2>Contacto</h2>
+        <h2>Ajustes</h2>
 
         <ul class="tabs">
             <li>Dirección</li>

@@ -114,14 +114,16 @@
     </section>
 
     <div id="modalLineadelTiempo" class="modal">
+        <div onclick="cerrarModalLineadelTiempo()" class="manita">
+            <p><i class="far fa-times-circle"></i></p>
+        </div>
         <h2>Linea del tiempo</h2>
-        <div onclick="cerrarModalLineadelTiempo()" class="manita"><i class="far fa-times-circle"></i></div>
         <form action="">
             <p>Año</p>
             <input type="text" placeholder="Año">
 
             <p>Acontecimiento</p>
-            <input type="text" placeholder="Año">
+            <input type="text" placeholder="Acontecimiento">
 
             <button><i class="far fa-save"></i></button>
         </form>
