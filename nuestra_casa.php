@@ -30,7 +30,7 @@
         <div class="contenedor">
 
             <div class="anadir">
-                <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="modalLineadelTiempo()" class="manita"></figure>
+                <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
                 <p>Agregar Acontecimiento</p>
             </div>
 
@@ -112,6 +112,20 @@
         </div>
 
     </section>
+
+    <div id="modalLineadelTiempo" class="modal">
+        <h2>Linea del tiempo</h2>
+        <div onclick="cerrarModalLineadelTiempo()" class="manita"><i class="far fa-times-circle"></i></div>
+        <form action="">
+            <p>Año</p>
+            <input type="text" placeholder="Año">
+
+            <p>Acontecimiento</p>
+            <input type="text" placeholder="Año">
+
+            <button><i class="far fa-save"></i></button>
+        </form>
+    </div>
 </body>
 
 </html>

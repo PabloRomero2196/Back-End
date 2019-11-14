@@ -29,7 +29,7 @@
         <div class="contenedor">
 
             <div class="anadir">
-                <figure><img src="img/anadir.svg" alt="añadir elemento"></figure>
+            <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirInicioCarrusel()" class="manita"></figure>
                 <p>Agregar Imagen</p>
             </div>
 
