@@ -1,0 +1,54 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilosmacoy.css">
+    <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs
+    pagina de w3school de tabs-->
+    <!--aqui tiene que estar un php include   para el menu-->
+</head>
+
+<body>
+    <!--TABS DE CATEGORIAS-->
+    <div class="tab">
+        <button class="tablinks" onclick="abrir(event, 'Direccion')">LINEA DE TIEMPO</button>
+        <button class="tablinks" onclick="abrir(event, 'Telefono')">NUESTRO EQUIPO</button>
+    </div>
+
+    <!--CONTENIDO DE CATEGORIAS-->
+    <section id="Direccion" class="tabcontent">
+        <!--contenido del tab-->
+        <article>
+            <a><i class="fa fa-plus-square-o" aria-hidden="true"></i></figure></a>
+            <p>Agregar producto</p>
+        </article>
+        <article>
+            <h2>Dirección 1</h2>
+            <p>Gabino Barreda 104. Colonia San Rafael. Cuauhtémoc CP 06470. México CDMX. </p>
+            <div>
+                <a onclick="editar()"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a onclick="borrar()"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+            </div>
+        </article>
+    </section>
+
+    <!--CONTENIDO DE CATEGORIAS-->
+    <section id="Telefono" class="tabcontent">
+        <!--contenido del tab-->
+        <article>
+            <a><i class="fa fa-plus-square-o" aria-hidden="true"></i></figure></a>
+            <p>Agregar producto</p>
+        </article>
+        <article>
+            <h2>Teléfono 1</h2>
+            <p>55 6388 1082</p>
+            <div>
+                <a onclick="editar()"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a onclick="borrar()"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+            </div>
+        </article>
+    </section>

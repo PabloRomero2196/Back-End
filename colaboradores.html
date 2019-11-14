@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilosmacoy.css">
+    <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs
+    pagina de w3school de tabs-->
+    <!--aqui tiene que estar un php include   para el menu-->
+</head>
+
+<body>
+    <!--TABS DE CATEGORIAS-->
+    <div class="tab">
+        <button class="tablinks" onclick="abrir(event, 'LineaTiempo')">LINEA DE TIEMPO</button>
+        <button class="tablinks" onclick="abrir(event, 'NuestroEquipo')">NUESTRO EQUIPO</button>
+        <button class="tablinks" onclick="abrir(event, 'RecetaInicio')">Trabajos Y FAMILIAS</button>
+    </div>
+
+    <!--CONTENIDO DE CATEGORIAS-->
+
+    <!--Linea de tiempo-->
+    <section id="Colaborador" class="tabcontent">
+        <!--contenido del tab-->
+        <div>
+            <figure><img src="img/logo.png" alt="img1"></figure>
+            <h3>Apricot</h3>
+            <a onclick="editar()">editar</a>
+            <a onclick="borrar()">borrar</a>
+        </div>
+        <div>
+            <figure><img src="img/logo.png" alt="img1"></figure>
+            <h3>Capeltic</h3>
+            <a onclick="editar()">editar</a>
+            <a onclick="borrar()">borrar</a>
+        </div>
+    </section>
+
+    </section>
