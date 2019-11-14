@@ -146,15 +146,19 @@ h2 {
 
 .tabs {
     display: flex;
-    justify-content: space-around;
-    /* background-color: #000; */
+    justify-content: left;
     border-bottom: solid #cccccc;
+    border-width: 0.5px;
+    font-size: 14px;
 }
 
 .tabs li {
     color: #000;
     border-style: solid solid none solid;
-    padding: 1vw 7vw;
+    border-width: 0.5px;
+    border-color: #ccc;
+    margin: 0 1em;
+    padding: 1vw 4vw;
     list-style: none;
 }
 
@@ -172,16 +176,19 @@ h2 {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.contenedor .element {
+.contenedor .element,
+.contenedor .anadir {
     width: 70%;
     margin: auto;
+    text-align: center;
 
+}
+
+.contenedor .anadir figure {
+    width: 50%;
+    margin: auto;
 }
 
 .mascara {
     clip-path: polygon(0 50%, 25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%);
-}
-
-.contenedorTexto {
-    text-align: center;
 }

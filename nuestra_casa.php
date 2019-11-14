@@ -8,6 +8,7 @@
     <title>Nuestra Casa</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/54e3edb7eb.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -16,14 +17,23 @@
 
 
     <section class="recetas">
-        <h2>Recetas</h2>
+        <h2>Nuestra Casa</h2>
 
         <ul class="tabs">
-            <li>Recetas</li>
-            <li>Categorias</li>
+            <li>Linea del Tiempo</li>
+            <li>Adquirir Productos</li>
+            <li>Nuesto Equipo</li>
+            <li>Colaboradores</li>
+            <li>Familias</li>
         </ul>
 
         <div class="contenedor">
+
+            <div class="anadir">
+                <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="modalLineadelTiempo()"></figure>
+                <p>Agregar Acontecimiento</p>
+            </div>
+
             <div class="element">
                 <figure><img src="img/img1.jpg" alt="img1" class="mascara"></figure>
                 <div class="contenedorTexto">

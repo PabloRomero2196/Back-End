@@ -1,0 +1,3 @@
+function modalLineadelTiempo() {
+    alert("modal");
+}

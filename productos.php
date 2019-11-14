@@ -16,11 +16,11 @@
 
 
     <section class="recetas">
-        <h2>Recetas</h2>
+        <h2>Productos</h2>
 
         <ul class="tabs">
-            <li>Recetas</li>
-            <li>Categorias</li>
+            <li>Carrusel de Imagenes</li>
+            <li>Imagenes de los Productos</li>
         </ul>
 
         <div class="contenedor">

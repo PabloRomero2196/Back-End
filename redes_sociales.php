@@ -16,11 +16,11 @@
 
 
     <section class="recetas">
-        <h2>Recetas</h2>
+        <h2>Redes Sociales</h2>
 
         <ul class="tabs">
-            <li>Recetas</li>
-            <li>Categorias</li>
+            <li>Facebook</li>
+            <li>Insta</li>
         </ul>
 
         <div class="contenedor">

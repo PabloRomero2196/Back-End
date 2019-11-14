@@ -16,14 +16,23 @@
 
 
     <section class="recetas">
-        <h2>Recetas</h2>
+        <h2>Inicio</h2>
 
         <ul class="tabs">
-            <li>Recetas</li>
-            <li>Categorias</li>
+            <li>CARRUSEL DE IMÁGENES</li>
+            <li>CERTIFICACIONES</li>
+            <li>ADQIRIR PRODUCTO</li>
+            <li>COLABORADORES</li>
+            <li>RECETAS</li>
         </ul>
 
         <div class="contenedor">
+
+            <div class="anadir">
+                <figure><img src="img/anadir.svg" alt="añadir elemento"></figure>
+                <p>Agregar Imagen</p>
+            </div>
+
             <div class="element">
                 <figure><img src="img/img1.jpg" alt="img1" class="mascara"></figure>
                 <div class="contenedorTexto">

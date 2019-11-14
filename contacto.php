@@ -16,11 +16,11 @@
 
 
     <section class="recetas">
-        <h2>Recetas</h2>
+        <h2>Contacto</h2>
 
         <ul class="tabs">
-            <li>Recetas</li>
-            <li>Categorias</li>
+            <li>Dirección</li>
+            <li>Telefono</li>
         </ul>
 
         <div class="contenedor">
