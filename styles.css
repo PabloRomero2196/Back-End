@@ -12,6 +12,18 @@ body {
     margin: 0;
 }
 
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 35vw;
+    height: 35vw;
+    display: none;
+    border: solid;
+}
+
 .log-in {
     height: 100vh;
     color: #FFF;
@@ -145,11 +157,16 @@ h2 {
 }
 
 .tabs {
+    cursor: pointer;
     display: flex;
     justify-content: left;
     border-bottom: solid #cccccc;
     border-width: 0.5px;
     font-size: 14px;
+}
+
+.tabs :hover {
+    pointer
 }
 
 .tabs li {
