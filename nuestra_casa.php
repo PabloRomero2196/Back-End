@@ -30,7 +30,7 @@
         <div class="contenedor">
 
             <div class="anadir">
-                <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="modalLineadelTiempo()"></figure>
+                <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="modalLineadelTiempo()" class="manita"></figure>
                 <p>Agregar Acontecimiento</p>
             </div>
 

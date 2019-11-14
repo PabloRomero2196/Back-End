@@ -192,3 +192,7 @@ h2 {
 .mascara {
     clip-path: polygon(0 50%, 25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%);
 }
+
+.manita {
+    cursor: pointer;
+}
