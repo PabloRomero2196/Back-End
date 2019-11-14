@@ -120,14 +120,18 @@ header li {
 
 }
 
-header li :hover {
+/* header li:hover {
     background: #000;
     color: #FFF;
-}
+} */
 
 header a {
     color: #FFF;
     text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
 }
 
 header ul .headerActive {
