@@ -13,10 +13,10 @@ function cerrarInicioCarrusel() {
 
 function abrirModalLineadelTiempo() {
     // alert("modal");
-    document.getElementById('modalLineadelTiempo').style.display = 'block'
+    document.getElementById('modalAgregaunaReceta').style.display = 'block'
 }
 
 function cerrarModalLineadelTiempo() {
     // alert("modal");
-    document.getElementById('modalLineadelTiempo').style.display = 'none'
+    document.getElementById('modalAgregaunaReceta').style.display = 'none'
 }
