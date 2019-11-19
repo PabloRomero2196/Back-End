@@ -32,7 +32,7 @@ function cerrarInicioCarrusel() {
 
 function abrirModalLineadelTiempo() {
     // alert("modal");
-    document.getElementById('modalLineadelTiempo').style.display = 'block'
+    document.getElementById('modalAgregaunaReceta').style.display = 'block'
 }
 
 function cerrarModalLineadelTiempo() {
@@ -42,4 +42,5 @@ function cerrarModalLineadelTiempo() {
 
 function headerHome() {
 
+    document.getElementById('modalAgregaunaReceta').style.display = 'none'
 }
