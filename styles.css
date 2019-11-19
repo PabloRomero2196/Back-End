@@ -97,9 +97,13 @@ body {
 
 
 header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
     display: flex;
     justify-content: space-around;
     background-color: #000;
+    align-items: center;
 }
 
 header h1 {
@@ -120,8 +124,11 @@ header nav {
 }
 
 header ul {
-    display: flex;
     justify-content: space-around;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
 }
 
 header li {
@@ -132,10 +139,9 @@ header li {
 
 }
 
-/* header li:hover {
-    background: #000;
-    color: #FFF;
-} */
+.headerActive {
+    text-decoration: underline;
+}
 
 header a {
     color: #FFF;
@@ -156,38 +162,9 @@ h2 {
     margin: 2vw;
 }
 
-.tabs {
-    cursor: pointer;
-    display: flex;
-    justify-content: left;
-    border-bottom: solid #cccccc;
-    border-width: 0.5px;
-    font-size: 14px;
-}
-
-.tabs :hover {
-    pointer
-}
-
-.tabs li {
-    color: #000;
-    border-style: solid solid none solid;
-    border-width: 0.5px;
-    border-color: #ccc;
-    margin: 0 1em;
-    padding: 1vw 4vw;
-    list-style: none;
-}
-
-.tabs :hover {
-    color: #FFF;
-    background-color: #000;
-
-}
 
 .contenedor {
     width: 95vw;
-    /* border-style: none solid solid solid; */
     display: grid;
     margin: auto;
     grid-template-columns: 1fr 1fr 1fr;
@@ -206,10 +183,79 @@ h2 {
     margin: auto;
 }
 
+.contenedorIconosEditarBorrar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin: auto;
+}
+
+.contenedorIconosEditarBorrar figure {
+    width: 25%;
+    margin: auto;
+    cursor: pointer;
+}
+
 .mascara {
     clip-path: polygon(0 50%, 25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%);
 }
 
 .manita {
     cursor: pointer;
+}
+
+/* ----------------------------------------------- TABS ----------------------------------------------- */
+.tabs {
+    cursor: pointer;
+    display: flex;
+    justify-content: left;
+    border-bottom: solid #cccccc;
+    border-width: 0.5px;
+    font-size: 14px;
+}
+
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: block;
+}
+
+.tabs :hover {
+    cursor: pointer;
+}
+
+.tabs li {
+    color: #000;
+    border-style: solid solid none solid;
+    border-width: 0.5px;
+    border-color: #ccc;
+    margin: 0 1em;
+    padding: 1vw 4vw;
+    list-style: none;
+}
+
+.tabs :hover {
+    color: #FFF;
+    background-color: #000;
+
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.tab.active {
+    background-color: #CCC;
+}
+
+.tab:hover {
+    background-color: #AAA;
+}
+
+.tab-content {
+    margin-left: 20px;
+    margin-right: 20px;
 }

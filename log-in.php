@@ -27,7 +27,7 @@
                     <button>Ingresar</button>
                     <br>
                     <p>
-                        <a href="...">¿Has olvidado tu contraseña?</a>
+                        <a href="index.php">¿Has olvidado tu contraseña?</a>
                     </p>
                 </form>
             </div>

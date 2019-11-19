@@ -23,92 +23,136 @@
             <li>Linea del Tiempo</li>
             <li>Adquirir Productos</li>
             <li>Nuesto Equipo</li>
-            <li>Colaboradores</li>
             <li>Familias</li>
         </ul>
 
         <div class="contenedor">
-
             <div class="anadir">
                 <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
                 <p>Agregar Acontecimiento</p>
             </div>
-
             <div class="element">
                 <figure><img src="img/img1.jpg" alt="img1" class="mascara"></figure>
-                <div class="contenedorTexto">
+                <div>
                     <p>Comida</p>
-                    <a onclick="editar()">editar</a>
-                    <a onclick="borrar()">borrar</a>
                 </div>
-            </div>
-
-            <div class="element">
-                <figure><img src="img/img2.jpg" alt="img2" class="mascara"></figure>
-                <div class="contenedorTexto">
-                    <p>Comida</p>
-                    <a onclick="editar()">editar</a>
-                    <a onclick="borrar()">borrar</a>
-                </div>
-            </div>
-
-            <div class="element">
-                <figure><img src="img/img3.jpg" alt="img3" class="mascara"></figure>
-                <div class="contenedorTexto">
-                    <p>Comida</p>
-                    <a onclick="editar()">editar</a>
-                    <a onclick="borrar()">borrar</a>
+                <div class="contenedorIconosEditarBorrar">
+                    <a onclick="editar()">
+                        <figure><img src="img/edit.svg" alt=""></figure>
+                    </a>
+                    <a onclick="borrar()">
+                        <figure><img src="img/trash.svg" alt=""></figure>
+                    </a>
                 </div>
             </div>
 
             <div class="element">
                 <figure><img src="img/img1.jpg" alt="img1" class="mascara"></figure>
-                <div class="contenedorTexto">
+                <div>
                     <p>Comida</p>
-                    <a onclick="editar()">editar</a>
-                    <a onclick="borrar()">borrar</a>
+                </div>
+                <div class="contenedorIconosEditarBorrar">
+                    <a onclick="editar()">
+                        <figure><img src="img/edit.svg" alt=""></figure>
+                    </a>
+                    <a onclick="borrar()">
+                        <figure><img src="img/trash.svg" alt=""></figure>
+                    </a>
                 </div>
             </div>
 
+            <div class="element">
+                <figure><img src="img/img1.jpg" alt="img1" class="mascara"></figure>
+                <div>
+                    <p>Comida</p>
+                </div>
+                <div class="contenedorIconosEditarBorrar">
+                    <a onclick="editar()">
+                        <figure><img src="img/edit.svg" alt=""></figure>
+                    </a>
+                    <a onclick="borrar()">
+                        <figure><img src="img/trash.svg" alt=""></figure>
+                    </a>
+                </div>
+            </div>
+
+            <div class="element">
+                <figure><img src="img/img1.jpg" alt="img1" class="mascara"></figure>
+                <div>
+                    <p>Comida</p>
+                </div>
+                <div class="contenedorIconosEditarBorrar">
+                    <a onclick="editar()">
+                        <figure><img src="img/edit.svg" alt=""></figure>
+                    </a>
+                    <a onclick="borrar()">
+                        <figure><img src="img/trash.svg" alt=""></figure>
+                    </a>
+                </div>
+            </div>
         </div>
 
         <div class="contenedor">
+            <div class="anadir">
+                <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
+                <p>Agregar Acontecimiento</p>
+            </div>
             <div class="element">
                 <figure><img src="img/img1.jpg" alt="img1" class="mascara"></figure>
-                <div class="contenedorTexto">
+                <div>
                     <p>Comida</p>
-                    <a onclick="editar()">editar</a>
-                    <a onclick="borrar()">borrar</a>
+                </div>
+                <div class="contenedorIconosEditarBorrar">
+                    <a onclick="editar()">
+                        <figure><img src="img/edit.svg" alt=""></figure>
+                    </a>
+                    <a onclick="borrar()">
+                        <figure><img src="img/trash.svg" alt=""></figure>
+                    </a>
                 </div>
             </div>
+        </div>
 
-            <div class="element">
-                <figure><img src="img/img2.jpg" alt="img2" class="mascara"></figure>
-                <div class="contenedorTexto">
-                    <p>Comida</p>
-                    <a onclick="editar()">editar</a>
-                    <a onclick="borrar()">borrar</a>
-                </div>
+        <div class="contenedor">
+            <div class="anadir">
+                <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
+                <p>Agregar Acontecimiento</p>
             </div>
-
-            <div class="element">
-                <figure><img src="img/img3.jpg" alt="img3" class="mascara"></figure>
-                <div class="contenedorTexto">
-                    <p>Comida</p>
-                    <a onclick="editar()">editar</a>
-                    <a onclick="borrar()">borrar</a>
-                </div>
-            </div>
-
             <div class="element">
                 <figure><img src="img/img1.jpg" alt="img1" class="mascara"></figure>
-                <div class="contenedorTexto">
+                <div>
                     <p>Comida</p>
-                    <a onclick="editar()">editar</a>
-                    <a onclick="borrar()">borrar</a>
+                </div>
+                <div class="contenedorIconosEditarBorrar">
+                    <a onclick="editar()">
+                        <figure><img src="img/edit.svg" alt=""></figure>
+                    </a>
+                    <a onclick="borrar()">
+                        <figure><img src="img/trash.svg" alt=""></figure>
+                    </a>
                 </div>
             </div>
+        </div>
 
+        <div class="contenedor">
+            <div class="anadir">
+                <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
+                <p>Agregar Acontecimiento</p>
+            </div>
+            <div class="element">
+                <figure><img src="img/img1.jpg" alt="img1" class="mascara"></figure>
+                <div>
+                    <p>Comida</p>
+                </div>
+                <div class="contenedorIconosEditarBorrar">
+                    <a onclick="editar()">
+                        <figure><img src="img/edit.svg" alt=""></figure>
+                    </a>
+                    <a onclick="borrar()">
+                        <figure><img src="img/trash.svg" alt=""></figure>
+                    </a>
+                </div>
+            </div>
         </div>
 
     </section>
@@ -125,9 +169,10 @@
             <p>Acontecimiento</p>
             <input type="text" placeholder="Acontecimiento">
 
-            <button><i class="far fa-save"></i></button>
+            <button><i class="far fa-edit"></i></button>
         </form>
     </div>
+
 </body>
 
 </html>

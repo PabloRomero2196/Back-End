@@ -23,7 +23,7 @@
             <li>Telefono</li>
         </ul>
 
-        <div class="contenedor">
+        <div class="contenedor" class="tab-content">
             <div class="element">
                 <figure><img src="img/img1.jpg" alt="img1" class="mascara"></figure>
                 <div class="contenedorTexto">
@@ -62,7 +62,7 @@
 
         </div>
 
-        <div class="contenedor">
+        <div class="contenedor" class="tab-content">
             <div class="element">
                 <figure><img src="img/img1.jpg" alt="img1" class="mascara"></figure>
                 <div class="contenedorTexto">
