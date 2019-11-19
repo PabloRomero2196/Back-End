@@ -274,36 +274,36 @@ h2 {
 .modalReceta p{
 text-align: center;
 }
-.modalReceta .titulo input{
+.titulo input{
     grid-row: 2;
     width: 74%;
     height: 35px;
     margin-bottom: 28px;
 }
-.modalReceta .categoria input{
+ .categoria input{
     height: 26px;
 }
-.modalReceta .tiempo input{
+ .tiempo input{
     grid-row: 4;
     height: 26px;
     width: 75%;
     margin-bottom: 28px;
 }
-.modalReceta .porcion input{
+ .porcion input{
     height: 23px;
 }
-.modalReceta .ingre input{
+ .ingre input{
     grid-row: 6;
     height: 139px;
     width: 82%;
     margin-bottom: 9px;
 }
-.modalReceta .varia input{
+.varia input{
     grid-row: 11;
     width: 83%;
     height: 85px;
 }
-.modalReceta .chef input{
+ .chef input{
     grid-row: 11;
     height: 29px;
 }
