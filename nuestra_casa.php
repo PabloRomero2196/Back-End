@@ -117,13 +117,39 @@
         <div onclick="cerrarModalLineadelTiempo()" class="manita">
             <p><i class="far fa-times-circle"></i></p>
         </div>
-        <h2>Linea del tiempo</h2>
+        <h2>Línea del tiempo</h2>
         <form action="">
-            <p>Año</p>
-            <input type="text" placeholder="Año">
+            <p>Año:</p>
+            <input type="number" name="quantity" min="1" max="2020"placeholder="Año">
 
-            <p>Acontecimiento</p>
-            <input type="text" placeholder="Acontecimiento">
+            <p>Acontecimiento:</p>
+            <input type="text">
+
+            <p class="save"><i class="far fa-save"></i></p>
+        </form>
+    </div>
+    <div id="modalAgregaunaReceta" class="modalReceta">
+        <div onclick="cerrarModalLineadelTiempo()" class="manita">
+            <p><i class="far fa-times-circle"></i></p>
+        </div>
+        <h2>Agrega una Receta</h2>
+        <form action="">
+            <p class="titulo">Título</p>
+            <input type="text" placeholder="Título">
+            <p class="categoria">Categoría</p>
+            <input type="text" placeholder="Categoría">
+            <p class="tiempo">TIEMPO</p>
+            <input type="text" placeholder="Tiempo de Preparación">
+            <p class="porcion">PORCIÓN</p>
+            <input type="text" placeholder="Año">
+            <p class="ingre">INGREDIENTES</p>
+            <input type="text" placeholder="Ingedientes">
+            <p class="prep">PREPARACIÒN</p>
+            <input type="text" placeholder="Año">
+            <p class="varia">VARIACIONES</p>
+            <input type="text" placeholder="Año">
+            <p class="chef">COMO LO HACE EL CHEF</p>
+            <input type="text" placeholder="Inserta URL">
 
             <button><i class="far fa-save"></i></button>
         </form>
