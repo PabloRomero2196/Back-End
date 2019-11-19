@@ -42,7 +42,9 @@ body {
 .log-in form input {
     border: solid #ccc;
     border-width: 0 0 2px 0;
-    width: 85%;
+    width: 92%;
+    margin-bottom: 38px;
+margin-top: 36px;
 }
 
 .log-in a {
@@ -59,7 +61,8 @@ body {
     border: none;
     border-radius: 25px;
     padding: 4px;
-    width: 65%;
+    width: 41%;
+    margin-top: 15px;
     font-size: 18px;
 }
 
@@ -85,14 +88,20 @@ body {
 
 .log-in article:nth-child(2) div {
     margin: auto;
-    width: 25vw;
-    height: 25vh;
+    width: 22vw;
+    height: 38vh;
+}
+.log-in input:nth-child(3){
+    margin-top: 0px;
 }
 
 .log-in article:nth-child(2) figure {
     width: 10vw;
     margin: auto;
     margin-top: 5vw;
+}
+.log-in form p{
+    margin-top: 41px;
 }
 
 
@@ -166,7 +175,7 @@ h2 {
 }
 
 .tabs :hover {
-    pointer
+    
 }
 
 .tabs li {
