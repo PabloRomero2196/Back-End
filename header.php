@@ -3,13 +3,14 @@
 
     <nav>
         <ul>
-            <li><a href="index.php">Inicio</a></li>
-            <li><a href="nuestra_casa.php">Nuestra Casa</a></li>
-            <li><a href="productos.php">Productos</a></li>
-            <li><a href="Recetas.php">Recetas</a></li>
-            <li><a href="contacto.php">Contacto</a></li>
-            <li><a href="redes_sociales.php">Redes Sociales</a></li>
-            <li>
+            <li><a href="home.php" onclick="headerHome()" class="headerActive">Home</a></li>
+            <li><a href="index.php" onclick="headerInicio()">Inicio</a></li>
+            <li><a href="nuestra_casa.php" onclick="headerNuestaCasa()">Nuestra Casa</a></li>
+            <li><a href="productos.php" onclick="headerProductos()">Productos</a></li>
+            <li><a href="Recetas.php" onclick="headerRecetas()">Recetas</a></li>
+            <li><a href="contacto.php" onclick="headerContacto()">Contacto</a></li>
+            <li><a href="redes_sociales.php" onclick="headerRedes()">Redes Sociales</a></li>
+            <li class="manita">
                 <figure><img src="img/ajustes.svg" alt="usuario"></figure>
             </li>
         </ul>

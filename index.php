@@ -17,98 +17,31 @@
 
     <section class="recetas">
         <h2>Pagina de Inicio</h2>
-
+        <!-- tabs -->
         <ul class="tabs">
-            <li>CARRUSEL DE IMÁGENES</li>
-            <li>CERTIFICACIONES</li>
-            <li>ADQIRIR PRODUCTO</li>
-            <li>COLABORADORES</li>
-            <li>RECETAS</li>
+            <li data-tab-target="#home" class="active tab">Home</li>
+            <li data-tab-target="#pricing" class="tab">Pricing</li>
+            <li data-tab-target="#about" class="tab">About</li>
         </ul>
 
-        <div class="contenedor">
-
-            <div class="anadir">
-                <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirInicioCarrusel()" class="manita"></figure>
-                <p>Agregar Imagen</p>
+        <!-- carrusel de imagenes -->
+        <div class="tab-content">
+            <div id="home" data-tab-content class="active">
+                <h1>Home</h1>
+                <p>This is the home</p>
             </div>
-
-            <div class="element">
-                <figure><img src="img/img1.jpg" alt="img1" class="mascara"></figure>
-                <div class="contenedorTexto">
-                    <p>Comida</p>
-                    <a onclick="editar()">editar</a>
-                    <a onclick="borrar()">borrar</a>
-                </div>
+            <div id="pricing" data-tab-content>
+                <h1>Pricing</h1>
+                <p>Some information on pricing</p>
             </div>
-
-            <div class="element">
-                <figure><img src="img/img2.jpg" alt="img2" class="mascara"></figure>
-                <div class="contenedorTexto">
-                    <p>Comida</p>
-                    <a onclick="editar()">editar</a>
-                    <a onclick="borrar()">borrar</a>
-                </div>
+            <div id="about" data-tab-content>
+                <h1>About</h1>
+                <p>Let me tell you about me</p>
             </div>
-
-            <div class="element">
-                <figure><img src="img/img3.jpg" alt="img3" class="mascara"></figure>
-                <div class="contenedorTexto">
-                    <p>Comida</p>
-                    <a onclick="editar()">editar</a>
-                    <a onclick="borrar()">borrar</a>
-                </div>
-            </div>
-
-            <div class="element">
-                <figure><img src="img/img1.jpg" alt="img1" class="mascara"></figure>
-                <div class="contenedorTexto">
-                    <p>Comida</p>
-                    <a onclick="editar()">editar</a>
-                    <a onclick="borrar()">borrar</a>
-                </div>
-            </div>
-
         </div>
 
-        <div class="contenedor">
-            <div class="element">
-                <figure><img src="img/img1.jpg" alt="img1" class="mascara"></figure>
-                <div class="contenedorTexto">
-                    <p>Comida</p>
-                    <a onclick="editar()">editar</a>
-                    <a onclick="borrar()">borrar</a>
-                </div>
-            </div>
 
-            <div class="element">
-                <figure><img src="img/img2.jpg" alt="img2" class="mascara"></figure>
-                <div class="contenedorTexto">
-                    <p>Comida</p>
-                    <a onclick="editar()">editar</a>
-                    <a onclick="borrar()">borrar</a>
-                </div>
-            </div>
 
-            <div class="element">
-                <figure><img src="img/img3.jpg" alt="img3" class="mascara"></figure>
-                <div class="contenedorTexto">
-                    <p>Comida</p>
-                    <a onclick="editar()">editar</a>
-                    <a onclick="borrar()">borrar</a>
-                </div>
-            </div>
-
-            <div class="element">
-                <figure><img src="img/img1.jpg" alt="img1" class="mascara"></figure>
-                <div class="contenedorTexto">
-                    <p>Comida</p>
-                    <a onclick="editar()">editar</a>
-                    <a onclick="borrar()">borrar</a>
-                </div>
-            </div>
-
-        </div>
 
     </section>
 </body>
