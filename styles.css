@@ -23,44 +23,56 @@ body {
     display: none;
     border: solid;
 }
-.modal h2{
+
+.modal h2 {
     margin-bottom: 44px;
 }
-.modal form{
-display: grid;
-display: grid;
-grid-template-columns: 1fr 1fr;
+
+.modal form {
+    display: grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
-.modal form p{
+
+.modal form p {
     grid-column: 1/2;
     text-align: center;
     margin-bottom: 41px;
 }
-.modal form input{
+
+.modal form input {
     grid-column: 2/2;
     width: 91%;
     height: 22px;
     margin-left: -71px;
 }
-.modal .save{
+
+.modal .save {
     margin-left: 87%;
     margin-top: 100px
 }
-#modalLineadelTiempo > form > p:nth-child(3){
-text-align: center;
-width: 78%;
+
+#modalLineadelTiempo>form>p:nth-child(3) {
+    text-align: center;
+    width: 78%;
 }
-#modalLineadelTiempo > form > input[type=text]:nth-child(4){
+
+#modalLineadelTiempo>form>input[type=text]:nth-child(4) {
     height: 100px;
     margin-left: -72px;
     margin-right: 83px;
 }
-.modal form
-.log-in {
+
+.modal form .log-in {
     height: 100vh;
     color: #FFF;
     display: grid;
     grid-template-columns: 1fr 2fr;
+}
+
+.log-in {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .log-in form {
@@ -76,7 +88,7 @@ width: 78%;
     border-width: 0 0 2px 0;
     width: 92%;
     margin-bottom: 38px;
-margin-top: 36px;
+    margin-top: 36px;
 }
 
 .log-in a {
@@ -123,7 +135,8 @@ margin-top: 36px;
     width: 22vw;
     height: 38vh;
 }
-.log-in input:nth-child(3){
+
+.log-in input:nth-child(3) {
     margin-top: 0px;
 }
 
@@ -132,7 +145,8 @@ margin-top: 36px;
     margin: auto;
     margin-top: 5vw;
 }
-.log-in form p{
+
+.log-in form p {
     margin-top: 41px;
 }
 
@@ -264,7 +278,7 @@ h2 {
 }
 
 .tabs :hover {
-   cursor: pointer;
+    cursor: pointer;
 }
 
 .tabs li {
@@ -304,8 +318,9 @@ h2 {
 .manita {
     cursor: pointer;
 }
-/*MODALES*/
-.modalReceta{
+
+/*----------------------------------------MODALES----------------------------------------*/
+.modalReceta {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -316,44 +331,53 @@ h2 {
     display: none;
     border: solid;
 }
-.modalReceta form{
+
+.modalReceta form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 2.5%;
 }
-.modalReceta p{
-text-align: center;
+
+.modalReceta p {
+    text-align: center;
 }
-.titulo input{
+
+.titulo+input {
     grid-row: 2;
     width: 74%;
     height: 35px;
     margin-bottom: 28px;
 }
- .categoria input{
+
+.categoria+input {
     height: 26px;
 }
- .tiempo input{
+
+.tiempo+input {
     grid-row: 4;
     height: 26px;
     width: 75%;
     margin-bottom: 28px;
 }
- .porcion input{
+
+.porcion+input {
     height: 23px;
 }
- .ingre input{
+
+.ingre+input {
     grid-row: 6;
     height: 139px;
     width: 82%;
     margin-bottom: 9px;
 }
-.varia input{
+
+.varia+input {
     grid-row: 11;
     width: 83%;
     height: 85px;
 }
- .chef input{
+
+.chef+input {
     grid-row: 11;
     height: 29px;
 }

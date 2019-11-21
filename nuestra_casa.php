@@ -164,7 +164,7 @@
         <h2>Línea del tiempo</h2>
         <form action="">
             <p>Año:</p>
-            <input type="number" name="quantity" min="1" max="2020"placeholder="Año">
+            <input type="number" name="quantity" min="1" max="2020" placeholder="Año">
 
             <p>Acontecimiento:</p>
             <input type="text">
@@ -172,6 +172,7 @@
             <p class="save"><i class="far fa-save"></i></p>
         </form>
     </div>
+
     <div id="modalAgregaunaReceta" class="modalReceta">
         <div onclick="cerrarModalLineadelTiempo()" class="manita">
             <p><i class="far fa-times-circle"></i></p>
