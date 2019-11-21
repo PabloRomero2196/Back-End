@@ -275,7 +275,7 @@ h2 {
 }
 
 .active[data-tab-content] {
-    display: block;
+    display: grid;
 }
 
 .tabs :hover {
@@ -316,6 +316,7 @@ h2 {
 .tab-content {
     margin-left: 20px;
     margin-right: 20px;
+    margin-top: 2em;
 }
 
 /*----------------------------------------MODALES----------------------------------------*/

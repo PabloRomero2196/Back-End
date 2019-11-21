@@ -5,120 +5,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Productos</title>
-    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link href="styles.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/54e3edb7eb.js" crossorigin="anonymous"></script>
+    <title>Productos</title>
 </head>
 
 <body>
 
     <?php include 'header.php'; ?>
 
+    <section>
 
-    <section class="recetas">
-        <h2>Productos</h2>
-
+        <h2>Pagina de Productos</h2>
         <ul class="tabs">
-            <li>Carrusel de Imagenes</li>
-            <li>Imagenes de los Productos</li>
+            <li data-tab-target="#carruselProductos" class="active tab">Carrusel de Imágenes</li>
+            <li data-tab-target="#imagenesProductos" class="tab">Imágenes de Productos</li>
         </ul>
 
-        <div class="contenedor">
-            <div class="element">
-                <figure><img src="img/img1.jpg" alt="img1" class="mascara"></figure>
-                <div class="contenedorTexto">
-                    <p>Comida</p>
-                    <a onclick="editar()">editar</a>
-                    <a onclick="borrar()">borrar</a>
+        <div class="tab-content">
+
+            <!-- Carrusel de Imagenes  -->
+            <div class="contenedor" id="carruselProductos" data-tab-content class="active">
+                <div class="anadir">
+                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
+                    <p>Agregar Imagen</p>
+                </div>
+                <div class="element">
+                    <figure><img src="img/slider1.jpg" alt="img3"></figure>
+                    <div>
+                        <p>Imagen 1</p>
+                    </div>
+                    <div class="contenedorIconosEditarBorrar">
+                        <a onclick="editar()">
+                            <figure><img src="img/edit.svg" alt=""></figure>
+                        </a>
+                        <a onclick="borrar()">
+                            <figure><img src="img/trash.svg" alt=""></figure>
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <div class="element">
-                <figure><img src="img/img2.jpg" alt="img2" class="mascara"></figure>
-                <div class="contenedorTexto">
-                    <p>Comida</p>
-                    <a onclick="editar()">editar</a>
-                    <a onclick="borrar()">borrar</a>
+            <!-- Imagenes de Productos  -->
+            <div class="contenedor" id="imagenesProductos" data-tab-content class="active">
+                <div class="anadir">
+                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
+                    <p>Agregar Certificación</p>
                 </div>
-            </div>
 
-            <div class="element">
-                <figure><img src="img/img3.jpg" alt="img3" class="mascara"></figure>
-                <div class="contenedorTexto">
-                    <p>Comida</p>
-                    <a onclick="editar()">editar</a>
-                    <a onclick="borrar()">borrar</a>
+                <!-- Elemento  -->
+                <div class="element">
+                    <figure><img src="img/logo_usda.svg" alt="img1"></figure>
+                    <div>
+                        <p>Certificación organica Usda</p>
+                    </div>
+                    <div class="contenedorIconosEditarBorrar">
+                        <a onclick="editar()">
+                            <figure><img src="img/edit.svg" alt=""></figure>
+                        </a>
+                        <a onclick="borrar()">
+                            <figure><img src="img/trash.svg" alt=""></figure>
+                        </a>
+                    </div>
                 </div>
-            </div>
-
-            <div class="element">
-                <figure><img src="img/img1.jpg" alt="img1" class="mascara"></figure>
-                <div class="contenedorTexto">
-                    <p>Comida</p>
-                    <a onclick="editar()">editar</a>
-                    <a onclick="borrar()">borrar</a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="contenedor">
-            <div class="element">
-                <figure><img src="img/img1.jpg" alt="img1" class="mascara"></figure>
-                <div class="contenedorTexto">
-                    <p>Comida</p>
-                    <a onclick="editar()">editar</a>
-                    <a onclick="borrar()">borrar</a>
-                </div>
-            </div>
-
-            <div class="element">
-                <figure><img src="img/img2.jpg" alt="img2" class="mascara"></figure>
-                <div class="contenedorTexto">
-                    <p>Comida</p>
-                    <a onclick="editar()">editar</a>
-                    <a onclick="borrar()">borrar</a>
-                </div>
-            </div>
-
-            <div class="element">
-                <figure><img src="img/img3.jpg" alt="img3" class="mascara"></figure>
-                <div class="contenedorTexto">
-                    <p>Comida</p>
-                    <a onclick="editar()">editar</a>
-                    <a onclick="borrar()">borrar</a>
-                </div>
-            </div>
-
-            <div class="element">
-                <figure><img src="img/img1.jpg" alt="img1" class="mascara"></figure>
-                <div class="contenedorTexto">
-                    <p>Comida</p>
-                    <a onclick="editar()">editar</a>
-                    <a onclick="borrar()">borrar</a>
+                <!-- Elemento  -->
+                <div class="element">
+                    <figure><img src="img/logo_certimex.svg" alt="img1"></figure>
+                    <div>
+                        <p>Certificación certimex</p>
+                    </div>
+                    <div class="contenedorIconosEditarBorrar">
+                        <a onclick="editar()">
+                            <figure><img src="img/edit.svg" alt=""></figure>
+                        </a>
+                        <a onclick="borrar()">
+                            <figure><img src="img/trash.svg" alt=""></figure>
+                        </a>
+                    </div>
                 </div>
             </div>
 
         </div>
+
     </section>
-
-
-
-    <div id="" class="modal">
-        <div onclick="cerrarModalLineadelTiempo()" class="manita">
-            <p><i class="far fa-times-circle"></i></p>
-        </div>
-        <h2>Linea del tiempo</h2>
-        <form action="">
-            <p>Año</p>
-            <input type="text" placeholder="Año">
-
-            <p>Acontecimiento</p>
-            <input type="text" placeholder="Acontecimiento">
-
-            <button><i class="far fa-save"></i></button>
-        </form>
-    </div>
 
 </body>
 
