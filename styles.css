@@ -260,6 +260,7 @@ h2 {
 }
 
 /* ----------------------------------------------- TABS ----------------------------------------------- */
+
 .tabs {
     cursor: pointer;
     display: flex;
@@ -303,20 +304,18 @@ h2 {
 }
 
 .tab.active {
-    background-color: #CCC;
+    background-color: #000;
+    color: #FFF;
 }
 
 .tab:hover {
-    background-color: #AAA;
+    background-color: #000;
+    color: #FFF;
 }
 
 .tab-content {
     margin-left: 20px;
     margin-right: 20px;
-}
-
-.manita {
-    cursor: pointer;
 }
 
 /*----------------------------------------MODALES----------------------------------------*/
