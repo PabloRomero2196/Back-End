@@ -1,3 +1,27 @@
+@font-face {
+    font-family: 'Whitney';
+    src: url('fonts/Whitney-Medium.eot');
+    src: url('fonts/Whitney-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Whitney-Medium.woff2') format('woff2'),
+        url('fonts/Whitney-Medium.woff') format('woff'),
+        url('fonts/Whitney-Medium.ttf') format('truetype'),
+        url('fonts/Whitney-Medium.svg#Whitney-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Whitney';
+    src: url('fonts/Whitney-Bold.eot');
+    src: url('fonts/Whitney-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Whitney-Bold.woff2') format('woff2'),
+        url('fonts/Whitney-Bold.woff') format('woff'),
+        url('fonts/Whitney-Bold.ttf') format('truetype'),
+        url('fonts/Whitney-Bold.svg#Whitney-Bold') format('svg');
+    font-weight: 700;
+    font-style: bold;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -277,6 +301,7 @@ h2 {
 .active[data-tab-content] {
     display: grid;
 }
+
 
 .tabs :hover {
     cursor: pointer;

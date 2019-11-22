@@ -138,6 +138,13 @@
 
     </section>
 
+
+
+    <div class="modalHome1"></div>
+    <div class="modalHome2"></div>
+    <div class="modalHome3"></div>
+    <div class="modalHome4"></div>
+
 </body>
 
 </html>

@@ -9,7 +9,6 @@
             <li><a href="productos.php" onclick="headerProductos()">Productos</a></li>
             <li><a href="Recetas.php" onclick="headerRecetas()">Recetas</a></li>
             <li><a href="contacto.php" onclick="headerContacto()">Contacto</a></li>
-            <li><a href="redes_sociales.php" onclick="headerRedes()">Redes Sociales</a></li>
             <li class="manita">
                 <figure><img src="img/ajustes.svg" alt="usuario"></figure>
             </li>
