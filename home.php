@@ -17,7 +17,7 @@
 
     <section>
 
-        <h2>Nuestra Casa</h2>
+        <h2>Home</h2>
         <ul class="tabs">
             <li data-tab-target="#carruselHome" class="active tab">Carrusel de Imagenes</li>
             <li data-tab-target="#certificaciones" class="tab">Certificaciones</li>

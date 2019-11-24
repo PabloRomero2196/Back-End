@@ -8,27 +8,26 @@
     <script src="script.js" defer></script>
     <link href="styles.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/54e3edb7eb.js" crossorigin="anonymous"></script>
-    <title>Nuestra Casa</title>
+    <title>Home</title>
 </head>
 
 <body>
 
     <?php include 'header.php'; ?>
 
-
     <section>
 
-        <h2>Pagina de Inicio</h2>
+        <h2>Nuestra Casa</h2>
         <ul class="tabs">
-            <li data-tab-target="#1" class="active tab">1</li>
-            <li data-tab-target="#2" class="tab">2</li>
-            <li data-tab-target="#3" class="tab">3</li>
+            <li data-tab-target="#carruselHome" class="active tab">Carrusel de Imagenes</li>
+            <li data-tab-target="#certificaciones" class="tab">Certificaciones</li>
+            <li data-tab-target="#sucursales" class="tab">Sucursales</li>
         </ul>
 
         <div class="tab-content">
 
-            <!-- 1  -->
-            <div class="contenedor" id="1" data-tab-content class="active">
+            <!-- Certificaciones  -->
+            <div class="contenedor" id="carruselHome" data-tab-content class="active">
                 <div class="anadir">
                     <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
                     <p>Agregar Imagen</p>
@@ -49,8 +48,8 @@
                 </div>
             </div>
 
-            <!-- 2  -->
-            <div class="contenedor" id="2" data-tab-content class="active">
+            <!-- Certificaciones  -->
+            <div class="contenedor" id="certificaciones" data-tab-content class="active">
                 <div class="anadir">
                     <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
                     <p>Agregar Certificación</p>
@@ -89,8 +88,8 @@
                 </div>
             </div>
 
-            <!-- 3  -->
-            <div class="contenedor" id="3" data-tab-content class="active">
+            <!-- Sucursales  -->
+            <div class="contenedor" id="sucursales" data-tab-content class="active">
                 <div class="anadir">
                     <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
                     <p>Agregar Sucursales</p>
@@ -117,48 +116,11 @@
 
     </section>
 
-    <div id="modalLineadelTiempo" class="modal">
-        <div onclick="cerrarModalLineadelTiempo()" class="manita">
-            <p><i class="far fa-times-circle"></i></p>
-        </div>
-        <h2>Línea del tiempo</h2>
-        <form action="">
-            <p>Año:</p>
-            <input type="number" name="quantity" min="1" max="2020" placeholder="Año">
 
-            <p>Acontecimiento:</p>
-            <input type="text">
 
-            <p class="save"><i class="far fa-save"></i></p>
-        </form>
-    </div>
-
-    <div id="modalAgregaunaReceta" class="modalReceta">
-        <div onclick="cerrarModalLineadelTiempo()" class="manita">
-            <p><i class="far fa-times-circle"></i></p>
-        </div>
-        <h2>Agrega una Receta</h2>
-        <form action="">
-            <p class="titulo">Título</p>
-            <input type="text" placeholder="Título">
-            <p class="categoria">Categoría</p>
-            <input type="text" placeholder="Categoría">
-            <p class="tiempo">TIEMPO</p>
-            <input type="text" placeholder="Tiempo de Preparación">
-            <p class="porcion">PORCIÓN</p>
-            <input type="text" placeholder="Año">
-            <p class="ingre">INGREDIENTES</p>
-            <input type="text" placeholder="Ingedientes">
-            <p class="prep">PREPARACIÒN</p>
-            <input type="text" placeholder="Año">
-            <p class="varia">VARIACIONES</p>
-            <input type="text" placeholder="Año">
-            <p class="chef">COMO LO HACE EL CHEF</p>
-            <input type="text" placeholder="Inserta URL">
-
-            <button><i class="far fa-edit"></i></button>
-        </form>
-    </div>
+    <div class="modalHome1"></div>
+    <div class="modalHome2"></div>
+    <div class="modalHome3"></div>
 
 </body>
 

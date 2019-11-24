@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Recetas</title>
-    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link href="styles.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/54e3edb7eb.js" crossorigin="anonymous"></script>
+    <title>Recetas</title>
 </head>
 
 <body>
 
     <?php include 'header.php'; ?>
 
-
     <section>
 
-        <h2>Pagina de Inicio</h2>
+        <h2>Recetas</h2>
         <ul class="tabs">
             <li data-tab-target="#carruselHome" class="active tab">Carrusel de Imagenes</li>
             <li data-tab-target="#certificaciones" class="tab">Certificaciones</li>
@@ -116,6 +116,11 @@
 
     </section>
 
+
+
+    <div class="modalHome1"></div>
+    <div class="modalHome2"></div>
+    <div class="modalHome3"></div>
 
 </body>
 
