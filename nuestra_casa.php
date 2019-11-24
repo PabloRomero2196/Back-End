@@ -19,18 +19,19 @@
 
         <h2>Nuestra Casa</h2>
         <ul class="tabs">
-            <li data-tab-target="#carruselHome" class="active tab">Carrusel de Imagenes</li>
-            <li data-tab-target="#certificaciones" class="tab">Certificaciones</li>
-            <li data-tab-target="#sucursales" class="tab">Sucursales</li>
+            <li data-tab-target="#lineaDelTiempo" class="tab">Linea del Tiempo</li>
+            <li data-tab-target="#sucursalesNC" class="tab">Sucursales</li>
+            <li data-tab-target="#nuestroEquipo" class="tab">Nuestro Equipo</li>
+            <li data-tab-target="#trabajadoresYfamilias" class="tab">Trabajadores y Familias</li>
         </ul>
 
         <div class="tab-content">
 
-            <!-- Certificaciones  -->
-            <div class="contenedor" id="carruselHome" data-tab-content class="active">
+            <!-- Linea del Tiempo -->
+            <div class="contenedor" id="lineaDelTiempo" data-tab-content class="active">
                 <div class="anadir">
                     <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
-                    <p>Agregar Imagen</p>
+                    <p>Agregar Evento</p>
                 </div>
                 <div class="element">
                     <figure><img src="img/slider1.jpg" alt="img3"></figure>
@@ -48,11 +49,11 @@
                 </div>
             </div>
 
-            <!-- Certificaciones  -->
-            <div class="contenedor" id="certificaciones" data-tab-content class="active">
+            <!-- Sucursales  -->
+            <div class="contenedor" id="sucursalesNC" data-tab-content class="active">
                 <div class="anadir">
                     <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
-                    <p>Agregar Certificación</p>
+                    <p>Agregar Sucursal</p>
                 </div>
 
                 <!-- Elemento  -->
@@ -88,8 +89,8 @@
                 </div>
             </div>
 
-            <!-- Sucursales  -->
-            <div class="contenedor" id="sucursales" data-tab-content class="active">
+            <!-- Nuestro Equipo  -->
+            <div class="contenedor" id="nuestroEquipo" data-tab-content class="active">
                 <div class="anadir">
                     <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
                     <p>Agregar Sucursales</p>
@@ -111,12 +112,32 @@
                 </div>
             </div>
 
+            <!-- Trabajadores y Familas  -->
+            <div class="contenedor" id="trabajadoresYfamilias" data-tab-content class="active">
+                <div class="anadir">
+                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
+                    <p>Agregar Imagen</p>
+                </div>
+                <div class="element">
+                    <figure><img src="img/slider1.jpg" alt="img3"></figure>
+                    <div>
+                        <p>Imagen 1</p>
+                    </div>
+                    <div class="contenedorIconosEditarBorrar">
+                        <a onclick="editar()">
+                            <figure><img src="img/edit.svg" alt=""></figure>
+                        </a>
+                        <a onclick="borrar()">
+                            <figure><img src="img/trash.svg" alt=""></figure>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
 
         </div>
 
     </section>
-
-
 
     <div class="modalHome1"></div>
     <div class="modalHome2"></div>

@@ -19,7 +19,7 @@
 
         <h2>Pagina de Inicio</h2>
         <ul class="tabs">
-            <li data-tab-target="#carruselHome" class="active tab">Carrusel de Imagenes</li>
+            <li data-tab-target="#carruselHome" class="tab">Carrusel de Imagenes</li>
             <li data-tab-target="#certificaciones" class="tab">Certificaciones</li>
             <li data-tab-target="#sucursales" class="tab">Sucursales</li>
         </ul>

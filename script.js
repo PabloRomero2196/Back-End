@@ -39,8 +39,3 @@ function cerrarModalLineadelTiempo() {
     // alert("modal");
     document.getElementById('modalLineadelTiempo').style.display = 'none'
 }
-
-function headerHome() {
-
-    document.getElementById('modalAgregaunaReceta').style.display = 'none'
-}

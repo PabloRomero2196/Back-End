@@ -19,7 +19,7 @@
 
         <h2>Pagina de Productos</h2>
         <ul class="tabs">
-            <li data-tab-target="#carruselProductos" class="active tab">Carrusel de Imágenes</li>
+            <li data-tab-target="#carruselProductos" class="tab">Carrusel de Imágenes</li>
             <li data-tab-target="#imagenesProductos" class="tab">Imágenes de Productos</li>
         </ul>
 

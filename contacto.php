@@ -8,7 +8,7 @@
     <script src="script.js" defer></script>
     <link href="styles.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/54e3edb7eb.js" crossorigin="anonymous"></script>
-    <title>Home</title>
+    <title>Contacto</title>
 </head>
 
 <body>
@@ -17,21 +17,21 @@
 
     <section>
 
-        <h2>Nuestra Casa</h2>
+        <h2>Contacto</h2>
         <ul class="tabs">
-            <li data-tab-target="#carruselHome" class="active tab">Carrusel de Imagenes</li>
-            <li data-tab-target="#certificaciones" class="tab">Certificaciones</li>
-            <li data-tab-target="#sucursales" class="tab">Sucursales</li>
+            <li data-tab-target="#direccion" class="tab">Dirección</li>
+            <li data-tab-target="#telefono" class="tab">Teléfono</li>
         </ul>
 
         <div class="tab-content">
 
-            <!-- Certificaciones  -->
-            <div class="contenedor" id="carruselHome" data-tab-content class="active">
+            <!-- Dirección  -->
+            <div class="contenedor" id="direccion" data-tab-content class="active">
                 <div class="anadir">
                     <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
                     <p>Agregar Imagen</p>
                 </div>
+                <!-- Elemento -->
                 <div class="element">
                     <figure><img src="img/slider1.jpg" alt="img3"></figure>
                     <div>
@@ -48,8 +48,8 @@
                 </div>
             </div>
 
-            <!-- Certificaciones  -->
-            <div class="contenedor" id="certificaciones" data-tab-content class="active">
+            <!-- Teléfono  -->
+            <div class="contenedor" id="telefono" data-tab-content class="active">
                 <div class="anadir">
                     <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
                     <p>Agregar Certificación</p>
@@ -88,30 +88,6 @@
                 </div>
             </div>
 
-            <!-- Sucursales  -->
-            <div class="contenedor" id="sucursales" data-tab-content class="active">
-                <div class="anadir">
-                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
-                    <p>Agregar Sucursales</p>
-                </div>
-                <!-- Elemento -->
-                <div class="element">
-                    <figure><img src="img/sucursal_Amazon.png" alt="amazon"></figure>
-                    <div>
-                        <p>Amazon</p>
-                    </div>
-                    <div class="contenedorIconosEditarBorrar">
-                        <a onclick="editar()">
-                            <figure><img src="img/edit.svg" alt=""></figure>
-                        </a>
-                        <a onclick="borrar()">
-                            <figure><img src="img/trash.svg" alt=""></figure>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-
         </div>
 
     </section>
@@ -122,6 +98,11 @@
     <div class="modalHome2"></div>
     <div class="modalHome3"></div>
 
+    <script>
+
+
+
+    </script>
 </body>
 
 </html>

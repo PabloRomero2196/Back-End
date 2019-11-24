@@ -195,7 +195,6 @@ header h1 {
     margin: 1em;
     background-size: contain;
     font-size: 6em; */
-
     margin: 1vw;
     color: #FFF;
 }
@@ -245,10 +244,12 @@ h2 {
 
 
 .contenedor {
-    width: 95vw;
+    padding-top: 2em;
+    width: 100vw;
     display: grid;
     margin: auto;
     grid-template-columns: 1fr 1fr 1fr;
+    background-color: #ccc;
 }
 
 .contenedor .element,
@@ -324,8 +325,8 @@ h2 {
 }
 
 .tabs :hover {
-    color: #FFF;
-    background-color: #000;
+    color: #000;
+    background-color: #ccc;
 
 }
 
@@ -335,19 +336,27 @@ h2 {
 }
 
 .tab.active {
-    background-color: #000;
-    color: #FFF;
+    background-color: #ccc;
+    color: #000;
 }
 
 .tab:hover {
-    background-color: #000;
-    color: #FFF;
+    background-color: #ccc;
+    color: #000;
 }
 
 .tab-content {
-    margin-left: 20px;
+    /* margin-left: 20px;
     margin-right: 20px;
-    margin-top: 2em;
+    margin-top: 2em; */
+}
+
+.paginaHome {
+    text-align: center;
+}
+
+.paginaHome p:nth-child(2) {
+    margin: 5em;
 }
 
 /*----------------------------------------MODALES----------------------------------------*/
@@ -411,4 +420,374 @@ h2 {
 .chef+input {
     grid-row: 11;
     height: 29px;
+}
+
+.modalReceta {
+    position: absolute;
+    display: none;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 50vw;
+    height: 64vw;
+    border: solid 0.8px;
+}
+
+.modalReceta form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2.5%;
+}
+
+
+.anadirimg {
+    width: 24%;
+    margin: auto;
+    border: solid 0.5px;
+    padding: 2em 9em;
+}
+
+.anadirimg figure {
+    width: 65%;
+    margin: 36px auto;
+}
+
+textarea {
+    border: solid 0.5px;
+}
+
+.tituloReceta+textarea {
+    grid-row: 2;
+    width: 81%;
+    height: 23px;
+    margin-bottom: 28px;
+}
+
+.categoria+textarea {
+    height: 26px;
+}
+
+.tiempo+textarea {
+    grid-row: 4;
+    height: 26px;
+    width: 81%;
+    margin-bottom: 28px;
+}
+
+.porcion+textarea {
+    height: 23px;
+}
+
+.ingre+textarea {
+    grid-row: 6;
+    height: 131px;
+    width: 82%;
+    margin-bottom: 32px;
+}
+
+.prep+textarea {
+    height: 132px;
+}
+
+.varia+textarea {
+    grid-row: 11;
+    width: 83%;
+    height: 137px;
+}
+
+.chef+textarea {
+    grid-row: 11;
+    height: 29px;
+}
+
+.save {
+    text-align: center;
+    margin-top: 12%;
+    grid-column: 1/3;
+    font-size: 66px;
+    grid-row: 13;
+}
+
+.cerrar {
+    font-size: 47px;
+    margin-left: 2px;
+}
+
+/* Modal Agregar Categoria*/
+
+.modalCategoria {
+    position: absolute;
+    display: none;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 47vw;
+    height: 30vw;
+    border: solid;
+}
+
+.modalCategoria form {
+    display: grid;
+    margin: 2.5%;
+    grid-template-columns: 30% 50%;
+}
+
+
+
+.titulo {
+    grid-column: 1/2;
+    grid-row: 2;
+    text-align: center;
+}
+
+.parrafoCategoria {
+    text-align: center;
+}
+
+
+.titulo+input {
+    grid-column: 2/2;
+}
+
+.save {
+    text-align: center;
+    margin-top: 12%;
+    grid-column: 1/3;
+    font-size: 66px;
+    grid-row: 13;
+}
+
+
+/* Modal edita categoria */
+.modalEditarCategoria {
+    position: absolute;
+    z-index: 2;
+    display: none;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 47vw;
+    height: 26vw;
+    border: solid;
+}
+
+.modalEditarCategoria form {
+    display: grid;
+    margin: 2.5%;
+    grid-template-columns: 30% 50%;
+}
+
+.tituloEditarCategoria {
+    grid-column: 1/2;
+    grid-row: 2;
+    text-align: center;
+}
+
+.parrafoCategoria {
+    text-align: center;
+}
+
+.tituloEditaCategoria {
+    text-align: center;
+}
+
+.modalEditarCategoria textarea {
+    height: 26px;
+    grid-column: 2/2;
+}
+
+.save {
+    text-align: center;
+    margin-top: 12%;
+    grid-column: 2/2;
+    font-size: 66px;
+    grid-row: 13;
+}
+
+/* Modal Adquiere nuestro producto */
+.modalAdquerirProducto {
+    position: absolute;
+    display: none;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    width: 40vw;
+    height: 38vw;
+    border: solid;
+}
+
+.modalAdquerirProducto h2 {
+    font-size: 30px;
+}
+
+.parrafoAdquerir {
+    text-align: center;
+}
+
+.anadirimgsucursal {
+    height: 10vw;
+    width: 23%;
+    margin: auto;
+    border: solid 0.5px;
+    padding: 2em 9em;
+}
+
+.tituloAdquerir {
+
+    text-align: center;
+}
+
+.tituloAdquerir+textarea {
+    margin-left: 31%;
+    height: 18px;
+    width: 40%;
+}
+
+/* Modal Carrusel */
+.modalCarrusel {
+    position: absolute;
+    display: none;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    width: 47vw;
+    height: 40vw;
+    border: solid;
+}
+
+.modalCarrusel h2 {
+    font-size: 30px;
+}
+
+.anadirimgsucursal {
+    height: 10vw;
+    width: 23%;
+    margin: auto;
+    border: solid 0.5px;
+    padding: 2em 9em;
+}
+
+.tituloCarrusel {
+    text-align: center;
+}
+
+.tituloCarrusel+textarea {
+    margin-left: 31%;
+    height: 48px;
+    width: 40%;
+}
+
+/* IMG DE PRODCUTOS */
+.modalimgproductos {
+    position: absolute;
+    display: none;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    width: 43vw;
+    height: 38vw;
+    border: solid;
+}
+
+.modalimgproductos h2 {
+    font-size: 30px;
+}
+
+.anadirimgsucursal {
+    height: 10vw;
+    width: 23%;
+    margin: auto;
+    border: solid 0.5px;
+    padding: 2em 9em;
+}
+
+.titulodescrip {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.parrafodescrip {
+    text-align: center;
+}
+
+.titulodescrip+textarea {
+    margin-left: 31%;
+    height: 48px;
+    width: 40%;
+}
+
+/* Nuestro Equipo */
+.modalequipo {
+    position: absolute;
+    display: block;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    width: 43vw;
+    height: 51vw;
+    border: solid;
+}
+
+.modalimgproductos h2 {
+    font-size: 30px;
+}
+
+.anadirimgsucursal {
+    height: 10vw;
+    width: 23%;
+    margin: auto;
+    border: solid 0.5px;
+    padding: 2em 9em;
+}
+
+.modalequipo form {
+    margin: 2.5%;
+}
+
+.titulodescrip {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.parrafodescrip {
+    text-align: center;
+}
+
+.titulodescrip+textarea {
+    margin-left: 31%;
+    height: 110px;
+    width: 40%;
+}
+
+.modalequipo form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.descripcargo {
+    grid-column: 1/3;
+}
+
+.titulodescrip+textarea {
+    margin: auto;
+    display: block;
+}
+
+.cargo textarea {
+    height: 22px;
+}
+
+.nombretrab textarea {
+    height: 22px;
+}
+
+.save {
+    grid-column: 1/3;
 }

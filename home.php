@@ -15,112 +15,30 @@
 
     <?php include 'header.php'; ?>
 
-    <section>
+    <section class="paginaHome">
 
-        <h2>Home</h2>
-        <ul class="tabs">
-            <li data-tab-target="#carruselHome" class="active tab">Carrusel de Imagenes</li>
-            <li data-tab-target="#certificaciones" class="tab">Certificaciones</li>
-            <li data-tab-target="#sucursales" class="tab">Sucursales</li>
-        </ul>
+        <h2>Bienvenido</h2>
 
-        <div class="tab-content">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus adipisci officiis, aut vel possimus dolore praesentium. Quis velit sapiente harum, perspiciatis dolorum nobis hic explicabo repudiandae laborum ipsum quasi dolore!</p>
 
-            <!-- Certificaciones  -->
-            <div class="contenedor" id="carruselHome" data-tab-content class="active">
-                <div class="anadir">
-                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
-                    <p>Agregar Imagen</p>
-                </div>
-                <div class="element">
-                    <figure><img src="img/slider1.jpg" alt="img3"></figure>
-                    <div>
-                        <p>Imagen 1</p>
-                    </div>
-                    <div class="contenedorIconosEditarBorrar">
-                        <a onclick="editar()">
-                            <figure><img src="img/edit.svg" alt=""></figure>
-                        </a>
-                        <a onclick="borrar()">
-                            <figure><img src="img/trash.svg" alt=""></figure>
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <div>
+            <p>Descarga el manual de usabilidad aqui</p>
 
-            <!-- Certificaciones  -->
-            <div class="contenedor" id="certificaciones" data-tab-content class="active">
-                <div class="anadir">
-                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
-                    <p>Agregar Certificación</p>
-                </div>
-
-                <!-- Elemento  -->
-                <div class="element">
-                    <figure><img src="img/logo_usda.svg" alt="img1"></figure>
-                    <div>
-                        <p>Certificación organica Usda</p>
-                    </div>
-                    <div class="contenedorIconosEditarBorrar">
-                        <a onclick="editar()">
-                            <figure><img src="img/edit.svg" alt=""></figure>
-                        </a>
-                        <a onclick="borrar()">
-                            <figure><img src="img/trash.svg" alt=""></figure>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Elemento  -->
-                <div class="element">
-                    <figure><img src="img/logo_certimex.svg" alt="img1"></figure>
-                    <div>
-                        <p>Certificación certimex</p>
-                    </div>
-                    <div class="contenedorIconosEditarBorrar">
-                        <a onclick="editar()">
-                            <figure><img src="img/edit.svg" alt=""></figure>
-                        </a>
-                        <a onclick="borrar()">
-                            <figure><img src="img/trash.svg" alt=""></figure>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Sucursales  -->
-            <div class="contenedor" id="sucursales" data-tab-content class="active">
-                <div class="anadir">
-                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
-                    <p>Agregar Sucursales</p>
-                </div>
-                <!-- Elemento -->
-                <div class="element">
-                    <figure><img src="img/sucursal_Amazon.png" alt="amazon"></figure>
-                    <div>
-                        <p>Amazon</p>
-                    </div>
-                    <div class="contenedorIconosEditarBorrar">
-                        <a onclick="editar()">
-                            <figure><img src="img/edit.svg" alt=""></figure>
-                        </a>
-                        <a onclick="borrar()">
-                            <figure><img src="img/trash.svg" alt=""></figure>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-
+            <button>Descargar</button>
         </div>
 
     </section>
 
-
-
     <div class="modalHome1"></div>
     <div class="modalHome2"></div>
     <div class="modalHome3"></div>
+
+    <script>
+        function headerHome() {
+            document.getElementById("headerHome").style.textDecoration = undeline;
+        }
+        headerHome()
+    </script>
 
 </body>
 
