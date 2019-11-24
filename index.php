@@ -22,7 +22,6 @@
             <li data-tab-target="#carruselHome" class="active tab">Carrusel de Imagenes</li>
             <li data-tab-target="#certificaciones" class="tab">Certificaciones</li>
             <li data-tab-target="#sucursales" class="tab">Sucursales</li>
-            <li data-tab-target="#recetas" class="tab">Recetas</li>
         </ul>
 
         <div class="tab-content">
@@ -71,6 +70,7 @@
                         </a>
                     </div>
                 </div>
+
                 <!-- Elemento  -->
                 <div class="element">
                     <figure><img src="img/logo_certimex.svg" alt="img1"></figure>
@@ -92,35 +92,13 @@
             <div class="contenedor" id="sucursales" data-tab-content class="active">
                 <div class="anadir">
                     <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
-                    <p>Agregar Acontecimiento</p>
+                    <p>Agregar Sucursales</p>
                 </div>
                 <!-- Elemento -->
                 <div class="element">
-                    <figure><img src="img/img1.jpg" alt="img1"></figure>
+                    <figure><img src="img/sucursal_Amazon.png" alt="amazon"></figure>
                     <div>
-                        <p>Comida</p>
-                    </div>
-                    <div class="contenedorIconosEditarBorrar">
-                        <a onclick="editar()">
-                            <figure><img src="img/edit.svg" alt=""></figure>
-                        </a>
-                        <a onclick="borrar()">
-                            <figure><img src="img/trash.svg" alt=""></figure>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Recetas  -->
-            <div class="contenedor" id="recetas" data-tab-content class="active">
-                <div class="anadir">
-                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
-                    <p>Agregar Acontecimiento</p>
-                </div>
-                <div class="element">
-                    <figure><img src="img/img1.jpg" alt="img1" class="mascara"></figure>
-                    <div>
-                        <p>Comida</p>
+                        <p>Amazon</p>
                     </div>
                     <div class="contenedorIconosEditarBorrar">
                         <a onclick="editar()">
@@ -143,7 +121,6 @@
     <div class="modalHome1"></div>
     <div class="modalHome2"></div>
     <div class="modalHome3"></div>
-    <div class="modalHome4"></div>
 
 </body>
 

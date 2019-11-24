@@ -300,6 +300,10 @@ h2 {
     display: none;
 }
 
+.active {
+    display: grid;
+}
+
 .active[data-tab-content] {
     display: grid;
 }
