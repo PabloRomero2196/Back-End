@@ -117,10 +117,24 @@
     </section>
 
 
+    <!-- MODALES -->
 
-    <div class="modalHome1"></div>
-    <div class="modalHome2"></div>
-    <div class="modalHome3"></div>
+    <!-- Inicio -->
+    <div id="modalCarrusel" class="modalCarrusel">
+        <div onclick="cerrarModalLineadelTiempo()" class="manita">
+            <p class="cerrar"><i class="far fa-times-circle"></i></p>
+        </div>
+        <h2>Carrusel de Imágenes</h2>
+        <p class="parrafoAdquerir"> AGREGAR NUEVA IMÁGEN</p>
+        <div class="anadirimgsucursal">
+            <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
+        </div>
+        <form action="">
+            <p class="tituloCarrusel">Insertar Frases:</p>
+            <textarea placeholder="Frase" rows="4" cols="50"> </textarea>
+            <p class="save"><i class="far fa-save"></i></p>
+        </form>
+    </div>
 
 </body>
 

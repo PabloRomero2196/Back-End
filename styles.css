@@ -244,25 +244,31 @@ h2 {
 
 
 .contenedor {
-    padding-top: 2em;
+    padding: 2em;
     width: 100vw;
     display: grid;
     margin: auto;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: #ccc;
+    /* background-color: #ccc; */
+}
+
+.contenedor .element {
+    border: solid #5c7039;
 }
 
 .contenedor .element,
 .contenedor .anadir {
-    width: 70%;
-    margin: auto;
-    text-align: center;
-
+    width: 90%;
 }
 
 .contenedor .anadir figure {
-    width: 50%;
+    /* width: 50%; */
+    height: 65%;
     margin: auto;
+}
+
+.contenedor .element figure {
+    height: 65%;
 }
 
 .contenedorIconosEditarBorrar {
@@ -284,6 +290,12 @@ h2 {
 
 .manita {
     cursor: pointer;
+}
+
+
+#trabajadoresYfamilias form {
+    grid-column: 1/4;
+    margin: auto;
 }
 
 /* ----------------------------------------------- TABS ----------------------------------------------- */

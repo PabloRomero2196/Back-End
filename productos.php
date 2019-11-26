@@ -19,17 +19,16 @@
 
         <h2>Pagina de Productos</h2>
         <ul class="tabs">
-            <li data-tab-target="#carruselProductos" class="tab">Carrusel de Imágenes</li>
-            <li data-tab-target="#imagenesProductos" class="tab">Imágenes de Productos</li>
+            <li data-tab-target="#anadirProductos" class="tab">Añadir Productos</li>
         </ul>
 
         <div class="tab-content">
 
-            <!-- Carrusel de Imagenes  -->
-            <div class="contenedor" id="carruselProductos" data-tab-content class="active">
+            <!-- Añadir Productos -->
+            <div class="contenedor" id="anadirProductos" data-tab-content class="active">
                 <div class="anadir">
                     <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
-                    <p>Agregar Imagen</p>
+                    <p>Agregar Producto</p>
                 </div>
                 <div class="element">
                     <figure><img src="img/slider1.jpg" alt="img3"></figure>
@@ -47,49 +46,26 @@
                 </div>
             </div>
 
-            <!-- Imagenes de Productos  -->
-            <div class="contenedor" id="imagenesProductos" data-tab-content class="active">
-                <div class="anadir">
-                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
-                    <p>Agregar Certificación</p>
-                </div>
-
-                <!-- Elemento  -->
-                <div class="element">
-                    <figure><img src="img/logo_usda.svg" alt="img1"></figure>
-                    <div>
-                        <p>Certificación organica Usda</p>
-                    </div>
-                    <div class="contenedorIconosEditarBorrar">
-                        <a onclick="editar()">
-                            <figure><img src="img/edit.svg" alt=""></figure>
-                        </a>
-                        <a onclick="borrar()">
-                            <figure><img src="img/trash.svg" alt=""></figure>
-                        </a>
-                    </div>
-                </div>
-                <!-- Elemento  -->
-                <div class="element">
-                    <figure><img src="img/logo_certimex.svg" alt="img1"></figure>
-                    <div>
-                        <p>Certificación certimex</p>
-                    </div>
-                    <div class="contenedorIconosEditarBorrar">
-                        <a onclick="editar()">
-                            <figure><img src="img/edit.svg" alt=""></figure>
-                        </a>
-                        <a onclick="borrar()">
-                            <figure><img src="img/trash.svg" alt=""></figure>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
     </section>
 
+    <!-- MODALES -->
+
+    <!-- Productos -->
+    <div id="modalImagenProductos" class="modalimgproductos">
+        <div onclick="cerrarModalLineadelTiempo()" class="manita">
+            <p class="cerrar"><i class="far fa-times-circle"></i></p>
+        </div>
+        <h2>IMÁGENES DE LOS PRODUCTOS</h2>
+        <p class="parrafoAdquerir"> Agregar Imágen del Producto </p>
+        <div class="anadirimgsucursal">
+            <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
+        </div>
+        <form action="">
+            <p class="titulodescrip">Descripción</p>
+            <textarea placeholder="Descripción" rows="4" cols="50"> </textarea>
+            <p class="save"><i class="far fa-save"></i></p>
+        </form>
+    </div>
 </body>
 
 </html>
