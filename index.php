@@ -26,10 +26,10 @@
 
         <div class="tab-content">
 
-            <!-- Certificaciones  -->
+            <!-- carrusel Home  -->
             <div class="contenedor" id="carruselHome" data-tab-content class="active">
                 <div class="anadir">
-                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
+                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalCarrusel()" class="manita"></figure>
                     <p>Agregar Imagen</p>
                 </div>
                 <div class="element">
@@ -121,7 +121,7 @@
 
     <!-- Inicio -->
     <div id="modalCarrusel" class="modalCarrusel">
-        <div onclick="cerrarModalLineadelTiempo()" class="manita">
+        <div onclick="cerrarModal()" class="manita">
             <p class="cerrar"><i class="far fa-times-circle"></i></p>
         </div>
         <h2>Carrusel de Imágenes</h2>

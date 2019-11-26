@@ -28,7 +28,7 @@
             <!-- recetas  -->
             <div class="contenedor" id="recetas" data-tab-content class="active">
                 <div class="anadir">
-                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
+                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalAgregaUnaReceta()" class="manita"></figure>
                     <p>Agregar Imagen</p>
                 </div>
 
@@ -39,7 +39,7 @@
                         <p>Imagen 1</p>
                     </div>
                     <div class="contenedorIconosEditarBorrar">
-                        <a onclick="editar()">
+                        <a onclick="abrirModalEditaUnaCategoria()">
                             <figure><img src="img/edit.svg" alt=""></figure>
                         </a>
                         <a onclick="borrar()">
@@ -52,7 +52,7 @@
             <!-- categorias  -->
             <div class="contenedor" id="categorias" data-tab-content class="active">
                 <div class="anadir">
-                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
+                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalAgregaUnaCategoria()" class="manita"></figure>
                     <p>Agregar Certificación</p>
                 </div>
 
@@ -95,9 +95,14 @@
 
 
 
+
+
+
+    <!-- MODALES -->
+
     <!-- Recetas -->
-    <div id="modalAgregaunaReceta" class="modalReceta">
-        <div onclick="cerrarModalLineadelTiempo()" class="manita">
+    <div id="modalAgregaUnaReceta" class="modalReceta">
+        <div onclick="cerrarModal()" class="manita">
             <p class="cerrar"><i class="far fa-times-circle"></i></p>
         </div>
         <h2>Agrega una Receta</h2>
@@ -131,12 +136,9 @@
         </form>
     </div>
 
-
-    <!-- MODALES -->
-
     <!-- Recetas -->
-    <div id="modalAgregaunaCategoria" class="modalCategoria">
-        <div onclick="cerrarModalLineadelTiempo()" class="manita">
+    <div id="modalAgregaUnaCategoria" class="modalCategoria">
+        <div onclick="cerrarModal()" class="manita">
             <p class="cerrar"><i class="far fa-times-circle"></i></p>
         </div>
         <h2 class="">Agrega Categoría</h2>
@@ -151,8 +153,8 @@
     </div>
 
     <!-- Recetas -->
-    <div id="modalEditaunaCategoria" class="modalEditarCategoria">
-        <div onclick="cerrarModalLineadelTiempo()" class="manita">
+    <div id="modalEditaUnaCategoria" class="modalEditarCategoria">
+        <div onclick="cerrarModal()" class="manita">
             <p class="cerrar"><i class="far fa-times-circle"></i></p>
         </div>
         <h2>Edita la Categoría</h2>
@@ -168,7 +170,7 @@
 
     <!-- Recetas -->
     <div id="modalEliminaUnaCategoria" class="modalEditarCategoria">
-        <div onclick="cerrarModalLineadelTiempo()" class="manita">
+        <div onclick="cerrarModal()" class="manita">
             <p class="cerrar"><i class="far fa-times-circle"></i></p>
         </div>
         <h2>Edita la Categoría</h2>

@@ -52,7 +52,7 @@
 
     <!-- Productos -->
     <div id="modalImagenProductos" class="modalimgproductos">
-        <div onclick="cerrarModalLineadelTiempo()" class="manita">
+        <div onclick="cerrarModal()" class="manita">
             <p class="cerrar"><i class="far fa-times-circle"></i></p>
         </div>
         <h2>IMÁGENES DE LOS PRODUCTOS</h2>

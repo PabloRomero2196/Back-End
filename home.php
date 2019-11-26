@@ -29,16 +29,13 @@
 
     </section>
 
-    <div class="modalHome1"></div>
-    <div class="modalHome2"></div>
-    <div class="modalHome3"></div>
 
-    <script>
+    <!-- <script>
         function headerHome() {
             document.getElementById("headerHome").style.textDecoration = undeline;
         }
         headerHome()
-    </script>
+    </script> -->
 
 </body>
 

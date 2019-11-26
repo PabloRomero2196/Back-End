@@ -21,21 +21,70 @@ function manita() {
     cursor: pointer;
 }
 
-function abrirInicioCarrusel() {
-    // alert("modal");
-
+//------------------------------------ Modales ------------------------------------
+// index
+function abrirModalCarrusel() {
+    document.getElementById('modalCarrusel').style.display = 'block'
 }
 
-function cerrarInicioCarrusel() {
-
-}
-
+// Nuestra Casa
 function abrirModalLineadelTiempo() {
-    // alert("modal");
-    document.getElementById('modalAgregaunaReceta').style.display = 'block'
+    document.getElementById('modalLineadelTiempo').style.display = 'block'
 }
 
-function cerrarModalLineadelTiempo() {
-    // alert("modal");
+function abrirModalequipo() {
+    document.getElementById('modalequipo').style.display = 'block'
+}
+
+// Recetas
+function abrirModalAgregaUnaReceta() {
+    document.getElementById('modalAgregaUnaReceta').style.display = 'block'
+}
+
+function abrirModalAgregaUnaCategoria() {
+    document.getElementById('modalAgregaUnaCategoria').style.display = 'block'
+}
+
+function abrirModalEditaUnaCategoria() {
+    document.getElementById('modalEditaUnaCategoria').style.display = 'block'
+}
+
+function abrirModalEliminaUnaCategoria() {
+    document.getElementById('modalEliminaUnaCategoria').style.display = 'block'
+}
+
+// Productos
+function abrirModalEliminaUnaCategoria() {
+    document.getElementById('modalEliminaUnaCategoria').style.display = 'block'
+}
+
+
+
+
+function cerrarModal() {
+    // Index
+    document.getElementsByClassName('modalReceta').style.display = 'none';
+    document.getElementsByClassName('modalCategoria').style.display = 'none';
+    document.getElementsByClassName('modalEditarCategoria').style.display = 'none';
+    document.getElementsByClassName('modalAdquerirProducto').style.display = 'none';
+    document.getElementsByClassName('modalCarrusel').style.display = 'none';
+    document.getElementsByClassName('modalimgproductos').style.display = 'none';
+    document.getElementsByClassName('modalequipo').style.display = 'none';
+
+
+
+
+    // Recetas
+    document.getElementById('modalAgregaUnaReceta').style.display = 'none'
+    document.getElementById('modalAgregaUnaCategoria').style.display = 'none'
+    document.getElementById('modalEditaUnaCategoria').style.display = 'none'
+    document.getElementById('modalEliminaUnaCategoria').style.display = 'none'
+
+    // Nuestra Casa
+    document.getElementById('modalLineadelTiempo').style.display = 'none'
+    document.getElementById('modalLineadelTiempo').style.display = 'none'
+    document.getElementById('modalLineadelTiempo').style.display = 'none'
+    document.getElementById('modalLineadelTiempo').style.display = 'none'
+    document.getElementById('modalLineadelTiempo').style.display = 'none'
     document.getElementById('modalLineadelTiempo').style.display = 'none'
 }

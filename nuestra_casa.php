@@ -92,7 +92,7 @@
             <!-- Nuestro Equipo  -->
             <div class="contenedor" id="nuestroEquipo" data-tab-content class="active">
                 <div class="anadir">
-                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
+                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalequipo()" class="manita"></figure>
                     <p>Agregar Integrante</p>
                 </div>
                 <!-- Elemento -->
@@ -131,7 +131,7 @@
 
     <!-- Nuestra Casa -->
     <div id="modalLineadelTiempo" class="modal">
-        <div onclick="cerrarModalLineadelTiempo()" class="manita">
+        <div onclick="cerrarModal()" class="manita">
             <p><i class="far fa-times-circle"></i></p>
         </div>
         <h2>Línea del tiempo</h2>
@@ -148,7 +148,7 @@
 
     <!-- Nuestra casa -->
     <div id="modalequipo" class="modalequipo">
-        <div onclick="cerrarmodalequipo()" class="manita">
+        <div onclick="cerrarModal()" class="manita">
             <p class="cerrar"><i class="far fa-times-circle"></i></p>
         </div>
         <h2>Nuestro Equipo</h2>

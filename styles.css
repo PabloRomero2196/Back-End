@@ -45,7 +45,8 @@ body {
     transform: translate(-50%, -50%);
     background-color: #fff;
     width: 35vw;
-    height: 40vw;
+    /* height: 40vw; */
+    overflow: auto;
     display: none;
     border: solid;
 }
@@ -244,7 +245,7 @@ h2 {
 
 
 .contenedor {
-    padding: 2em;
+    padding-top: 2em;
     width: 100vw;
     display: grid;
     margin: auto;
@@ -259,6 +260,9 @@ h2 {
 .contenedor .element,
 .contenedor .anadir {
     width: 90%;
+    width: 80%;
+    padding: 20px;
+    margin: 0px auto;
 }
 
 .contenedor .anadir figure {
@@ -296,6 +300,8 @@ h2 {
 #trabajadoresYfamilias form {
     grid-column: 1/4;
     margin: auto;
+    border: solid;
+    padding: 5em;
 }
 
 /* ----------------------------------------------- TABS ----------------------------------------------- */
@@ -379,7 +385,8 @@ h2 {
     transform: translate(-50%, -50%);
     background-color: #fff;
     width: 47vw;
-    height: 44vw;
+    /* height: 44vw; */
+    overflow: auto;
     display: none;
     border: solid;
 }
@@ -442,7 +449,8 @@ h2 {
     transform: translate(-50%, -50%);
     background-color: #fff;
     width: 50vw;
-    height: 64vw;
+    /* height: 64vw; */
+    overflow: auto;
     border: solid 0.8px;
 }
 
@@ -536,7 +544,8 @@ textarea {
     transform: translate(-50%, -50%);
     background-color: #fff;
     width: 47vw;
-    height: 30vw;
+    /* height: 30vw; */
+    overflow: auto;
     border: solid;
 }
 
@@ -627,8 +636,9 @@ textarea {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255);
+    overflow: auto;
     width: 40vw;
-    height: 38vw;
+    /* height: 38vw; */
     border: solid;
 }
 
@@ -668,7 +678,8 @@ textarea {
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255);
     width: 47vw;
-    height: 40vw;
+    overflow: auto;
+    /* height: 40vw; */
     border: solid;
 }
 
@@ -737,13 +748,14 @@ textarea {
 /* Nuestro Equipo */
 .modalequipo {
     position: absolute;
-    display: block;
+    display: none;
     top: 92%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255);
     width: 43vw;
-    height: 51vw;
+    /* height: 51vw; */
+    overflow: auto;
     border: solid;
 }
 
