@@ -20,7 +20,6 @@
         <h2>Nuestra Casa</h2>
         <ul class="tabs">
             <li data-tab-target="#lineaDelTiempo" class="tab">Linea del Tiempo</li>
-            <li data-tab-target="#sucursalesNC" class="tab">Sucursales</li>
             <li data-tab-target="#nuestroEquipo" class="tab">Nuestro Equipo</li>
             <li data-tab-target="#trabajadoresYfamilias" class="tab">Trabajadores y Familias</li>
         </ul>
@@ -37,46 +36,6 @@
                     <figure><img src="img/slider1.jpg" alt="img3"></figure>
                     <div>
                         <p>Imagen 1</p>
-                    </div>
-                    <div class="contenedorIconosEditarBorrar">
-                        <a onclick="editar()">
-                            <figure><img src="img/edit.svg" alt=""></figure>
-                        </a>
-                        <a onclick="borrar()">
-                            <figure><img src="img/trash.svg" alt=""></figure>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Sucursales  -->
-            <div class="contenedor" id="sucursalesNC" data-tab-content class="active">
-                <div class="anadir">
-                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
-                    <p>Agregar Sucursal</p>
-                </div>
-
-                <!-- Elemento  -->
-                <div class="element">
-                    <figure><img src="img/logo_usda.svg" alt="img1"></figure>
-                    <div>
-                        <p>Certificación organica Usda</p>
-                    </div>
-                    <div class="contenedorIconosEditarBorrar">
-                        <a onclick="editar()">
-                            <figure><img src="img/edit.svg" alt=""></figure>
-                        </a>
-                        <a onclick="borrar()">
-                            <figure><img src="img/trash.svg" alt=""></figure>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Elemento  -->
-                <div class="element">
-                    <figure><img src="img/logo_certimex.svg" alt="img1"></figure>
-                    <div>
-                        <p>Certificación certimex</p>
                     </div>
                     <div class="contenedorIconosEditarBorrar">
                         <a onclick="editar()">

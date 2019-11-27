@@ -8,7 +8,7 @@
     <script src="script.js" defer></script>
     <link href="styles.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/54e3edb7eb.js" crossorigin="anonymous"></script>
-    <title>Colaboradores</title>
+    <title>Sucursales</title>
 </head>
 
 <body>
@@ -17,7 +17,7 @@
 
     <section>
 
-        <h2>Pagina de Colaboradores</h2>
+        <h2>Pagina de Sucursales</h2>
         <ul class="tabs">
             <li data-tab-target="#anadirProductos" class="tab">Añadir Productos</li>
         </ul>
