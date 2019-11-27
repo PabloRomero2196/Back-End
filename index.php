@@ -121,13 +121,13 @@
 
     <!-- Inicio -->
     <div id="modalCarrusel" class="modalCarrusel">
-        <div onclick="cerrarModal()" class="manita">
+        <div onclick="cerrarModalCarrusel()" class="manita">
             <p class="cerrar"><i class="far fa-times-circle"></i></p>
         </div>
         <h2>Carrusel de Imágenes</h2>
         <p class="parrafoAdquerir"> AGREGAR NUEVA IMÁGEN</p>
         <div class="anadirimgsucursal">
-            <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
+            <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="agregarImagen()" class="manita"></figure>
         </div>
         <form action="">
             <p class="tituloCarrusel">Insertar Frases:</p>

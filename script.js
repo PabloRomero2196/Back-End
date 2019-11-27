@@ -21,7 +21,7 @@ function manita() {
     cursor: pointer;
 }
 
-//------------------------------------ Modales ------------------------------------
+//------------------------------------ Abrir Modales ------------------------------------
 // index
 function abrirModalCarrusel() {
     document.getElementById('modalCarrusel').style.display = 'block'
@@ -59,32 +59,34 @@ function abrirModalEliminaUnaCategoria() {
 }
 
 
+//------------------------------------ Cerrar Modales ------------------------------------
+// index
+function cerrarModalCarrusel() {
+    document.getElementById('modalCarrusel').style.display = 'none'
+}
 
+// Nuestra Casa
+function cerrarModalLineadelTiempo() {
+    document.getElementById('modalLineadelTiempo').style.display = 'none'
+}
 
-function cerrarModal() {
-    // Index
-    document.getElementsByClassName('modalReceta').style.display = 'none';
-    document.getElementsByClassName('modalCategoria').style.display = 'none';
-    document.getElementsByClassName('modalEditarCategoria').style.display = 'none';
-    document.getElementsByClassName('modalAdquerirProducto').style.display = 'none';
-    document.getElementsByClassName('modalCarrusel').style.display = 'none';
-    document.getElementsByClassName('modalimgproductos').style.display = 'none';
-    document.getElementsByClassName('modalequipo').style.display = 'none';
+function cerrarModalequipo() {
+    document.getElementById('modalequipo').style.display = 'none'
+}
 
-
-
-
-    // Recetas
+// Recetas
+function cerrarModalAgregaUnaReceta() {
     document.getElementById('modalAgregaUnaReceta').style.display = 'none'
-    document.getElementById('modalAgregaUnaCategoria').style.display = 'none'
-    document.getElementById('modalEditaUnaCategoria').style.display = 'none'
-    document.getElementById('modalEliminaUnaCategoria').style.display = 'none'
+}
 
-    // Nuestra Casa
-    document.getElementById('modalLineadelTiempo').style.display = 'none'
-    document.getElementById('modalLineadelTiempo').style.display = 'none'
-    document.getElementById('modalLineadelTiempo').style.display = 'none'
-    document.getElementById('modalLineadelTiempo').style.display = 'none'
-    document.getElementById('modalLineadelTiempo').style.display = 'none'
-    document.getElementById('modalLineadelTiempo').style.display = 'none'
+function cerrarModalAgregaUnaCategoria() {
+    document.getElementById('modalAgregaUnaCategoria').style.display = 'none'
+}
+
+function cerrarModalEditaUnaCategoria() {
+    document.getElementById('modalEditaUnaCategoria').style.display = 'none'
+}
+
+function cerrarModalEliminaUnaCategoria() {
+    document.getElementById('modalEliminaUnaCategoria').style.display = 'none'
 }

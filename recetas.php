@@ -94,15 +94,11 @@
     </section>
 
 
-
-
-
-
     <!-- MODALES -->
 
     <!-- Recetas -->
     <div id="modalAgregaUnaReceta" class="modalReceta">
-        <div onclick="cerrarModal()" class="manita">
+        <div onclick="cerrarModalAgregaUnaReceta()" class="manita">
             <p class="cerrar"><i class="far fa-times-circle"></i></p>
         </div>
         <h2>Agrega una Receta</h2>
@@ -138,7 +134,7 @@
 
     <!-- Recetas -->
     <div id="modalAgregaUnaCategoria" class="modalCategoria">
-        <div onclick="cerrarModal()" class="manita">
+        <div onclick="cerrarModalAgregaUnaCategoria()" class="manita">
             <p class="cerrar"><i class="far fa-times-circle"></i></p>
         </div>
         <h2 class="">Agrega Categoría</h2>
@@ -154,7 +150,7 @@
 
     <!-- Recetas -->
     <div id="modalEditaUnaCategoria" class="modalEditarCategoria">
-        <div onclick="cerrarModal()" class="manita">
+        <div onclick="cerrarModalEditaUnaCategoria()" class="manita">
             <p class="cerrar"><i class="far fa-times-circle"></i></p>
         </div>
         <h2>Edita la Categoría</h2>
@@ -170,7 +166,7 @@
 
     <!-- Recetas -->
     <div id="modalEliminaUnaCategoria" class="modalEditarCategoria">
-        <div onclick="cerrarModal()" class="manita">
+        <div onclick="cerrarModalEliminaUnaCategoria()" class="manita">
             <p class="cerrar"><i class="far fa-times-circle"></i></p>
         </div>
         <h2>Edita la Categoría</h2>

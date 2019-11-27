@@ -131,7 +131,7 @@
 
     <!-- Nuestra Casa -->
     <div id="modalLineadelTiempo" class="modal">
-        <div onclick="cerrarModal()" class="manita">
+        <div onclick="cerrarModalLineadelTiempo()" class="manita">
             <p><i class="far fa-times-circle"></i></p>
         </div>
         <h2>Línea del tiempo</h2>
@@ -148,7 +148,7 @@
 
     <!-- Nuestra casa -->
     <div id="modalequipo" class="modalequipo">
-        <div onclick="cerrarModal()" class="manita">
+        <div onclick="cerrarModalequipo()" class="manita">
             <p class="cerrar"><i class="far fa-times-circle"></i></p>
         </div>
         <h2>Nuestro Equipo</h2>
