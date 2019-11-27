@@ -29,14 +29,15 @@
             <div class="contenedor" id="direccion" data-tab-content class="active">
                 <div class="anadir">
                     <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
-                    <p>Agregar Imagen</p>
+                    <p>Agregar Dirección</p>
                 </div>
                 <!-- Elemento -->
                 <div class="element">
-                    <figure><img src="img/slider1.jpg" alt="img3"></figure>
-                    <div>
-                        <p>Imagen 1</p>
-                    </div>
+                    <p>Dirección</p>
+                    <form action="POST">
+                        <textarea name="" id="direccion" cols="50" rows="10">Prolongacion Paseo de la Reforma 880, Lomas de Santa Fe, Zedec Sta Fé, Álvaro Obregón, 01219 Ciudad de México, CDMX                        
+                    </textarea>
+                    </form>
                     <div class="contenedorIconosEditarBorrar">
                         <a onclick="editar()">
                             <figure><img src="img/edit.svg" alt=""></figure>
@@ -52,15 +53,15 @@
             <div class="contenedor" id="telefono" data-tab-content class="active">
                 <div class="anadir">
                     <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
-                    <p>Agregar Certificación</p>
+                    <p>Agregar Telefono</p>
                 </div>
 
                 <!-- Elemento  -->
                 <div class="element">
-                    <figure><img src="img/logo_usda.svg" alt="img1"></figure>
-                    <div>
-                        <p>Certificación organica Usda</p>
-                    </div>
+                    <p>Telefono 1</p>
+                    <form action="POST">
+                        <textarea name="" id="direccion" cols="50" rows="10">Calle Generica 123 int 456</textarea>
+                    </form>
                     <div class="contenedorIconosEditarBorrar">
                         <a onclick="editar()">
                             <figure><img src="img/edit.svg" alt=""></figure>
@@ -73,10 +74,10 @@
 
                 <!-- Elemento  -->
                 <div class="element">
-                    <figure><img src="img/logo_certimex.svg" alt="img1"></figure>
-                    <div>
-                        <p>Certificación certimex</p>
-                    </div>
+                    <p>Telefono 2</p>
+                    <form action="POST">
+                        <textarea name="" id="direccion" cols="50" rows="10">Calle Generica 123 int 456</textarea>
+                    </form>
                     <div class="contenedorIconosEditarBorrar">
                         <a onclick="editar()">
                             <figure><img src="img/edit.svg" alt=""></figure>

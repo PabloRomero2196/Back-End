@@ -30,7 +30,8 @@
 }
 
 img {
-    width: 100%;
+    display: block;
+    margin: auto;
     height: 100%;
 }
 
@@ -259,10 +260,10 @@ h2 {
 
 .contenedor .element,
 .contenedor .anadir {
-    width: 90%;
     width: 80%;
+    height: 250px;
     padding: 20px;
-    margin: 0px auto;
+    margin: 15px auto;
 }
 
 .contenedor .anadir figure {
@@ -275,11 +276,23 @@ h2 {
     height: 65%;
 }
 
+.contenedor .element p,
+.contenedor .anadir p {
+    margin: 15px auto;
+    text-align: center;
+}
+
+.contenedor .element textarea,
+.contenedor .anadir textarea {
+    display: block;
+    margin: 15px auto;
+}
+
 .contenedorIconosEditarBorrar {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 80%;
-    margin: auto;
+    margin: 15px auto;
 }
 
 .contenedorIconosEditarBorrar figure {
@@ -343,8 +356,8 @@ h2 {
 }
 
 .tabs :hover {
-    color: #000;
-    background-color: #ccc;
+    color: #fff;
+    background-color: #000;
 
 }
 
@@ -354,13 +367,13 @@ h2 {
 }
 
 .tab.active {
-    background-color: #ccc;
-    color: #000;
+    background-color: #000;
+    color: #fff;
 }
 
 .tab:hover {
-    background-color: #ccc;
-    color: #000;
+    background-color: #000;
+    color: #fff;
 }
 
 .tab-content {

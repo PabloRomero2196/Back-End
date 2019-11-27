@@ -32,11 +32,81 @@
                     <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
                     <p>Agregar Evento</p>
                 </div>
+                <!-- Element -->
                 <div class="element">
-                    <figure><img src="img/slider1.jpg" alt="img3"></figure>
-                    <div>
-                        <p>Imagen 1</p>
+                    <p>2001</p>
+                    <p>Acontecimiento</p>
+                    <form action="POST">
+                        <textarea name="" id="direccion" cols="50" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</textarea>
+                    </form>
+                    <div class="contenedorIconosEditarBorrar">
+                        <a onclick="editar()">
+                            <figure><img src="img/edit.svg" alt=""></figure>
+                        </a>
+                        <a onclick="borrar()">
+                            <figure><img src="img/trash.svg" alt=""></figure>
+                        </a>
                     </div>
+                </div>
+
+                <!-- Element -->
+                <div class="element">
+                    <p>2001</p>
+                    <p>Acontecimiento</p>
+                    <form action="POST">
+                        <textarea name="" id="direccion" cols="50" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</textarea>
+                    </form>
+                    <div class="contenedorIconosEditarBorrar">
+                        <a onclick="editar()">
+                            <figure><img src="img/edit.svg" alt=""></figure>
+                        </a>
+                        <a onclick="borrar()">
+                            <figure><img src="img/trash.svg" alt=""></figure>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Element -->
+                <div class="element">
+                    <p>2001</p>
+                    <p>Acontecimiento</p>
+                    <form action="POST">
+                        <textarea name="" id="direccion" cols="50" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</textarea>
+                    </form>
+                    <div class="contenedorIconosEditarBorrar">
+                        <a onclick="editar()">
+                            <figure><img src="img/edit.svg" alt=""></figure>
+                        </a>
+                        <a onclick="borrar()">
+                            <figure><img src="img/trash.svg" alt=""></figure>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Element -->
+                <div class="element">
+                    <p>2001</p>
+                    <p>Acontecimiento</p>
+                    <form action="POST">
+                        <textarea name="" id="direccion" cols="50" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</textarea>
+                    </form>
+                    <div class="contenedorIconosEditarBorrar">
+                        <a onclick="editar()">
+                            <figure><img src="img/edit.svg" alt=""></figure>
+                        </a>
+                        <a onclick="borrar()">
+                            <figure><img src="img/trash.svg" alt=""></figure>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Element -->
+                <div class="element">
+                    <p>2001</p>
+                    <p>Acontecimiento</p>
+                    <form action="POST">
+                        <textarea name="" id="direccion" cols="50" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</textarea>
+                    </form>
                     <div class="contenedorIconosEditarBorrar">
                         <a onclick="editar()">
                             <figure><img src="img/edit.svg" alt=""></figure>
@@ -57,9 +127,12 @@
                 <!-- Elemento -->
                 <div class="element">
                     <figure><img src="img/sucursal_Amazon.png" alt="amazon"></figure>
-                    <div>
-                        <p>Amazon</p>
-                    </div>
+                    <form action="POST">
+                        <p>Titulo:</p>
+                        <textarea name="" id="direccion" cols="50" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</textarea>
+                        <p>Descripción:</p>
+                        <textarea name="" id="direccion" cols="50" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</textarea>
+                    </form>
                     <div class="contenedorIconosEditarBorrar">
                         <a onclick="editar()">
                             <figure><img src="img/edit.svg" alt=""></figure>
@@ -73,12 +146,15 @@
 
             <!-- Trabajadores y Familas  -->
             <div class="contenedor" id="trabajadoresYfamilias" data-tab-content class="active">
-                <form action="">
-                    <p>Trabajadores</p>
-                    <input type="number" value="22">
 
-                    <p>Familas</p>
-                    <input type="number" value="39">
+                <form action="">
+                    <p>Trabajadores y Familias</p>
+                    <br>
+                    <p>Familias productoras</p>
+                    <input type="number" value="29">
+
+                    <p>Trabajadores</p>
+                    <input type="number" value="3">
                 </form>
             </div>
 
