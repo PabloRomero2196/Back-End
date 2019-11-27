@@ -39,6 +39,14 @@ body {
     margin: 0;
 }
 
+.logo {
+    width: 9%;
+    height: 109px;
+    text-indent: -9999px;
+    background: url(img/logo.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+
 .modal {
     position: fixed;
     top: 50%;
@@ -100,13 +108,13 @@ body {
 
 .log-in {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
 }
 
 .log-in form {
     background-color: #FFF;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 63%;
     border-radius: 25px;
     text-align: center;
 }
@@ -114,9 +122,19 @@ body {
 .log-in form input {
     border: solid #ccc;
     border-width: 0 0 2px 0;
-    width: 92%;
+    width: 82%;
     margin-bottom: 38px;
-    margin-top: 36px;
+}
+
+.user {
+    height: 19%;
+    margin-top: 25px;
+    font-size: medium;
+}
+
+.pw {
+    height: 35px;
+    font-size: medium;
 }
 
 .log-in a {
@@ -151,7 +169,7 @@ body {
 }
 
 .log-in article:nth-child(1) figure img {
-    width: auto;
+    width: 100%;
 }
 
 .log-in article:nth-child(2) {
@@ -203,6 +221,7 @@ header h1 {
 
 header nav {
     align-self: center;
+    width: 53%;
 }
 
 header ul {
@@ -457,7 +476,7 @@ h2 {
 .modalReceta {
     position: absolute;
     display: none;
-    top: 50%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
@@ -552,7 +571,7 @@ textarea {
 .modalCategoria {
     position: absolute;
     display: none;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
@@ -599,7 +618,7 @@ textarea {
     position: absolute;
     z-index: 2;
     display: none;
-    top: 50%;
+    top: 64%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
@@ -645,7 +664,7 @@ textarea {
 .modalAdquerirProducto {
     position: absolute;
     display: none;
-    top: 50%;
+    top: 78%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255);
@@ -686,7 +705,7 @@ textarea {
 .modalCarrusel {
     position: absolute;
     display: none;
-    top: 50%;
+    top: 78%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255);
@@ -722,7 +741,7 @@ textarea {
 .modalimgproductos {
     position: absolute;
     display: none;
-    top: 50%;
+    top: 78%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255);
@@ -762,7 +781,7 @@ textarea {
 .modalequipo {
     position: absolute;
     display: none;
-    top: 50%;
+    top: 92%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255);
