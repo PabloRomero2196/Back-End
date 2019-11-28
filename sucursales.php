@@ -17,23 +17,23 @@
 
     <section>
 
-        <h2>Pagina de Sucursales</h2>
+        <h2>Nuestra Casa</h2>
         <ul class="tabs">
-            <li data-tab-target="#anadirProductos" class="tab">Añadir Productos</li>
+            <li data-tab-target="#sucursales" class="tab">Sucursales</li>
         </ul>
 
         <div class="tab-content">
-
-            <!-- Añadir Productos -->
-            <div class="contenedor" id="anadirProductos" data-tab-content class="active">
+            <!-- Sucursales  -->
+            <div class="contenedor" id="sucursales" data-tab-content class="active">
                 <div class="anadir">
                     <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
-                    <p>Agregar Producto</p>
+                    <p>Agregar Sucursales</p>
                 </div>
+                <!-- Elemento -->
                 <div class="element">
-                    <figure><img src="img/slider1.jpg" alt="img3"></figure>
+                    <figure><img src="img/sucursal_Amazon.png" alt="amazon"></figure>
                     <div>
-                        <p>Imagen 1</p>
+                        <p>Amazon</p>
                     </div>
                     <div class="contenedorIconosEditarBorrar">
                         <a onclick="editar()">
@@ -45,27 +45,14 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        </div>
 
     </section>
-
     <!-- MODALES -->
 
-    <!-- Productos -->
-    <div id="modalImagenProductos" class="modalimgproductos">
-        <div onclick="cerrarModal()" class="manita">
-            <p class="cerrar"><i class="far fa-times-circle"></i></p>
-        </div>
-        <h2>IMÁGENES DE LOS PRODUCTOS</h2>
-        <p class="parrafoAdquerir"> Agregar Imágen del Producto </p>
-        <div class="anadirimgsucursal">
-            <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
-        </div>
-        <form action="">
-            <p class="titulodescrip">Descripción</p>
-            <textarea placeholder="Descripción" rows="4" cols="50"> </textarea>
-            <p class="save"><i class="far fa-save"></i></p>
-        </form>
-    </div>
+
 </body>
 
 </html>

@@ -36,7 +36,7 @@
                 <div class="element">
                     <p>2001</p>
                     <p>Acontecimiento</p>
-                    <form action="POST">
+                    <form method="POST" action="">
                         <textarea name="" id="direccion" cols="50" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</textarea>
                     </form>
                     <div class="contenedorIconosEditarBorrar">
@@ -170,14 +170,15 @@
             <p><i class="far fa-times-circle"></i></p>
         </div>
         <h2>Línea del tiempo</h2>
-        <form action="">
+        <form method="POST" action="">
             <p>Año:</p>
             <input type="number" name="quantity" min="1" max="2020" placeholder="Año">
 
             <p>Acontecimiento:</p>
             <input type="text">
 
-            <p class="save"><i class="far fa-save"></i></p>
+            <button class="save"><i class="far fa-save"></i></button>
+
         </form>
     </div>
 
