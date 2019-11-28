@@ -54,6 +54,14 @@ function abrirModalEliminaUnaCategoria() {
 }
 
 // Productos
+function abrirModalProducto() {
+    document.getElementById('modalproducto').style.display = 'block'
+}
+
+function cerrarModalProducto() {
+    document.getElementById('modalproducto').style.display = 'none'
+}
+
 function abrirModalEliminaUnaCategoria() {
     document.getElementById('modalEliminaUnaCategoria').style.display = 'block'
 }
@@ -89,4 +97,29 @@ function cerrarModalEditaUnaCategoria() {
 
 function cerrarModalEliminaUnaCategoria() {
     document.getElementById('modalEliminaUnaCategoria').style.display = 'none'
+}
+
+// Direccion
+function abrirModalDireccion() {
+    document.getElementById('modaldireccion').style.display = 'block'
+}
+
+function cerrarModalDireccion() {
+    document.getElementById('modaldireccion').style.display = 'none'
+}
+// Telefono
+function abrirModalTelefono() {
+    document.getElementById('modaltelefono').style.display = 'block'
+}
+
+function cerrarModalTelefono() {
+    document.getElementById('modaltelefono').style.display = 'none'
+}
+// Certifiaciones
+function abrirModalCertifiaciones() {
+    document.getElementById('modalcertifiaciones').style.display = 'block'
+}
+
+function cerrarModalCertificacion() {
+    document.getElementById('modalcertificaciones').style.display = 'none'
 }
