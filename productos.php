@@ -27,7 +27,7 @@
             <!-- Añadir Productos -->
             <div class="contenedor" id="anadirProductos" data-tab-content class="active">
                 <div class="anadir">
-                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
+                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalProducto()" class="manita"></figure>
                     <p>Agregar Producto</p>
                 </div>
                 <div class="element">
@@ -51,18 +51,20 @@
     <!-- MODALES -->
 
     <!-- Productos -->
-    <div id="modalImagenProductos" class="modalimgproductos">
-        <div onclick="cerrarModal()" class="manita">
+    <div id="modalproducto" class="modalproducto">
+        <div onclick="cerrarModalProducto()" class="manita">
             <p class="cerrar"><i class="far fa-times-circle"></i></p>
         </div>
-        <h2>IMÁGENES DE LOS PRODUCTOS</h2>
-        <p class="parrafoAdquerir"> Agregar Imágen del Producto </p>
-        <div class="anadirimgsucursal">
+        <h2>Agrega un nuevo producto</h2>
+        <p class="parrafoAdquerir"> Agregar imágen del nuevo producto</p>
+        <div class="anadirimgproductos">
             <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
         </div>
         <form action="">
-            <p class="titulodescrip">Descripción</p>
-            <textarea placeholder="Descripción" rows="4" cols="50"> </textarea>
+            <div class="descripcargo">
+                <p class="titulodescrip">Descripción del producto</p>
+                <textarea placeholder="Descripción" rows="4" cols="50"> </textarea>
+            </div>
             <p class="save"><i class="far fa-save"></i></p>
         </form>
     </div>

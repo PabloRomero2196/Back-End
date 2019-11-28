@@ -52,7 +52,7 @@
             <!-- Certificaciones  -->
             <div class="contenedor" id="certificaciones" data-tab-content class="active">
                 <div class="anadir">
-                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
+                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalCertificaciones()" class="manita"></figure>
                     <p>Agregar Certificación</p>
                 </div>
 
@@ -111,6 +111,24 @@
             <p class="tituloCarrusel">Insertar Frases:</p>
             <textarea placeholder="Frase" rows="4" cols="50"> </textarea>
             <button class="save"><i class="far fa-save"></i></button>
+        </form>
+    </div>
+    <!-- Certificaciones -->
+    <div id="modalcertificaciones" class="modalcertificaciones">
+        <div onclick="cerrarModalCertifiacionl()" class="manita">
+            <p class="cerrar"><i class="far fa-times-circle"></i></p>
+        </div>
+        <h2>Certificaciones</h2>
+        <p class="parrafoAdquerir"> AGREGA IMÁGEN DE LA NUEVA CERTIFICACIÓN</p>
+        <div class="anadircert">
+            <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="agregarImagen()" class="manita"></figure>
+        </div>
+        <form action="">
+            <p class="titulocert">Insertar Nombre de Certificación</p>
+            <textarea placeholder="Nombre de certifación" rows="4" cols="50"> </textarea>
+            <p class="linkcert">Insertar Link de Certificación</p>
+            <textarea placeholder="URL" rows="4" cols="50"> </textarea>
+            <p class="save"><i class="far fa-save"></i></p>
         </form>
     </div>
 

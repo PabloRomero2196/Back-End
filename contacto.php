@@ -52,7 +52,7 @@
             <!-- Teléfono  -->
             <div class="contenedor" id="telefono" data-tab-content class="active">
                 <div class="anadir">
-                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
+                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTelefono()" class="manita"></figure>
                     <p>Agregar Telefono</p>
                 </div>
 
@@ -92,6 +92,32 @@
         </div>
 
     </section>
+    <!-- Modal -->
+    <div id="modaldireccion" class="modaldireccion">
+        <div onclick="cerrarModalDireccion()" class="manita">
+            <p class="cerrar"><i class="far fa-times-circle"></i></p>
+        </div>
+        <h2>Nueva Dirección</h2>
+        <form action="">
+            <p class="tituloubicacion">Nombre de la ubicación</p>
+            <textarea placeholder="Descripción" rows="4" cols="50"> </textarea>
+            <p class="tituloenlace">Enlace de ubicación</p>
+            <textarea placeholder="Link de ubicación" class="url" rows="4" cols="50"> </textarea>
+            <p class="save"><i class="far fa-save"></i></p>
+        </form>
+    </div>
+    <!-- Telefono -->
+    <div id="modaltelefono" class="modaltelefono">
+        <div onclick="cerrarModalTelefono()" class="manita">
+            <p class="cerrar"><i class="far fa-times-circle"></i></p>
+        </div>
+        <h2>Nueva Teléfono</h2>
+        <form action="">
+            <p class="titulonum">Número de Teléfono</p>
+            <textarea placeholder="Descripción" rows="4" cols="50"> </textarea>
+            <p class="save"><i class="far fa-save"></i></p>
+        </form>
+    </div>
 </body>
 
 </html>
