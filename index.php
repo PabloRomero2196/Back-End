@@ -114,8 +114,8 @@
         </form>
     </div>
     <!-- Certificaciones -->
-    <div id="modalcertificaciones" class="modalcertificaciones">
-        <div onclick="cerrarModalCertifiacionl()" class="manita">
+    <div id="modalCertificaciones" class="modalCertificaciones">
+        <div onclick="cerrarModalCertificaciones()" class="manita">
             <p class="cerrar"><i class="far fa-times-circle"></i></p>
         </div>
         <h2>Certificaciones</h2>

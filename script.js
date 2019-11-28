@@ -27,6 +27,11 @@ function abrirModalCarrusel() {
     document.getElementById('modalCarrusel').style.display = 'block'
 }
 
+function abrirModalCertificaciones() {
+    document.getElementById('modalCertificaciones').style.display = 'block'
+}
+
+
 // Nuestra Casa
 function abrirModalLineadelTiempo() {
     document.getElementById('modalLineadelTiempo').style.display = 'block'
@@ -72,6 +77,11 @@ function abrirModalEliminaUnaCategoria() {
 function cerrarModalCarrusel() {
     document.getElementById('modalCarrusel').style.display = 'none'
 }
+
+function cerrarModalCertificaciones() {
+    document.getElementById('modalCertificaciones').style.display = 'none'
+}
+
 
 // Nuestra Casa
 function cerrarModalLineadelTiempo() {

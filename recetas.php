@@ -29,14 +29,14 @@
             <div class="contenedor" id="recetas" data-tab-content class="active">
                 <div class="anadir">
                     <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalAgregaUnaReceta()" class="manita"></figure>
-                    <p>Agregar Imagen</p>
+                    <p>Agregar Receta</p>
                 </div>
 
                 <!-- Element -->
                 <div class="element">
-                    <figure><img src="img/slider1.jpg" alt="img3"></figure>
+                    <figure><img src="img/img1.jpg" alt="img3"></figure>
                     <div>
-                        <p>Imagen 1</p>
+                        <p>Receta 1</p>
                     </div>
                     <div class="contenedorIconosEditarBorrar">
                         <a onclick="abrirModalEditaUnaCategoria()">
@@ -53,37 +53,39 @@
             <div class="contenedor" id="categorias" data-tab-content class="active">
                 <div class="anadir">
                     <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalAgregaUnaCategoria()" class="manita"></figure>
-                    <p>Agregar Certificación</p>
+                    <p>Agregar Categoria</p>
                 </div>
 
                 <!-- Elemento  -->
                 <div class="element">
-                    <figure><img src="img/logo_usda.svg" alt="img1"></figure>
-                    <div>
-                        <p>Certificación organica Usda</p>
-                    </div>
+                    <p>Categoria</p>
+                    <form action="POST">
+                        <textarea name="" id="direccion" cols="50" rows="10">Recetas de la abuela
+                    </textarea>
+                    </form>
                     <div class="contenedorIconosEditarBorrar">
                         <a onclick="editar()">
-                            <figure class="editar"><img src="img/edit.svg" alt=""></figure>
+                            <figure><img src="img/edit.svg" alt=""></figure>
                         </a>
                         <a onclick="borrar()">
-                            <figure class="borrar"><img src="img/trash.svg" alt=""></figure>
+                            <figure><img src="img/trash.svg" alt=""></figure>
                         </a>
                     </div>
                 </div>
 
                 <!-- Elemento  -->
                 <div class="element">
-                    <figure><img src="img/logo_certimex.svg" alt="img1"></figure>
-                    <div>
-                        <p>Certificación certimex</p>
-                    </div>
+                    <p>Categoria</p>
+                    <form action="POST">
+                        <textarea name="" id="direccion" cols="50" rows="10">Picar la dieta
+                    </textarea>
+                    </form>
                     <div class="contenedorIconosEditarBorrar">
                         <a onclick="editar()">
-                            <figure class="editar"><img src="img/edit.svg" alt=""></figure>
+                            <figure><img src="img/edit.svg" alt=""></figure>
                         </a>
                         <a onclick="borrar()">
-                            <figure class="borrar"><img src="img/trash.svg" alt=""></figure>
+                            <figure><img src="img/trash.svg" alt=""></figure>
                         </a>
                     </div>
                 </div>
