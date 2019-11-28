@@ -52,6 +52,25 @@
     </section>
     <!-- MODALES -->
 
+    <div id="modalSucursales" class="modalAdquerirProducto">
+        <div onclick="cerrarModalLineadelTiempo()" class="manita">
+            <p class="cerrar"><i class="far fa-times-circle"></i></p>
+        </div>
+        <h2>DÓNDE ADQUIRIR NUESTRO PRODUCTO</h2>
+        <p class="parrafoAdquerir"> AGREGAR NUEVO LUGAR </p>
+        <div class="anadirimgsucursal">
+            <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
+        </div>
+        <form action="">
+
+            <p class="tituloAdquerir">Título</p>
+            <textarea placeholder="Descripción" rows="4" cols="50"> </textarea>
+            <p class="tituloAdquerir">Enlace de ubicación</p>
+            <textarea placeholder="Descripción" class="url" rows="4" cols="50"> </textarea>
+            <p class="save"><i class="far fa-save"></i></p>
+        </form>
+    </div>
+
 
 </body>
 

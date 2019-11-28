@@ -40,10 +40,10 @@
                     </div>
                     <div class="contenedorIconosEditarBorrar">
                         <a onclick="abrirModalEditaUnaCategoria()">
-                            <figure><img src="img/edit.svg" alt=""></figure>
+                            <figure class="editar"><img src="img/edit.svg" alt=""></figure>
                         </a>
                         <a onclick="borrar()">
-                            <figure><img src="img/trash.svg" alt=""></figure>
+                            <figure class="borrar"><img src="img/trash.svg" alt=""></figure>
                         </a>
                     </div>
                 </div>
@@ -64,10 +64,10 @@
                     </div>
                     <div class="contenedorIconosEditarBorrar">
                         <a onclick="editar()">
-                            <figure><img src="img/edit.svg" alt=""></figure>
+                            <figure class="editar"><img src="img/edit.svg" alt=""></figure>
                         </a>
                         <a onclick="borrar()">
-                            <figure><img src="img/trash.svg" alt=""></figure>
+                            <figure class="borrar"><img src="img/trash.svg" alt=""></figure>
                         </a>
                     </div>
                 </div>
@@ -80,10 +80,10 @@
                     </div>
                     <div class="contenedorIconosEditarBorrar">
                         <a onclick="editar()">
-                            <figure><img src="img/edit.svg" alt=""></figure>
+                            <figure class="editar"><img src="img/edit.svg" alt=""></figure>
                         </a>
                         <a onclick="borrar()">
-                            <figure><img src="img/trash.svg" alt=""></figure>
+                            <figure class="borrar"><img src="img/trash.svg" alt=""></figure>
                         </a>
                     </div>
                 </div>

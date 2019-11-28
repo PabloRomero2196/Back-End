@@ -110,7 +110,7 @@
         <form action="">
             <p class="tituloCarrusel">Insertar Frases:</p>
             <textarea placeholder="Frase" rows="4" cols="50"> </textarea>
-            <p class="save"><i class="far fa-save"></i></p>
+            <button class="save"><i class="far fa-save"></i></button>
         </form>
     </div>
 

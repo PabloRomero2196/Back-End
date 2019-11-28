@@ -190,7 +190,7 @@
         <h2>Nuestro Equipo</h2>
         <p class="parrafoAdquerir"> Agregar Imágen del Nuevo Integrante</p>
         <div class="anadirimgsucursal">
-            <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
+            <figure class="mascara"><img class="mascara" src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
         </div>
         <form action="">
             <div class="nombretrab">
@@ -206,7 +206,7 @@
                 <p class="titulodescrip">Descripción</p>
                 <textarea placeholder="Descripción" rows="4" cols="50"> </textarea>
             </div>
-            <p class="save"><i class="far fa-save"></i></p>
+            <button method="POST" class="save"><i class="far fa-save"></i></button>
         </form>
     </div>
 
