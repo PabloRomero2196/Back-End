@@ -25,12 +25,13 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Whitney';
-    font-style: normal;
+    /* font-family: 'Whitney';
+    font-style: normal; */
 }
 
 img {
-    width: 100%;
+    display: block;
+    margin: auto;
     height: 100%;
 }
 
@@ -38,14 +39,23 @@ body {
     margin: 0;
 }
 
+.logo {
+    width: 9%;
+    height: 109px;
+    text-indent: -9999px;
+    background: url(img/logo.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+
 .modal {
     position: fixed;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
     width: 35vw;
-    height: 40vw;
+    /* height: 40vw; */
+    overflow: auto;
     display: none;
     border: solid;
 }
@@ -64,6 +74,7 @@ body {
     grid-column: 1/2;
     text-align: center;
     margin-bottom: 41px;
+    font-family: 'Whitney'
 }
 
 .modal form input {
@@ -98,13 +109,13 @@ body {
 
 .log-in {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
 }
 
 .log-in form {
     background-color: #FFF;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 63%;
     border-radius: 25px;
     text-align: center;
 }
@@ -112,9 +123,19 @@ body {
 .log-in form input {
     border: solid #ccc;
     border-width: 0 0 2px 0;
-    width: 92%;
+    width: 82%;
     margin-bottom: 38px;
-    margin-top: 36px;
+}
+
+.user {
+    height: 19%;
+    margin-top: 25px;
+    font-size: medium;
+}
+
+.pw {
+    height: 35px;
+    font-size: medium;
 }
 
 .log-in a {
@@ -149,7 +170,7 @@ body {
 }
 
 .log-in article:nth-child(1) figure img {
-    width: auto;
+    width: 100%;
 }
 
 .log-in article:nth-child(2) {
@@ -159,8 +180,9 @@ body {
 .log-in article:nth-child(2) div {
     margin: auto;
     width: 22vw;
-    height: 38vh;
+    height: 40vh;
 }
+body > section > article:nth-child(2) > figure
 
 .log-in input:nth-child(3) {
     margin-top: 0px;
@@ -169,7 +191,8 @@ body {
 .log-in article:nth-child(2) figure {
     width: 10vw;
     margin: auto;
-    margin-top: 5vw;
+    margin-top: 7vw;
+    height: 177px;
 }
 
 .log-in form p {
@@ -195,13 +218,13 @@ header h1 {
     margin: 1em;
     background-size: contain;
     font-size: 6em; */
-
     margin: 1vw;
     color: #FFF;
 }
 
 header nav {
     align-self: center;
+    width: 73%;
 }
 
 header ul {
@@ -227,6 +250,9 @@ header li {
 header a {
     color: #FFF;
     text-decoration: none;
+    font-size: 1.4em;
+    font-family: 'Whitney';
+    font-style: bold;
 }
 
 header a:hover {
@@ -241,40 +267,67 @@ h2 {
     font-size: 4vw;
     text-align: center;
     margin: 2vw;
+    font-family: 'Whitney';
 }
 
 
 .contenedor {
-    width: 95vw;
+    padding-top: 2em;
+    width: 100vw;
     display: grid;
     margin: auto;
     grid-template-columns: 1fr 1fr 1fr;
+    /* background-color: #ccc; */
+}
+
+.contenedor .element {
+    border: solid #5c7039;
 }
 
 .contenedor .element,
 .contenedor .anadir {
-    width: 70%;
-    margin: auto;
-    text-align: center;
-
+    overflow: auto;
+    width: 80%;
+    height: 250px;
+    padding: 20px;
+    margin: 15px auto;
 }
 
 .contenedor .anadir figure {
-    width: 50%;
+    /* width: 50%; */
+    height: 65%;
     margin: auto;
+}
+
+.contenedor .element figure {
+    height: 65%;
+}
+
+.contenedor .element p,
+.contenedor .anadir p {
+    margin: 15px auto;
+    text-align: center;
+    font-family: 'Whitney';
+}
+
+.contenedor .element textarea,
+.contenedor .anadir textarea {
+    display: block;
+    margin: 15px auto;
 }
 
 .contenedorIconosEditarBorrar {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 80%;
-    margin: auto;
+    margin: 15px auto;
 }
 
 .contenedorIconosEditarBorrar figure {
     width: 25%;
     margin: auto;
     cursor: pointer;
+    height: 100%;
 }
 
 .mascara {
@@ -283,6 +336,22 @@ h2 {
 
 .manita {
     cursor: pointer;
+}
+
+.editar,
+.borrar {
+    height: 100%;
+}
+
+#nuestroEquipo>div.element>figure>img {
+    clip-path: polygon(0 50%, 25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%);
+}
+
+#trabajadoresYfamilias form {
+    grid-column: 1/4;
+    margin: auto;
+    border: solid;
+    padding: 5em;
 }
 
 /* ----------------------------------------------- TABS ----------------------------------------------- */
@@ -298,6 +367,10 @@ h2 {
 
 [data-tab-content] {
     display: none;
+}
+
+.active {
+    display: grid;
 }
 
 .active[data-tab-content] {
@@ -317,10 +390,11 @@ h2 {
     margin: 0 1em;
     padding: 1vw 4vw;
     list-style: none;
+    font-family: 'Whitney';
 }
 
 .tabs :hover {
-    color: #FFF;
+    color: #fff;
     background-color: #000;
 
 }
@@ -332,41 +406,45 @@ h2 {
 
 .tab.active {
     background-color: #000;
-    color: #FFF;
+    color: #fff;
 }
 
 .tab:hover {
     background-color: #000;
-    color: #FFF;
+    color: #fff;
 }
 
 .tab-content {
-    margin-left: 20px;
+    /* margin-left: 20px;
     margin-right: 20px;
-    margin-top: 2em;
+    margin-top: 2em; */
+}
+
+.paginaHome {
+    text-align: center;
+}
+
+.paginaHome p:nth-child(2) {
+    margin: 5em;
 }
 
 /*----------------------------------------MODALES----------------------------------------*/
 .modalReceta {
-    position: fixed;
-    top: 50%;
+    position: absolute;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
-    width: 47vw;
-    height: 44vw;
-    display: none;
-    border: solid;
+    width: 50vw;
+    /* height: 64vw; */
+    overflow: auto;
+    border: solid 0.8px;
 }
 
 .modalReceta form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 2.5%;
-}
-
-.modalReceta p {
-    text-align: center;
 }
 
 .titulo+input {
@@ -407,4 +485,559 @@ h2 {
 .chef+input {
     grid-row: 11;
     height: 29px;
+}
+
+
+
+.modalReceta form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2.5%;
+}
+
+
+.anadirimg {
+    width: 24%;
+    margin: auto;
+    border: solid 0.5px;
+    padding: 2em 9em;
+}
+
+.anadirimg figure {
+    width: 65%;
+    margin: 36px auto;
+}
+
+textarea {
+    border: solid 0.5px;
+}
+
+.tituloReceta+textarea {
+    grid-row: 2;
+    width: 81%;
+    height: 23px;
+    margin-bottom: 28px;
+}
+
+.categoria+textarea {
+    height: 26px;
+}
+
+.tiempo+textarea {
+    grid-row: 4;
+    height: 26px;
+    width: 81%;
+    margin-bottom: 28px;
+}
+
+.porcion+textarea {
+    height: 23px;
+}
+
+.ingre+textarea {
+    grid-row: 6;
+    height: 131px;
+    width: 82%;
+    margin-bottom: 32px;
+}
+
+.prep+textarea {
+    height: 132px;
+}
+
+.varia+textarea {
+    grid-row: 11;
+    width: 83%;
+    height: 137px;
+}
+
+.chef+textarea {
+    grid-row: 11;
+    height: 29px;
+}
+
+.save {
+    display: block;
+    margin: auto;
+    border: none;
+    margin-top: 12%;
+    grid-column: 1/3;
+    font-size: 66px;
+    grid-row: 13;
+}
+
+.cerrar {
+    font-size: 47px;
+    margin-left: 2px;
+}
+
+/* Modal Agregar Categoria*/
+
+.modalCategoria {
+    position: absolute;
+    display: none;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 47vw;
+    /* height: 30vw; */
+    overflow: auto;
+    border: solid;
+}
+
+.modalCategoria form {
+    display: grid;
+    margin: 2.5%;
+    grid-template-columns: 30% 50%;
+}
+
+
+
+.titulo {
+    grid-column: 1/2;
+    grid-row: 2;
+    text-align: center;
+}
+
+.parrafoCategoria {
+    text-align: center;
+}
+
+
+.titulo+input {
+    grid-column: 2/2;
+}
+
+.save {
+    text-align: center;
+    margin-top: 12%;
+    grid-column: 1/3;
+    font-size: 66px;
+    grid-row: 13;
+}
+
+
+/* Modal edita categoria */
+.modalEditarCategoria {
+    position: absolute;
+    z-index: 2;
+    display: none;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 47vw;
+    height: 26vw;
+    border: solid;
+}
+
+.modalEditarCategoria form {
+    display: grid;
+    margin: 2.5%;
+    grid-template-columns: 30% 50%;
+}
+
+.tituloEditarCategoria {
+    grid-column: 1/2;
+    grid-row: 2;
+    text-align: center;
+}
+
+.parrafoCategoria {
+    text-align: center;
+}
+
+.tituloEditaCategoria {
+    text-align: center;
+}
+
+.modalEditarCategoria textarea {
+    height: 26px;
+    grid-column: 2/2;
+}
+
+.save {
+    text-align: center;
+    margin-top: 12%;
+    grid-column: 2/2;
+    font-size: 66px;
+    grid-row: 13;
+}
+
+/* Modal Adquiere nuestro producto */
+.modalAdquerirProducto {
+    position: absolute;
+    display: none;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    overflow: auto;
+    width: 40vw;
+    /* height: 38vw; */
+    border: solid;
+}
+
+.modalAdquerirProducto h2 {
+    font-size: 30px;
+}
+
+.parrafoAdquerir {
+    text-align: center;
+}
+
+.anadirimgsucursal {
+    height: 10vw;
+    width: 23%;
+    margin: auto;
+    border: solid 0.5px;
+    padding: 2em 9em;
+}
+
+.tituloAdquerir {
+
+    text-align: center;
+}
+
+.tituloAdquerir+textarea {
+    margin-left: 31%;
+    height: 18px;
+    width: 40%;
+}
+
+/* Modal Carrusel */
+.modalCarrusel {
+    position: absolute;
+    display: none;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    width: 47vw;
+    overflow: auto;
+    /* height: 40vw; */
+    border: solid;
+}
+
+.modalCarrusel h2 {
+    font-size: 30px;
+}
+
+.anadirimgsucursal {
+    height: 10vw;
+    width: 23%;
+    margin: auto;
+    border: solid 0.5px;
+    padding: 2em 9em;
+}
+
+.tituloCarrusel {
+    text-align: center;
+}
+
+.tituloCarrusel+textarea {
+    margin-left: 31%;
+    height: 48px;
+    width: 40%;
+}
+
+/* IMG DE PRODCUTOS */
+.modalimgproductos {
+    position: absolute;
+    display: none;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    width: 43vw;
+    height: 38vw;
+    border: solid;
+}
+
+.modalimgproductos h2 {
+    font-size: 30px;
+}
+
+.anadirimgsucursal {
+    height: 10vw;
+    width: 23%;
+    margin: auto;
+    border: solid 0.5px;
+    padding: 2em 9em;
+}
+
+.titulodescrip {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.parrafodescrip {
+    text-align: center;
+}
+
+.titulodescrip+textarea {
+    margin-left: 31%;
+    height: 48px;
+    width: 40%;
+}
+
+/* Nuestro Equipo */
+.modalequipo {
+    position: absolute;
+    display: none;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    width: 43vw;
+    /* height: 51vw; */
+    overflow: auto;
+    border: solid;
+}
+
+.modalimgproductos h2 {
+    font-size: 30px;
+}
+
+.anadirimgsucursal {
+    height: 10vw;
+    width: 23%;
+    margin: auto;
+    border: solid 0.5px;
+    padding: 2em 9em;
+}
+
+.modalequipo form {
+    margin: 2.5%;
+}
+
+.titulodescrip {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.parrafodescrip {
+    text-align: center;
+}
+
+.titulodescrip+textarea {
+    margin-left: 31%;
+    height: 110px;
+    width: 40%;
+}
+
+.modalequipo form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.descripcargo {
+    grid-column: 1/3;
+}
+
+.titulodescrip+textarea {
+    margin: auto;
+    display: block;
+}
+
+.cargo textarea {
+    height: 22px;
+}
+
+.nombretrab textarea {
+    height: 22px;
+}
+
+.save {
+    grid-column: 1/3;
+}
+
+/* MODAL PRODUCTO */
+.modalproducto {
+    position: absolute;
+    display: none;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    width: 43vw;
+    /* height: 51vw; */
+    overflow: auto;
+    border: solid;
+}
+
+.modalimgproductos h2 {
+    font-size: 30px;
+}
+
+.anadirimgproductos {
+    height: 10vw;
+    width: 23%;
+    margin: auto;
+    border: solid 0.5px;
+    padding: 2em 9em;
+}
+
+.modalproducto form {
+    margin: 2.5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.titulodescrip {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.parrafodescrip {
+    text-align: center;
+}
+
+.titulodescrip+textarea {
+    margin: auto;
+    display: block;
+    margin-left: 31%;
+    height: 110px;
+    width: 40%;
+}
+
+.save {
+    grid-column: 1/3;
+}
+
+/* Direccion */
+.modalDireccion {
+    display: none;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    width: 43vw;
+    /* height: 51vw; */
+    overflow: auto;
+    border: solid;
+}
+
+.modalDireccion h2 {
+    font-size: 30px;
+}
+
+.modalDireccion form {
+    margin: 2.5%;
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+
+.tituloubicacion+textarea {
+    width: 49%;
+    height: 21px;
+    margin-bottom: 15px;
+}
+
+.tituloenlace+textarea {
+    width: 49%;
+    height: 21px;
+}
+
+.save {
+    grid-column: 1/3;
+}
+
+/* Telefono */
+.modalTelefono {
+    position: absolute;
+    display: none;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    width: 43vw;
+    /* height: 51vw; */
+    overflow: auto;
+    border: solid;
+}
+
+.modatelefono h2 {
+    font-size: 30px;
+}
+
+.modalTelefono form {
+    margin: 2.5%;
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+
+.titulonum+textarea {
+    width: 49%;
+    height: 21px;
+}
+
+.save {
+    grid-column: 1/3;
+}
+
+
+/* Modal certificaciones */
+.modalCertificaciones {
+    position: absolute;
+    display: none;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    width: 43vw;
+    /* height: 51vw; */
+    overflow: auto;
+    border: solid;
+}
+
+.modalCertificaciones h2 {
+    font-size: 30px;
+}
+
+.anadircert {
+    height: 10vw;
+    width: 23%;
+    margin: auto;
+    border: solid 0.5px;
+    padding: 2em 9em;
+}
+
+.modalcertifiaciones form {
+    margin: 2.5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.titulocert,
+.linkcert {
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+.titulocert+textarea {
+    margin: auto;
+    display: block;
+    margin-left: 31%;
+    height: 22px;
+    width: 40%;
+}
+
+.linkcert+textarea {
+    margin: auto;
+    display: block;
+    margin-left: 31%;
+    height: 22px;
+    width: 40%;
+}
+
+.save {
+    grid-column: 1/3;
 }

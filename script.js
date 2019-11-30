@@ -21,26 +21,115 @@ function manita() {
     cursor: pointer;
 }
 
-function abrirInicioCarrusel() {
-    // alert("modal");
-
+//------------------------------------ Abrir Modales ------------------------------------
+// index
+function abrirModalCarrusel() {
+    document.getElementById('modalCarrusel').style.display = 'block'
 }
 
-function cerrarInicioCarrusel() {
-
+function abrirModalCertificaciones() {
+    document.getElementById('modalCertificaciones').style.display = 'block'
 }
 
+
+// Nuestra Casa
 function abrirModalLineadelTiempo() {
-    // alert("modal");
-    document.getElementById('modalAgregaunaReceta').style.display = 'block'
+    document.getElementById('modalLineadelTiempo').style.display = 'block'
 }
 
+function abrirModalequipo() {
+    document.getElementById('modalequipo').style.display = 'block'
+}
+
+// Recetas
+function abrirModalAgregaUnaReceta() {
+    document.getElementById('modalAgregaUnaReceta').style.display = 'block'
+}
+
+function abrirModalAgregaUnaCategoria() {
+    document.getElementById('modalAgregaUnaCategoria').style.display = 'block'
+}
+
+function abrirModalEditaUnaCategoria() {
+    document.getElementById('modalEditaUnaCategoria').style.display = 'block'
+}
+
+function abrirModalEliminaUnaCategoria() {
+    document.getElementById('modalEliminaUnaCategoria').style.display = 'block'
+}
+
+// Productos
+function abrirModalProducto() {
+    document.getElementById('modalproducto').style.display = 'block'
+}
+
+function cerrarModalProducto() {
+    document.getElementById('modalproducto').style.display = 'none'
+}
+
+function abrirModalEliminaUnaCategoria() {
+    document.getElementById('modalEliminaUnaCategoria').style.display = 'block'
+}
+
+
+//------------------------------------ Cerrar Modales ------------------------------------
+// index
+function cerrarModalCarrusel() {
+    document.getElementById('modalCarrusel').style.display = 'none'
+}
+
+function cerrarModalCertificaciones() {
+    document.getElementById('modalCertificaciones').style.display = 'none'
+}
+
+
+// Nuestra Casa
 function cerrarModalLineadelTiempo() {
-    // alert("modal");
     document.getElementById('modalLineadelTiempo').style.display = 'none'
 }
 
-function headerHome() {
+function cerrarModalequipo() {
+    document.getElementById('modalequipo').style.display = 'none'
+}
 
-    document.getElementById('modalAgregaunaReceta').style.display = 'none'
+// Recetas
+function cerrarModalAgregaUnaReceta() {
+    document.getElementById('modalAgregaUnaReceta').style.display = 'none'
+}
+
+function cerrarModalAgregaUnaCategoria() {
+    document.getElementById('modalAgregaUnaCategoria').style.display = 'none'
+}
+
+function cerrarModalEditaUnaCategoria() {
+    document.getElementById('modalEditaUnaCategoria').style.display = 'none'
+}
+
+function cerrarModalEliminaUnaCategoria() {
+    document.getElementById('modalEliminaUnaCategoria').style.display = 'none'
+}
+
+// Direccion
+function abrirModalDireccion() {
+    document.getElementById('modaldireccion').style.display = 'block'
+}
+
+function cerrarModalDireccion() {
+    document.getElementById('modaldireccion').style.display = 'none'
+}
+// Telefono
+function abrirModalTelefono() {
+    document.getElementById('modaltelefono').style.display = 'block'
+}
+
+function cerrarModalTelefono() {
+    document.getElementById('modaltelefono').style.display = 'none'
+}
+// Certifiaciones
+function abrirModalCertifiaciones() {
+    document.getElementById('modalcertifiaciones').style.display = 'block'
+}
+
+function cerrarModalCertificacion() {
+    document.getElementById('modalcertificaciones').style.display = 'none'
 }

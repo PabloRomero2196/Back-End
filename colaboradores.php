@@ -5,103 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Colaboradores</title>
-    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link href="styles.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/54e3edb7eb.js" crossorigin="anonymous"></script>
+    <title>Colaboradores</title>
 </head>
 
 <body>
 
     <?php include 'header.php'; ?>
 
+    <section>
 
-    <section class="recetas">
-        <h2>Recetas</h2>
-
+        <h2>Colaboradores</h2>
         <ul class="tabs">
-            <li>Recetas</li>
-            <li>Categorias</li>
+            <li data-tab-target="#colaboradores" class="tab">Colaboradores</li>
         </ul>
 
-        <div class="contenedor">
-            <div class="element">
-                <figure><img src="img/img1.jpg" alt="img1" class="mascara"></figure>
-                <div class="contenedorTexto">
-                    <p>Comida</p>
-                    <a onclick="editar()">editar</a>
-                    <a onclick="borrar()">borrar</a>
+        <div class="tab-content">
+            <!-- Colaboradores  -->
+            <div class="contenedor" id="colaboradores" data-tab-content class="active">
+                <div class="anadir">
+                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalColaboradores()" class="manita"></figure>
+                    <p>Agregar Colaboradores</p>
+                </div>
+                <!-- Elemento -->
+                <div class="element">
+                    <figure><img src="img/sucursal_Amazon.png" alt="amazon"></figure>
+                    <div>
+                        <p>Amazon</p>
+                    </div>
+                    <div class="contenedorIconosEditarBorrar">
+                        <a onclick="editar()">
+                            <figure><img src="img/edit.svg" alt=""></figure>
+                        </a>
+                        <a onclick="borrar()">
+                            <figure><img src="img/trash.svg" alt=""></figure>
+                        </a>
+                    </div>
                 </div>
             </div>
-
-            <div class="element">
-                <figure><img src="img/img2.jpg" alt="img2" class="mascara"></figure>
-                <div class="contenedorTexto">
-                    <p>Comida</p>
-                    <a onclick="editar()">editar</a>
-                    <a onclick="borrar()">borrar</a>
-                </div>
-            </div>
-
-            <div class="element">
-                <figure><img src="img/img3.jpg" alt="img3" class="mascara"></figure>
-                <div class="contenedorTexto">
-                    <p>Comida</p>
-                    <a onclick="editar()">editar</a>
-                    <a onclick="borrar()">borrar</a>
-                </div>
-            </div>
-
-            <div class="element">
-                <figure><img src="img/img1.jpg" alt="img1" class="mascara"></figure>
-                <div class="contenedorTexto">
-                    <p>Comida</p>
-                    <a onclick="editar()">editar</a>
-                    <a onclick="borrar()">borrar</a>
-                </div>
-            </div>
-
         </div>
-
-        <div class="contenedor">
-            <div class="element">
-                <figure><img src="img/img1.jpg" alt="img1" class="mascara"></figure>
-                <div class="contenedorTexto">
-                    <p>Comida</p>
-                    <a onclick="editar()">editar</a>
-                    <a onclick="borrar()">borrar</a>
-                </div>
-            </div>
-
-            <div class="element">
-                <figure><img src="img/img2.jpg" alt="img2" class="mascara"></figure>
-                <div class="contenedorTexto">
-                    <p>Comida</p>
-                    <a onclick="editar()">editar</a>
-                    <a onclick="borrar()">borrar</a>
-                </div>
-            </div>
-
-            <div class="element">
-                <figure><img src="img/img3.jpg" alt="img3" class="mascara"></figure>
-                <div class="contenedorTexto">
-                    <p>Comida</p>
-                    <a onclick="editar()">editar</a>
-                    <a onclick="borrar()">borrar</a>
-                </div>
-            </div>
-
-            <div class="element">
-                <figure><img src="img/img1.jpg" alt="img1" class="mascara"></figure>
-                <div class="contenedorTexto">
-                    <p>Comida</p>
-                    <a onclick="editar()">editar</a>
-                    <a onclick="borrar()">borrar</a>
-                </div>
-            </div>
 
         </div>
 
     </section>
+    <!-- MODALES -->
+
+
 </body>
 
 </html>

@@ -1,3 +1,5 @@
+<?php session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,18 +21,16 @@
 
         <h2>Pagina de Inicio</h2>
         <ul class="tabs">
-            <li data-tab-target="#carruselHome" class="active tab">Carrusel de Imagenes</li>
+            <li data-tab-target="#carruselHome" class="tab">Carrusel de Imagenes</li>
             <li data-tab-target="#certificaciones" class="tab">Certificaciones</li>
-            <li data-tab-target="#sucursales" class="tab">Sucursales</li>
-            <li data-tab-target="#recetas" class="tab">Recetas</li>
         </ul>
 
         <div class="tab-content">
 
-            <!-- Certificaciones  -->
+            <!-- carrusel Home  -->
             <div class="contenedor" id="carruselHome" data-tab-content class="active">
                 <div class="anadir">
-                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
+                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalCarrusel()" class="manita"></figure>
                     <p>Agregar Imagen</p>
                 </div>
                 <div class="element">
@@ -52,7 +52,7 @@
             <!-- Certificaciones  -->
             <div class="contenedor" id="certificaciones" data-tab-content class="active">
                 <div class="anadir">
-                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
+                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalCertificaciones()" class="manita"></figure>
                     <p>Agregar Certificación</p>
                 </div>
 
@@ -71,56 +71,12 @@
                         </a>
                     </div>
                 </div>
+
                 <!-- Elemento  -->
                 <div class="element">
                     <figure><img src="img/logo_certimex.svg" alt="img1"></figure>
                     <div>
                         <p>Certificación certimex</p>
-                    </div>
-                    <div class="contenedorIconosEditarBorrar">
-                        <a onclick="editar()">
-                            <figure><img src="img/edit.svg" alt=""></figure>
-                        </a>
-                        <a onclick="borrar()">
-                            <figure><img src="img/trash.svg" alt=""></figure>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Sucursales  -->
-            <div class="contenedor" id="sucursales" data-tab-content class="active">
-                <div class="anadir">
-                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
-                    <p>Agregar Acontecimiento</p>
-                </div>
-                <!-- Elemento -->
-                <div class="element">
-                    <figure><img src="img/img1.jpg" alt="img1"></figure>
-                    <div>
-                        <p>Comida</p>
-                    </div>
-                    <div class="contenedorIconosEditarBorrar">
-                        <a onclick="editar()">
-                            <figure><img src="img/edit.svg" alt=""></figure>
-                        </a>
-                        <a onclick="borrar()">
-                            <figure><img src="img/trash.svg" alt=""></figure>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Recetas  -->
-            <div class="contenedor" id="recetas" data-tab-content class="active">
-                <div class="anadir">
-                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
-                    <p>Agregar Acontecimiento</p>
-                </div>
-                <div class="element">
-                    <figure><img src="img/img1.jpg" alt="img1" class="mascara"></figure>
-                    <div>
-                        <p>Comida</p>
                     </div>
                     <div class="contenedorIconosEditarBorrar">
                         <a onclick="editar()">
@@ -139,11 +95,42 @@
     </section>
 
 
+    <!-- MODALES -->
 
-    <div class="modalHome1"></div>
-    <div class="modalHome2"></div>
-    <div class="modalHome3"></div>
-    <div class="modalHome4"></div>
+    <!-- Inicio -->
+    <div id="modalCarrusel" class="modalCarrusel">
+        <div onclick="cerrarModalCarrusel()" class="manita">
+            <p class="cerrar"><i class="far fa-times-circle"></i></p>
+        </div>
+        <h2>Carrusel de Imágenes</h2>
+        <p class="parrafoAdquerir"> AGREGAR NUEVA IMÁGEN</p>
+        <div class="anadirimgsucursal">
+            <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="agregarImagen()" class="manita"></figure>
+        </div>
+        <form action="">
+            <p class="tituloCarrusel">Insertar Frases:</p>
+            <textarea placeholder="Frase" rows="4" cols="50"> </textarea>
+            <button class="save"><i class="far fa-save"></i></button>
+        </form>
+    </div>
+    <!-- Certificaciones -->
+    <div id="modalCertificaciones" class="modalCertificaciones">
+        <div onclick="cerrarModalCertificaciones()" class="manita">
+            <p class="cerrar"><i class="far fa-times-circle"></i></p>
+        </div>
+        <h2>Certificaciones</h2>
+        <p class="parrafoAdquerir"> AGREGA IMÁGEN DE LA NUEVA CERTIFICACIÓN</p>
+        <div class="anadircert">
+            <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="agregarImagen()" class="manita"></figure>
+        </div>
+        <form action="">
+            <p class="titulocert">Insertar Nombre de Certificación</p>
+            <textarea placeholder="Nombre de certifación" rows="4" cols="50"> </textarea>
+            <p class="linkcert">Insertar Link de Certificación</p>
+            <textarea placeholder="URL" rows="4" cols="50"> </textarea>
+            <p class="save"><i class="far fa-save"></i></p>
+        </form>
+    </div>
 
 </body>
 

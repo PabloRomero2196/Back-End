@@ -5,40 +5,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nuestra Casa</title>
-    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link href="styles.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/54e3edb7eb.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <title>Home</title>
 </head>
 
 <body>
 
     <?php include 'header.php'; ?>
 
-
     <section>
 
-        <h2>Pagina de Nuestra Casa</h2>
+        <h2>Nuestra Casa</h2>
         <ul class="tabs">
-            <li data-tab-target="#lineaDelTiempo" class="active tab">Carrusel de Imagenes</li>
-            <li data-tab-target="#Sucursal" class="tab">Certificaciones</li>
-            <li data-tab-target="#nuestroEquipo" class="tab">Sucursales</li>
-            <li data-tab-target="#recetas" class="tab">Recetas</li>
+            <li data-tab-target="#lineaDelTiempo" class="tab">Linea del Tiempo</li>
+            <li data-tab-target="#nuestroEquipo" class="tab">Nuestro Equipo</li>
+            <li data-tab-target="#trabajadoresYfamilias" class="tab">Trabajadores y Familias</li>
         </ul>
 
         <div class="tab-content">
 
-            <!-- Certificaciones  -->
-            <div class="contenedor" id="carruselHome" data-tab-content class="active">
+            <!-- Linea del Tiempo -->
+            <div class="contenedor" id="lineaDelTiempo" data-tab-content class="active">
                 <div class="anadir">
                     <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
-                    <p>Agregar Imagen</p>
+                    <p>Agregar Evento</p>
                 </div>
+                <!-- Element -->
                 <div class="element">
-                    <figure><img src="img/slider1.jpg" alt="img3"></figure>
-                    <div>
-                        <p>Imagen 1</p>
+                    <p>2001</p>
+                    <p>Acontecimiento</p>
+                    <form method="POST" action="">
+                        <textarea name="" id="direccion" cols="50" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</textarea>
+                    </form>
+                    <div class="contenedorIconosEditarBorrar">
+                        <a onclick="editar()">
+                            <figure><img src="img/edit.svg" alt=""></figure>
+                        </a>
+                        <a onclick="borrar()">
+                            <figure><img src="img/trash.svg" alt=""></figure>
+                        </a>
                     </div>
+                </div>
+
+                <!-- Element -->
+                <div class="element">
+                    <p>2001</p>
+                    <p>Acontecimiento</p>
+                    <form action="POST">
+                        <textarea name="" id="direccion" cols="50" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</textarea>
+                    </form>
+                    <div class="contenedorIconosEditarBorrar">
+                        <a onclick="editar()">
+                            <figure><img src="img/edit.svg" alt=""></figure>
+                        </a>
+                        <a onclick="borrar()">
+                            <figure><img src="img/trash.svg" alt=""></figure>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Element -->
+                <div class="element">
+                    <p>2001</p>
+                    <p>Acontecimiento</p>
+                    <form action="POST">
+                        <textarea name="" id="direccion" cols="50" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</textarea>
+                    </form>
+                    <div class="contenedorIconosEditarBorrar">
+                        <a onclick="editar()">
+                            <figure><img src="img/edit.svg" alt=""></figure>
+                        </a>
+                        <a onclick="borrar()">
+                            <figure><img src="img/trash.svg" alt=""></figure>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Element -->
+                <div class="element">
+                    <p>2001</p>
+                    <p>Acontecimiento</p>
+                    <form action="POST">
+                        <textarea name="" id="direccion" cols="50" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</textarea>
+                    </form>
+                    <div class="contenedorIconosEditarBorrar">
+                        <a onclick="editar()">
+                            <figure><img src="img/edit.svg" alt=""></figure>
+                        </a>
+                        <a onclick="borrar()">
+                            <figure><img src="img/trash.svg" alt=""></figure>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Element -->
+                <div class="element">
+                    <p>2001</p>
+                    <p>Acontecimiento</p>
+                    <form action="POST">
+                        <textarea name="" id="direccion" cols="50" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</textarea>
+                    </form>
                     <div class="contenedorIconosEditarBorrar">
                         <a onclick="editar()">
                             <figure><img src="img/edit.svg" alt=""></figure>
@@ -50,57 +118,78 @@
                 </div>
             </div>
 
-            <!-- Certificaciones  -->
-            <div class="contenedor" id="certificaciones" data-tab-content class="active">
+            <!-- Nuestro Equipo  -->
+            <div class="contenedor" id="nuestroEquipo" data-tab-content class="active">
                 <div class="anadir">
-                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
-                    <p>Agregar Certificación</p>
-                </div>
-
-                <!-- Elemento  -->
-                <div class="element">
-                    <figure><img src="img/logo_usda.svg" alt="img1"></figure>
-                    <div>
-                        <p>Certificación organica Usda</p>
-                    </div>
-                    <div class="contenedorIconosEditarBorrar">
-                        <a onclick="editar()">
-                            <figure><img src="img/edit.svg" alt=""></figure>
-                        </a>
-                        <a onclick="borrar()">
-                            <figure><img src="img/trash.svg" alt=""></figure>
-                        </a>
-                    </div>
-                </div>
-                <!-- Elemento  -->
-                <div class="element">
-                    <figure><img src="img/logo_certimex.svg" alt="img1"></figure>
-                    <div>
-                        <p>Certificación certimex</p>
-                    </div>
-                    <div class="contenedorIconosEditarBorrar">
-                        <a onclick="editar()">
-                            <figure><img src="img/edit.svg" alt=""></figure>
-                        </a>
-                        <a onclick="borrar()">
-                            <figure><img src="img/trash.svg" alt=""></figure>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Sucursales  -->
-            <div class="contenedor" id="sucursales" data-tab-content class="active">
-                <div class="anadir">
-                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
-                    <p>Agregar Acontecimiento</p>
+                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalequipo()" class="manita"></figure>
+                    <p>Agregar Integrante</p>
                 </div>
                 <!-- Elemento -->
                 <div class="element">
-                    <figure><img src="img/img1.jpg" alt="img1"></figure>
-                    <div>
-                        <p>Comida</p>
+                    <figure><img src="img/retrato1.jpg" alt="amazon"></figure>
+                    <form action="POST">
+                        <p>Titulo:</p>
+                        <textarea name="" id="direccion" cols="50" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</textarea>
+                        <p>Descripción:</p>
+                        <textarea name="" id="direccion" cols="50" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</textarea>
+                    </form>
+                    <div class="contenedorIconosEditarBorrar">
+                        <a onclick="editar()">
+                            <figure><img src="img/edit.svg" alt=""></figure>
+                        </a>
+                        <a onclick="borrar()">
+                            <figure><img src="img/trash.svg" alt=""></figure>
+                        </a>
                     </div>
+                </div>
+
+                <!-- Elemento -->
+                <div class="element">
+                    <figure><img src="img/retrato2.jpg" alt="amazon"></figure>
+                    <form action="POST">
+                        <p>Titulo:</p>
+                        <textarea name="" id="direccion" cols="50" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</textarea>
+                        <p>Descripción:</p>
+                        <textarea name="" id="direccion" cols="50" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</textarea>
+                    </form>
+                    <div class="contenedorIconosEditarBorrar">
+                        <a onclick="editar()">
+                            <figure><img src="img/edit.svg" alt=""></figure>
+                        </a>
+                        <a onclick="borrar()">
+                            <figure><img src="img/trash.svg" alt=""></figure>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Elemento -->
+                <div class="element">
+                    <figure><img src="img/retrato3.jpg" alt="amazon"></figure>
+                    <form action="POST">
+                        <p>Titulo:</p>
+                        <textarea name="" id="direccion" cols="50" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</textarea>
+                        <p>Descripción:</p>
+                        <textarea name="" id="direccion" cols="50" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</textarea>
+                    </form>
+                    <div class="contenedorIconosEditarBorrar">
+                        <a onclick="editar()">
+                            <figure><img src="img/edit.svg" alt=""></figure>
+                        </a>
+                        <a onclick="borrar()">
+                            <figure><img src="img/trash.svg" alt=""></figure>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Elemento -->
+                <div class="element">
+                    <figure><img src="img/retrato4.jpg" alt="amazon"></figure>
+                    <form action="POST">
+                        <p>Titulo:</p>
+                        <textarea name="" id="direccion" cols="50" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</textarea>
+                        <p>Descripción:</p>
+                        <textarea name="" id="direccion" cols="50" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</textarea>
+                    </form>
                     <div class="contenedorIconosEditarBorrar">
                         <a onclick="editar()">
                             <figure><img src="img/edit.svg" alt=""></figure>
@@ -112,73 +201,69 @@
                 </div>
             </div>
 
-            <!-- Recetas  -->
-            <div class="contenedor" id="recetas" data-tab-content class="active">
-                <div class="anadir">
-                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
-                    <p>Agregar Acontecimiento</p>
-                </div>
-                <div class="element">
-                    <figure><img src="img/img1.jpg" alt="img1" class="mascara"></figure>
-                    <div>
-                        <p>Comida</p>
-                    </div>
-                    <div class="contenedorIconosEditarBorrar">
-                        <a onclick="editar()">
-                            <figure><img src="img/edit.svg" alt=""></figure>
-                        </a>
-                        <a onclick="borrar()">
-                            <figure><img src="img/trash.svg" alt=""></figure>
-                        </a>
-                    </div>
-                </div>
+            <!-- Trabajadores y Familas  -->
+            <div class="contenedor" id="trabajadoresYfamilias" data-tab-content class="active">
+
+                <form action="">
+                    <p>Trabajadores y Familias</p>
+                    <br>
+                    <p>Familias productoras</p>
+                    <input type="number" value="29">
+
+                    <p>Trabajadores</p>
+                    <input type="number" value="3">
+                </form>
             </div>
 
 
         </div>
 
     </section>
+    <!-- MODALES -->
 
+    <!-- Nuestra Casa -->
     <div id="modalLineadelTiempo" class="modal">
         <div onclick="cerrarModalLineadelTiempo()" class="manita">
             <p><i class="far fa-times-circle"></i></p>
         </div>
         <h2>Línea del tiempo</h2>
-        <form action="">
+        <form method="POST" action="">
             <p>Año:</p>
             <input type="number" name="quantity" min="1" max="2020" placeholder="Año">
 
             <p>Acontecimiento:</p>
             <input type="text">
 
-            <p class="save"><i class="far fa-save"></i></p>
+            <button class="save"><i class="far fa-save"></i></button>
+
         </form>
     </div>
 
-    <div id="modalAgregaunaReceta" class="modalReceta">
-        <div onclick="cerrarModalLineadelTiempo()" class="manita">
-            <p><i class="far fa-times-circle"></i></p>
+    <!-- Nuestra casa -->
+    <div id="modalequipo" class="modalequipo">
+        <div onclick="cerrarModalequipo()" class="manita">
+            <p class="cerrar"><i class="far fa-times-circle"></i></p>
         </div>
-        <h2>Agrega una Receta</h2>
+        <h2>Nuestro Equipo</h2>
+        <p class="parrafoAdquerir"> Agregar Imágen del Nuevo Integrante</p>
+        <div class="anadirimgsucursal">
+            <figure class="mascara"><img class="mascara" src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
+        </div>
         <form action="">
-            <p class="titulo">Título</p>
-            <input type="text" placeholder="Título">
-            <p class="categoria">Categoría</p>
-            <input type="text" placeholder="Categoría">
-            <p class="tiempo">TIEMPO</p>
-            <input type="text" placeholder="Tiempo de Preparación">
-            <p class="porcion">PORCIÓN</p>
-            <input type="text" placeholder="Año">
-            <p class="ingre">INGREDIENTES</p>
-            <input type="text" placeholder="Ingedientes">
-            <p class="prep">PREPARACIÒN</p>
-            <input type="text" placeholder="Año">
-            <p class="varia">VARIACIONES</p>
-            <input type="text" placeholder="Año">
-            <p class="chef">COMO LO HACE EL CHEF</p>
-            <input type="text" placeholder="Inserta URL">
+            <div class="nombretrab">
+                <p class="titulonombre">Nombre</p>
+                <textarea placeholder="Descripción" rows="4" cols="50"> </textarea>
+            </div>
 
-            <button><i class="far fa-edit"></i></button>
+            <div class="cargo">
+                <p class="titulocargo">Cargo</p>
+                <textarea placeholder="Descripción" rows="4" cols="50"> </textarea>
+            </div>
+            <div class="descripcargo">
+                <p class="titulodescrip">Descripción</p>
+                <textarea placeholder="Descripción" rows="4" cols="50"> </textarea>
+            </div>
+            <button method="POST" class="save"><i class="far fa-save"></i></button>
         </form>
     </div>
 
