@@ -60,14 +60,16 @@
         <div class="anadirimgproductos">
             <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
         </div>
-        <form action="">
+        <form action="agregarProducto_xt.php">
             <div class="descripcargo">
                 <p class="titulodescrip">Descripción del producto</p>
-                <textarea placeholder="Descripción" rows="4" cols="50"> </textarea>
+                <textarea placeholder="Descripción" rows="4" cols="50" id="descripcion"> </textarea>
             </div>
-            <p class="save"><i class="far fa-save"></i></p>
+            <!-- <p class="save" type="submit"><i class="far fa-save"></i></p> -->
+            <button type="submit">save</button>
         </form>
     </div>
+
 </body>
 
 </html>

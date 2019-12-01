@@ -227,14 +227,15 @@
             <p><i class="far fa-times-circle"></i></p>
         </div>
         <h2>Línea del tiempo</h2>
-        <form method="POST" action="">
+        <form method="POST" action="acontecimiento_xt.php">
             <p>Año:</p>
-            <input type="number" name="quantity" min="1" max="2020" placeholder="Año">
+            <input type="number" name="ano_linea" id="ano_linea" min="1" max="2100" placeholder="Año">
 
             <p>Acontecimiento:</p>
-            <input type="text">
+            <input type="text" name="acontecimiento_linea" id="acontecimiento_linea">
+            <button type="submit"></button>
 
-            <button class="save"><i class="far fa-save"></i></button>
+            <!-- <button class="save" type=""><i class="far fa-save"></i></button> -->
 
         </form>
     </div>

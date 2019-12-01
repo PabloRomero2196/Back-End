@@ -108,29 +108,29 @@
             <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
 
         </div>
-        <form action="">
-
-
+        <form method="POST" action="agregar_receta_xt.php">
             <p class="tituloReceta">Título</p>
-            <textarea rows="4" cols="50" placeholder="Título"> </textarea>
+            <textarea id="" cols="50" rows="4" type="text" name="titulo_receta" placeholder="Título"></textarea>
             <p class="categoria">Categoría</p>
-            <textarea placeholder="Categoría" rows="4" cols="50"> </textarea>
+            <textarea placeholder="Categoría" rows="4" cols="50" id="categoria_receta" name="categoria_receta"> </textarea>
             <p class="tiempo">TIEMPO</p>
-            <textarea placeholder="Tiempo de Preparación" rows="4" cols="50"> </textarea>
+            <textarea id="" cols="50" rows="4" type="text" name="tiempo_receta" placeholder="Título"></textarea>
             <p class="porcion">PORCIÓN</p>
-            <textarea placeholder="Porción" rows="4" cols="50"> </textarea>
+            <textarea id="" cols="50" rows="4" type="text" name="porcion_receta" placeholder="Título"></textarea>
             <p class="ingre">INGREDIENTES</p>
-            <textarea placeholder="Ingredientes" rows="4" cols="50"> </textarea>
+            <textarea id="" cols="50" rows="4" type="text" name="ingredientes_receta" placeholder="Título"></textarea>
             <p class="prep">PREPARACIÒN</p>
-            <textarea placeholder="Año" rows="4" cols="50"> </textarea>
+            <textarea id="" cols="50" rows="4" type="text" name="preparacion_receta" placeholder="Título"></textarea>
             <p class="varia">VARIACIONES</p>
-            <textarea placeholder="Variaciones" rows="4" cols="50"> </textarea>
+            <textarea id="" cols="50" rows="4" type="text" name="variacion_receta" placeholder="Título"></textarea>
             <p class="chef">COMO LO HACE EL CHEF</p>
-            <textarea placeholder="Inserta URL" rows="4" cols="50"> </textarea>
+            <textarea id="" cols="50" rows="4" type="text" name="comoLoHaceElChef_receta" placeholder="Inserta URL"></textarea>
             <!-- <p class="imagenReceta">Título</p>
             <input type="text" placeholder="Título"> -->
-
-            <p class="save"><i class="far fa-save"></i></p>
+            <button class="save">
+                <p><i class="far fa-save"></i></p>
+            </button>
+            <!-- <p class="save"><i class="far fa-save"></i></p> -->
         </form>
     </div>
 
@@ -157,7 +157,7 @@
         </div>
         <h2>Edita la Categoría</h2>
         <p class="parrafoCategoria"> Edita el título de tu categoría </p>
-        <form action="">
+        <form>
 
             <p class="tituloEditaCategoria">Título</p>
             <textarea placeholder="Título de Categoría" rows="4" cols="50"> </textarea>
