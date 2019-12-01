@@ -376,6 +376,7 @@ h2 {
 
 .tabs li {
     color: #000;
+    border-radius: 25px 25px 0 0;
     border-style: solid solid none solid;
     border-width: 0.5px;
     border-color: #ccc;
@@ -395,14 +396,18 @@ h2 {
     padding: 10px;
 }
 
+
 .tab.active {
-    background-color: #000;
-    color: #fff;
+    background-color: #FCDF5F;
+    color: #000;
+
 }
 
+
+
 .tab:hover {
-    background-color: #000;
-    color: #fff;
+    background-color: #FCDF5F;
+    color: #000;
 }
 
 .tab-content {
@@ -1047,4 +1052,8 @@ textarea {
 
 .save {
     grid-column: 1/3;
+}
+
+div.element>div.contenedorIconosEditarBorrar>a:nth-child(1)>figure {
+    height: 100%;
 }

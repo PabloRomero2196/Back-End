@@ -212,6 +212,9 @@
 
                     <p>Trabajadores</p>
                     <input type="number" value="3">
+                    <button type="submit" target="_self" class="save">
+                        <p><i class="far fa-save"></i></p>
+                    </button>
                 </form>
             </div>
 
@@ -234,8 +237,9 @@
             <p>Acontecimiento:</p>
             <input type="text">
 
-            <button class="save"><i class="far fa-save"></i></button>
-
+            <button type="submit" target="_self" class="save">
+                <p><i class="far fa-save"></i></p>
+            </button>
         </form>
     </div>
 
@@ -263,7 +267,9 @@
                 <p class="titulodescrip">Descripción</p>
                 <textarea placeholder="Descripción" rows="4" cols="50"> </textarea>
             </div>
-            <button method="POST" class="save"><i class="far fa-save"></i></button>
+            <button type="submit" target="_self" class="save">
+                <p><i class="far fa-save"></i></p>
+            </button>
         </form>
     </div>
 

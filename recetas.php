@@ -109,8 +109,6 @@
 
         </div>
         <form action="">
-
-
             <p class="tituloReceta">Título</p>
             <textarea rows="4" cols="50" placeholder="Título"> </textarea>
             <p class="categoria">Categoría</p>
@@ -130,7 +128,9 @@
             <!-- <p class="imagenReceta">Título</p>
             <input type="text" placeholder="Título"> -->
 
-            <p class="save"><i class="far fa-save"></i></p>
+            <button type="submit" target="_self" class="save">
+                <p><i class="far fa-save"></i></p>
+            </button>
         </form>
     </div>
 
@@ -146,7 +146,9 @@
             <p class="tituloCategoria">Título</p>
             <input type="text" placeholder="Título">
 
-            <p class="save"><i class="far fa-save"></i></p>
+            <button type="submit" target="_self" class="save">
+                <p><i class="far fa-save"></i></p>
+            </button>
         </form>
     </div>
 
@@ -162,7 +164,9 @@
             <p class="tituloEditaCategoria">Título</p>
             <textarea placeholder="Título de Categoría" rows="4" cols="50"> </textarea>
 
-            <p class="save"><i class="far fa-save"></i></p>
+            <button type="submit" target="_self" class="save">
+                <p><i class="far fa-save"></i></p>
+            </button>
         </form>
     </div>
 
@@ -178,7 +182,9 @@
             <p class="tituloEditaCategoria">Título</p>
             <textarea placeholder="Título de Categoría" rows="4" cols="50"> </textarea>
 
-            <p class="save"><i class="far fa-save"></i></p>
+            <button type="submit" target="_self" class="save">
+                <p><i class="far fa-save"></i></p>
+            </button>
         </form>
     </div>
 
