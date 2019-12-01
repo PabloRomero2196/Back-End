@@ -376,6 +376,7 @@ h2 {
 
 .tabs li {
     color: #000;
+    border-radius: 25px 25px 0 0;
     border-style: solid solid none solid;
     border-width: 0.5px;
     border-color: #ccc;
@@ -395,14 +396,18 @@ h2 {
     padding: 10px;
 }
 
+
 .tab.active {
-    background-color: #000;
-    color: #fff;
+    background-color: #FCDF5F;
+    color: #000;
+
 }
 
+
+
 .tab:hover {
-    background-color: #000;
-    color: #fff;
+    background-color: #FCDF5F;
+    color: #000;
 }
 
 .tab-content {
@@ -914,7 +919,8 @@ textarea {
 }
 
 /* Direccion */
-.modaldireccion {
+.modalDireccion {
+    display: none;
     position: absolute;
     top: 75%;
     left: 50%;
@@ -926,11 +932,11 @@ textarea {
     border: solid;
 }
 
-.modadireccion h2 {
+.modalDireccion h2 {
     font-size: 30px;
 }
 
-.modaldireccion form {
+.modalDireccion form {
     margin: 2.5%;
     text-align: center;
     margin-top: 25px;
@@ -954,8 +960,9 @@ textarea {
 }
 
 /* Telefono */
-.modaltelefono {
+.modalTelefono {
     position: absolute;
+    display: none;
     top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -970,7 +977,7 @@ textarea {
     font-size: 30px;
 }
 
-.modaltelefono form {
+.modalTelefono form {
     margin: 2.5%;
     text-align: center;
     margin-top: 25px;
@@ -987,11 +994,12 @@ textarea {
     grid-column: 1/3;
 }
 
-/* Modal certifaiciones */
-.modalcertificaciones {
+
+/* Modal certificaciones */
+.modalCertificaciones {
     position: absolute;
-    /* display: none; */
-    top: 70%;
+    display: none;
+    top: 78%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255);
@@ -1001,7 +1009,7 @@ textarea {
     border: solid;
 }
 
-.modalcertificaciones h2 {
+.modalCertificaciones h2 {
     font-size: 30px;
 }
 
@@ -1044,4 +1052,8 @@ textarea {
 
 .save {
     grid-column: 1/3;
+}
+
+div.element>div.contenedorIconosEditarBorrar>a:nth-child(1)>figure {
+    height: 100%;
 }

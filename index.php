@@ -110,12 +110,14 @@
         <form action="">
             <p class="tituloCarrusel">Insertar Frases:</p>
             <textarea placeholder="Frase" rows="4" cols="50"> </textarea>
-            <button class="save"><i class="far fa-save"></i></button>
+            <button type="submit" target="_self" class="save">
+                <p><i class="far fa-save"></i></p>
+            </button>
         </form>
     </div>
     <!-- Certificaciones -->
-    <div id="modalcertificaciones" class="modalcertificaciones">
-        <div onclick="cerrarModalCertifiacionl()" class="manita">
+    <div id="modalCertificaciones" class="modalCertificaciones">
+        <div onclick="cerrarModalCertificaciones()" class="manita">
             <p class="cerrar"><i class="far fa-times-circle"></i></p>
         </div>
         <h2>Certificaciones</h2>
@@ -128,7 +130,9 @@
             <textarea placeholder="Nombre de certifación" rows="4" cols="50"> </textarea>
             <p class="linkcert">Insertar Link de Certificación</p>
             <textarea placeholder="URL" rows="4" cols="50"> </textarea>
-            <p class="save"><i class="far fa-save"></i></p>
+            <button type="submit" target="_self" class="save">
+                <p><i class="far fa-save"></i></p>
+            </button>
         </form>
     </div>
 

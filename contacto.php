@@ -28,7 +28,7 @@
             <!-- Dirección  -->
             <div class="contenedor" id="direccion" data-tab-content class="active">
                 <div class="anadir">
-                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
+                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="cerrarModalDireccion()" class="manita"></figure>
                     <p>Agregar Dirección</p>
                 </div>
                 <!-- Elemento -->
@@ -52,7 +52,7 @@
             <!-- Teléfono  -->
             <div class="contenedor" id="telefono" data-tab-content class="active">
                 <div class="anadir">
-                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTelefono()" class="manita"></figure>
+                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="cerrarModalTelefono()" class="manita"></figure>
                     <p>Agregar Telefono</p>
                 </div>
 
@@ -93,7 +93,7 @@
 
     </section>
     <!-- Modal -->
-    <div id="modaldireccion" class="modaldireccion">
+    <div id="modalDireccion" class="modalDireccion">
         <div onclick="cerrarModalDireccion()" class="manita">
             <p class="cerrar"><i class="far fa-times-circle"></i></p>
         </div>
@@ -107,7 +107,7 @@
         </form>
     </div>
     <!-- Telefono -->
-    <div id="modaltelefono" class="modaltelefono">
+    <div id="modalTelefono" class="modalTelefono">
         <div onclick="cerrarModalTelefono()" class="manita">
             <p class="cerrar"><i class="far fa-times-circle"></i></p>
         </div>
