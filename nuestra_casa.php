@@ -127,12 +127,12 @@
                 <!-- Elemento -->
                 <div class="element">
                     <figure><img src="img/retrato1.jpg" alt="amazon"></figure>
-                    <form action="POST">
+                    <div>
                         <p>Titulo:</p>
-                        <textarea name="" id="direccion" cols="50" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</textarea>
+                        <p name="" id="direccion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</p>
                         <p>Descripción:</p>
-                        <textarea name="" id="direccion" cols="50" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</textarea>
-                    </form>
+                        <p name="" id="direccion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</p>
+                    </div>
                     <div class="contenedorIconosEditarBorrar">
                         <a onclick="editar()">
                             <figure><img src="img/edit.svg" alt=""></figure>
@@ -143,83 +143,52 @@
                     </div>
                 </div>
 
-                <!-- Elemento -->
-                <div class="element">
-                    <figure><img src="img/retrato2.jpg" alt="amazon"></figure>
-                    <form action="POST">
-                        <p>Titulo:</p>
-                        <textarea name="" id="direccion" cols="50" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</textarea>
-                        <p>Descripción:</p>
-                        <textarea name="" id="direccion" cols="50" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</textarea>
+                <?php
+                include "conexion.php";
+                $sql = "select * from equipo4_nuestraCasa_equipo_trabajo";
+                $rs = ejecutar($sql);
+
+                while ($datos = mysqli_fetch_array($rs)) {
+                    echo '
+                            <div class="element">
+                                <figure><img src="img/retrato1.jpg" alt="amazon"></figure>
+                                <div>
+                                    <p>Nombre Trabajador:</p>
+                                    <p>' . $datos["nombre_trabajador"] . '</p>
+                                    <p>Descripción:</p>
+                                    <p>' . $datos["descripcion_trabajador"] . '</p>
+                                </div>
+                                <div class="contenedorIconosEditarBorrar">
+                                    <a onclick="editar()">
+                                        <figure><img src="img/edit.svg" alt=""></figure>
+                                    </a>
+                                    <a onclick="borrar()">
+                                        <figure><img src="img/trash.svg" alt=""></figure>
+                                    </a>
+                                </div>    
+                            </div>';
+                }
+                ?>
+
+                <!-- Trabajadores y Familas  -->
+                <div class="contenedor" id="trabajadoresYfamilias" data-tab-content class="active">
+
+                    <form action="">
+                        <p>Trabajadores y Familias</p>
+                        <br>
+                        <p>Familias productoras</p>
+                        <input type="number" value="29">
+
+                        <p>Trabajadores</p>
+                        <input type="number" value="3">
+                        <button type="submit" target="_self" class="save">
+                            <p><i class="far fa-save"></i></p>
+                        </button>
                     </form>
-                    <div class="contenedorIconosEditarBorrar">
-                        <a onclick="editar()">
-                            <figure><img src="img/edit.svg" alt=""></figure>
-                        </a>
-                        <a onclick="borrar()">
-                            <figure><img src="img/trash.svg" alt=""></figure>
-                        </a>
-                    </div>
                 </div>
 
-                <!-- Elemento -->
-                <div class="element">
-                    <figure><img src="img/retrato3.jpg" alt="amazon"></figure>
-                    <form action="POST">
-                        <p>Titulo:</p>
-                        <textarea name="" id="direccion" cols="50" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</textarea>
-                        <p>Descripción:</p>
-                        <textarea name="" id="direccion" cols="50" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</textarea>
-                    </form>
-                    <div class="contenedorIconosEditarBorrar">
-                        <a onclick="editar()">
-                            <figure><img src="img/edit.svg" alt=""></figure>
-                        </a>
-                        <a onclick="borrar()">
-                            <figure><img src="img/trash.svg" alt=""></figure>
-                        </a>
-                    </div>
-                </div>
 
-                <!-- Elemento -->
-                <div class="element">
-                    <figure><img src="img/retrato4.jpg" alt="amazon"></figure>
-                    <form action="POST">
-                        <p>Titulo:</p>
-                        <textarea name="" id="direccion" cols="50" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</textarea>
-                        <p>Descripción:</p>
-                        <textarea name="" id="direccion" cols="50" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</textarea>
-                    </form>
-                    <div class="contenedorIconosEditarBorrar">
-                        <a onclick="editar()">
-                            <figure><img src="img/edit.svg" alt=""></figure>
-                        </a>
-                        <a onclick="borrar()">
-                            <figure><img src="img/trash.svg" alt=""></figure>
-                        </a>
-                    </div>
-                </div>
             </div>
-
-            <!-- Trabajadores y Familas  -->
-            <div class="contenedor" id="trabajadoresYfamilias" data-tab-content class="active">
-
-                <form action="">
-                    <p>Trabajadores y Familias</p>
-                    <br>
-                    <p>Familias productoras</p>
-                    <input type="number" value="29">
-
-                    <p>Trabajadores</p>
-                    <input type="number" value="3">
-                    <button type="submit" target="_self" class="save">
-                        <p><i class="far fa-save"></i></p>
-                    </button>
-                </form>
-            </div>
-
-
-        </div>
 
     </section>
     <!-- MODALES -->
