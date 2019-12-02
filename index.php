@@ -110,12 +110,11 @@
         <form action="">
             <p class="tituloCarrusel">Insertar Frases:</p>
             <textarea placeholder="Frase" rows="4" cols="50"> </textarea>
-            <<<<<<< HEAD <button class="save"><i class="far fa-save"></i></button>
-                =======
-                <button type="submit" target="_self" class="save">
-                    <p><i class="far fa-save"></i></p>
-                </button>
-                >>>>>>> master
+            <button class="save"><i class="far fa-save"></i></button>
+
+            <button type="submit" target="_self" class="save">
+                <p><i class="far fa-save"></i></p>
+            </button>
         </form>
     </div>
     <!-- Certificaciones -->
@@ -128,11 +127,11 @@
         <div class="anadircert">
             <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="agregarImagen()" class="manita"></figure>
         </div>
-        <form action="">
+        <form action="agregar_certificacion_xt.php" method="POST">
             <p class="titulocert">Insertar Nombre de Certificación</p>
-            <textarea placeholder="Nombre de certifación" rows="4" cols="50"> </textarea>
+            <textarea placeholder="Nombre de certifación" rows="4" cols="50" name="nombre_certificacion" class="nombre_certificacion"> </textarea>
             <p class="linkcert">Insertar Link de Certificación</p>
-            <textarea placeholder="URL" rows="4" cols="50"> </textarea>
+            <textarea placeholder="URL" rows="4" cols="50" name="link_certificacion" class="link_certificacion"> </textarea>
             <button type="submit" target="_self" class="save">
                 <p><i class="far fa-save"></i></p>
             </button>

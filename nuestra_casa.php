@@ -256,19 +256,19 @@
         <div class="anadirimgsucursal">
             <figure class="mascara"><img class="mascara" src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
         </div>
-        <form action="">
+        <form method="POST" action="agregar_equipo_xt.php">
             <div class="nombretrab">
                 <p class="titulonombre">Nombre</p>
-                <textarea placeholder="Descripción" rows="4" cols="50"> </textarea>
+                <textarea placeholder="Descripción" rows="4" cols="50" id="nombre_trabajador" name="nombre_trabajador"> </textarea>
             </div>
 
             <div class="cargo">
                 <p class="titulocargo">Cargo</p>
-                <textarea placeholder="Descripción" rows="4" cols="50"> </textarea>
+                <textarea placeholder="Descripción" rows="4" cols="50" id="puesto" name="puesto"> </textarea>
             </div>
             <div class="descripcargo">
                 <p class="titulodescrip">Descripción</p>
-                <textarea placeholder="Descripción" rows="4" cols="50"> </textarea>
+                <textarea placeholder="Descripción" rows="4" cols="50" id="descripcion_trabajador" name="descripcion_trabajador"> </textarea>
             </div>
             <button type="submit" target="_self" class="save">
                 <p><i class="far fa-save"></i></p>
