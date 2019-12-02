@@ -16,6 +16,11 @@
 <body>
 
     <?php include 'header.php'; ?>
+    <?php
+    include "conexion.php";
+    $sql = "select * from equipo4_producto where activo=1";
+    $rs = ejecutar($sql);  //este es el recordset obtenido con los datos de mi directorio
+    ?>
 
     <section>
 

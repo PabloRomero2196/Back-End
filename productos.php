@@ -60,10 +60,10 @@
         <div class="anadirimgproductos">
             <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
         </div>
-        <form action="agregarProducto_xt.php">
+        <form action="agregarProducto_xt.php" method="post">
             <div class="descripcargo">
                 <p class="titulodescrip">Descripción del producto</p>
-                <textarea placeholder="Descripción" rows="4" cols="50" id="nombre_producto" name="descripcion"> </textarea>
+                <textarea placeholder="Descripción" rows="4" cols="50" id="nombre_producto" name="nombre_producto"> </textarea>
             </div>
             <!-- <div class="descripcargo">
                 <p class="titulodescrip">URL Del Producto</p>
