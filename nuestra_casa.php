@@ -188,10 +188,6 @@
 
             <p>Acontecimiento:</p>
             <input type="text" name="acontecimiento_linea" id="acontecimiento_linea">
-            <button type="submit"></button>
-
-            <!-- <button class="save" type=""><i class="far fa-save"></i></button> -->
-
             <button type="submit" target="_self" class="save">
                 <p><i class="far fa-save"></i></p>
             </button>
