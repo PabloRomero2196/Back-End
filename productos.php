@@ -63,8 +63,12 @@
         <form action="agregarProducto_xt.php">
             <div class="descripcargo">
                 <p class="titulodescrip">Descripción del producto</p>
-                <textarea placeholder="Descripción" rows="4" cols="50" id="descripcion"> </textarea>
+                <textarea placeholder="Descripción" rows="4" cols="50" id="nombre_producto" name="descripcion"> </textarea>
             </div>
+            <!-- <div class="descripcargo">
+                <p class="titulodescrip">URL Del Producto</p>
+                <textarea placeholder="Descripción" rows="4" cols="50" id="link_producto" name="link_producto"> </textarea>
+            </div> -->
             <!-- <p class="save" type="submit"><i class="far fa-save"></i></p> -->
             <button type="submit">save</button>
         </form>
