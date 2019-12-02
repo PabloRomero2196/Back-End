@@ -120,6 +120,7 @@
 
             <!-- Nuestro Equipo  -->
             <div class="contenedor" id="nuestroEquipo" data-tab-content class="active">
+
                 <div class="anadir">
                     <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalequipo()" class="manita"></figure>
                     <p>Agregar Integrante</p>
@@ -187,10 +188,6 @@
 
             <p>Acontecimiento:</p>
             <input type="text" name="acontecimiento_linea" id="acontecimiento_linea">
-            <button type="submit"></button>
-
-            <!-- <button class="save" type=""><i class="far fa-save"></i></button> -->
-
             <button type="submit" target="_self" class="save">
                 <p><i class="far fa-save"></i></p>
             </button>

@@ -16,11 +16,7 @@
 <body>
 
     <?php include 'header.php'; ?>
-    <?php
-    include "conexion.php";
-    $sql = "select * from equipo4_producto where activo=1";
-    $rs = ejecutar($sql);  //este es el recordset obtenido con los datos de mi directorio
-    ?>
+
 
     <section>
 
@@ -38,20 +34,31 @@
                     <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalCarrusel()" class="manita"></figure>
                     <p>Agregar Imagen</p>
                 </div>
-                <div class="element">
-                    <figure><img src="img/slider1.jpg" alt="img3"></figure>
-                    <div>
-                        <p>Imagen 1</p>
-                    </div>
-                    <div class="contenedorIconosEditarBorrar">
-                        <a onclick="editar()">
-                            <figure><img src="img/edit.svg" alt=""></figure>
-                        </a>
-                        <a onclick="borrar()">
-                            <figure><img src="img/trash.svg" alt=""></figure>
-                        </a>
-                    </div>
-                </div>
+
+                <?php
+                include "conexion.php";
+                $sql = "select * from equipo4_inicio_carrusel";
+                $rs = ejecutar($sql);
+
+                while ($datos = mysqli_fetch_array($rs)) {
+                    echo '
+                    <div class="element">
+                        <figure><img src="img/slider1.jpg" alt="img3"></figure>
+                        <div>
+                            <p>' . $datos["descripcion"] . '</p>
+                        </div>
+                        <div class="contenedorIconosEditarBorrar">
+                            <a onclick="editar()">
+                                <figure><img src="img/edit.svg" alt=""></figure>
+                            </a>
+                            <a onclick="borrar()">
+                                <figure><img src="img/trash.svg" alt=""></figure>
+                            </a>
+                        </div>
+                    </div>';
+                }
+                ?>
+
             </div>
 
             <!-- Certificaciones  -->
