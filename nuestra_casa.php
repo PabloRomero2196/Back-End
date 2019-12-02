@@ -124,24 +124,6 @@
                     <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalequipo()" class="manita"></figure>
                     <p>Agregar Integrante</p>
                 </div>
-                <!-- Elemento -->
-                <div class="element">
-                    <figure><img src="img/retrato1.jpg" alt="amazon"></figure>
-                    <div>
-                        <p>Titulo:</p>
-                        <p name="" id="direccion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</p>
-                        <p>Descripción:</p>
-                        <p name="" id="direccion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</p>
-                    </div>
-                    <div class="contenedorIconosEditarBorrar">
-                        <a onclick="editar()">
-                            <figure><img src="img/edit.svg" alt=""></figure>
-                        </a>
-                        <a onclick="borrar()">
-                            <figure><img src="img/trash.svg" alt=""></figure>
-                        </a>
-                    </div>
-                </div>
 
                 <?php
                 include "conexion.php";
