@@ -18,5 +18,5 @@
     </nav>
 </header>
 
-<p>Log out    <a href="">salir aqui </a>
+<p>Log out <a href="">salir aqui </a>
 </p>

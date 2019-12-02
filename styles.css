@@ -182,9 +182,8 @@ body {
     width: 22vw;
     height: 40vh;
 }
-body > section > article:nth-child(2) > figure
 
-.log-in input:nth-child(3) {
+body>section>article:nth-child(2)>figure .log-in input:nth-child(3) {
     margin-top: 0px;
 }
 
@@ -224,7 +223,7 @@ header h1 {
 
 header nav {
     align-self: center;
-    width: 73%;
+    width: 69%;
 }
 
 header ul {
@@ -384,6 +383,7 @@ h2 {
 
 .tabs li {
     color: #000;
+    border-radius: 25px 25px 0 0;
     border-style: solid solid none solid;
     border-width: 0.5px;
     border-color: #ccc;
@@ -404,14 +404,18 @@ h2 {
     padding: 10px;
 }
 
+
 .tab.active {
-    background-color: #000;
-    color: #fff;
+    background-color: #FCDF5F;
+    color: #000;
+
 }
 
+
+
 .tab:hover {
-    background-color: #000;
-    color: #fff;
+    background-color: #FCDF5F;
+    color: #000;
 }
 
 .tab-content {
@@ -435,10 +439,11 @@ h2 {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
-    width: 50vw;
-    /* height: 64vw; */
-    overflow: auto;
-    border: solid 0.8px;
+    width: 47vw;
+    /* height: 44vw; */
+    /* overflow: auto; */
+    display: none;
+    border: solid;
 }
 
 .modalReceta form {
@@ -487,7 +492,18 @@ h2 {
     height: 29px;
 }
 
-
+.modalReceta {
+    position: absolute;
+    display: none;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 50vw;
+    /* height: 64vw; */
+    overflow: auto;
+    border: solid 0.8px;
+}
 
 .modalReceta form {
     display: grid;
@@ -710,7 +726,7 @@ textarea {
 .modalCarrusel {
     position: absolute;
     display: none;
-    top: 60%;
+    top: 78%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255);
@@ -786,7 +802,7 @@ textarea {
 .modalequipo {
     position: absolute;
     display: none;
-    top: 60%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255);
@@ -857,7 +873,7 @@ textarea {
 .modalproducto {
     position: absolute;
     display: none;
-    top: 60%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255);
@@ -910,7 +926,7 @@ textarea {
 .modalDireccion {
     display: none;
     position: absolute;
-    top: 60%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255);
@@ -987,7 +1003,7 @@ textarea {
 .modalCertificaciones {
     position: absolute;
     display: none;
-    top: 60%;
+    top: 78%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255);
@@ -1040,4 +1056,8 @@ textarea {
 
 .save {
     grid-column: 1/3;
+}
+
+div.element>div.contenedorIconosEditarBorrar>a:nth-child(1)>figure {
+    height: 100%;
 }

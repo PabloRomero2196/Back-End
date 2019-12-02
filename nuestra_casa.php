@@ -212,6 +212,9 @@
 
                     <p>Trabajadores</p>
                     <input type="number" value="3">
+                    <button type="submit" target="_self" class="save">
+                        <p><i class="far fa-save"></i></p>
+                    </button>
                 </form>
             </div>
 
@@ -227,7 +230,7 @@
             <p><i class="far fa-times-circle"></i></p>
         </div>
         <h2>Línea del tiempo</h2>
-        <form method="POST" action="acontecimiento_xt.php">
+        <form method="POST" action="">
             <p>Año:</p>
             <input type="number" name="ano_linea" id="ano_linea" min="1" max="2100" placeholder="Año">
 
@@ -237,6 +240,9 @@
 
             <!-- <button class="save" type=""><i class="far fa-save"></i></button> -->
 
+            <button type="submit" target="_self" class="save">
+                <p><i class="far fa-save"></i></p>
+            </button>
         </form>
     </div>
 
@@ -264,7 +270,9 @@
                 <p class="titulodescrip">Descripción</p>
                 <textarea placeholder="Descripción" rows="4" cols="50"> </textarea>
             </div>
-            <button method="POST" class="save"><i class="far fa-save"></i></button>
+            <button type="submit" target="_self" class="save">
+                <p><i class="far fa-save"></i></p>
+            </button>
         </form>
     </div>
 

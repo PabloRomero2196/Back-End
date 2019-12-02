@@ -54,44 +54,62 @@
                 <div class="anadir">
                     <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalAgregaUnaCategoria()" class="manita"></figure>
                     <p>Agregar Categoria</p>
+                    <<<<<<< HEAD </div> <!-- Elemento -->
+                        <div class="element">
+                            <p>Categoria</p>
+                            <form action="POST">
+                                <textarea name="" id="direccion" cols="50" rows="10">Recetas de la abuela
+                    </textarea>
+                            </form>
+                            <div class="contenedorIconosEditarBorrar">
+                                <a onclick="editar()">
+                                    <figure><img src="img/edit.svg" alt=""></figure>
+                                </a>
+                                <a onclick="borrar()">
+                                    <figure><img src="img/trash.svg" alt=""></figure>
+                                </a>
+                            </div>
+                            =======
+                            >>>>>>> master
+                        </div>
+
+                        <!-- Elemento  -->
+                        <div class="element">
+                            <p>Categoria</p>
+                            <form action="POST">
+                                <<<<<<< HEAD=======<textarea name="" id="direccion" cols="50" rows="10">Recetas de la abuela
+                                    </textarea>
+                            </form>
+                            <div class="contenedorIconosEditarBorrar">
+                                <a onclick="editar()">
+                                    <figure><img src="img/edit.svg" alt=""></figure>
+                                </a>
+                                <a onclick="borrar()">
+                                    <figure><img src="img/trash.svg" alt=""></figure>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Elemento  -->
+                        <div class="element">
+                            <p>Categoria</p>
+                            <form action="POST">
+                                >>>>>>> master
+                                <textarea name="" id="direccion" cols="50" rows="10">Picar la dieta
+                    </textarea>
+                            </form>
+                            <div class="contenedorIconosEditarBorrar">
+                                <a onclick="editar()">
+                                    <figure><img src="img/edit.svg" alt=""></figure>
+                                </a>
+                                <a onclick="borrar()">
+                                    <figure><img src="img/trash.svg" alt=""></figure>
+                                </a>
+                            </div>
+                        </div>
                 </div>
 
-                <!-- Elemento  -->
-                <div class="element">
-                    <p>Categoria</p>
-                    <form action="POST">
-                        <textarea name="" id="direccion" cols="50" rows="10">Recetas de la abuela
-                    </textarea>
-                    </form>
-                    <div class="contenedorIconosEditarBorrar">
-                        <a onclick="editar()">
-                            <figure><img src="img/edit.svg" alt=""></figure>
-                        </a>
-                        <a onclick="borrar()">
-                            <figure><img src="img/trash.svg" alt=""></figure>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Elemento  -->
-                <div class="element">
-                    <p>Categoria</p>
-                    <form action="POST">
-                        <textarea name="" id="direccion" cols="50" rows="10">Picar la dieta
-                    </textarea>
-                    </form>
-                    <div class="contenedorIconosEditarBorrar">
-                        <a onclick="editar()">
-                            <figure><img src="img/edit.svg" alt=""></figure>
-                        </a>
-                        <a onclick="borrar()">
-                            <figure><img src="img/trash.svg" alt=""></figure>
-                        </a>
-                    </div>
-                </div>
             </div>
-
-        </div>
 
     </section>
 
@@ -108,29 +126,29 @@
             <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
 
         </div>
-        <form method="POST" action="agregar_receta_xt.php">
+        <form action="">
             <p class="tituloReceta">Título</p>
-            <textarea id="" cols="50" rows="4" type="text" name="titulo_receta" placeholder="Título"></textarea>
+            <textarea rows="4" cols="50" placeholder="Título"> </textarea>
             <p class="categoria">Categoría</p>
-            <textarea placeholder="Categoría" rows="4" cols="50" id="categoria_receta" name="categoria_receta"> </textarea>
+            <textarea placeholder="Categoría" rows="4" cols="50"> </textarea>
             <p class="tiempo">TIEMPO</p>
-            <textarea id="" cols="50" rows="4" type="text" name="tiempo_receta" placeholder="Título"></textarea>
+            <textarea placeholder="Tiempo de Preparación" rows="4" cols="50"> </textarea>
             <p class="porcion">PORCIÓN</p>
-            <textarea id="" cols="50" rows="4" type="text" name="porcion_receta" placeholder="Título"></textarea>
+            <textarea placeholder="Porción" rows="4" cols="50"> </textarea>
             <p class="ingre">INGREDIENTES</p>
-            <textarea id="" cols="50" rows="4" type="text" name="ingredientes_receta" placeholder="Título"></textarea>
+            <textarea placeholder="Ingredientes" rows="4" cols="50"> </textarea>
             <p class="prep">PREPARACIÒN</p>
-            <textarea id="" cols="50" rows="4" type="text" name="preparacion_receta" placeholder="Título"></textarea>
+            <textarea placeholder="Año" rows="4" cols="50"> </textarea>
             <p class="varia">VARIACIONES</p>
-            <textarea id="" cols="50" rows="4" type="text" name="variacion_receta" placeholder="Título"></textarea>
+            <textarea placeholder="Variaciones" rows="4" cols="50"> </textarea>
             <p class="chef">COMO LO HACE EL CHEF</p>
-            <textarea id="" cols="50" rows="4" type="text" name="comoLoHaceElChef_receta" placeholder="Inserta URL"></textarea>
+            <textarea placeholder="Inserta URL" rows="4" cols="50"> </textarea>
             <!-- <p class="imagenReceta">Título</p>
             <input type="text" placeholder="Título"> -->
-            <button class="save">
+
+            <button type="submit" target="_self" class="save">
                 <p><i class="far fa-save"></i></p>
             </button>
-            <!-- <p class="save"><i class="far fa-save"></i></p> -->
         </form>
     </div>
 
@@ -146,7 +164,9 @@
             <p class="tituloCategoria">Título</p>
             <input type="text" placeholder="Título">
 
-            <p class="save"><i class="far fa-save"></i></p>
+            <button type="submit" target="_self" class="save">
+                <p><i class="far fa-save"></i></p>
+            </button>
         </form>
     </div>
 
@@ -157,12 +177,14 @@
         </div>
         <h2>Edita la Categoría</h2>
         <p class="parrafoCategoria"> Edita el título de tu categoría </p>
-        <form>
+        <form action="">
 
             <p class="tituloEditaCategoria">Título</p>
             <textarea placeholder="Título de Categoría" rows="4" cols="50"> </textarea>
 
-            <p class="save"><i class="far fa-save"></i></p>
+            <button type="submit" target="_self" class="save">
+                <p><i class="far fa-save"></i></p>
+            </button>
         </form>
     </div>
 
@@ -178,7 +200,9 @@
             <p class="tituloEditaCategoria">Título</p>
             <textarea placeholder="Título de Categoría" rows="4" cols="50"> </textarea>
 
-            <p class="save"><i class="far fa-save"></i></p>
+            <button type="submit" target="_self" class="save">
+                <p><i class="far fa-save"></i></p>
+            </button>
         </form>
     </div>
 

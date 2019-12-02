@@ -17,7 +17,7 @@
         include "../conexion.php";
 
         //checamos si existe esta combinación de usuario y password en la BD
-        $sql = "select * from equipo4_login where usuario = '$usuario' and pw = PASSWORD('$pw')";
+        $sql = "select * from equipo4_login where un = '$usuario' and pw = PASSWORD('$pw')";
         $rs = ejecutar($sql);
 
         if (mysqli_num_rows($rs) == 0) {
@@ -28,15 +28,15 @@
         } else {
             //combinación correcta, creamos la sesión
             $datos = mysqli_fetch_array($rs);
-            $_SESSION["usuario"] = $datos["usuario"];
+            $_SESSION["admin"] = $datos["usuario"];
             //redireccionamos la página a menu.php 
             echo "<script language='javascript'>";
-            echo "window.location.assign('home.php');";
+            echo "window.location.assign('nuestra_casa.php');";
             echo "</script>";
         }
     } else {
         echo "<script language='javascript'>";
-        echo "window.location.assign('home.php');";
+        echo "window.location.assign('nuestra_casa.php');";
         echo "</script>";
     }
 
