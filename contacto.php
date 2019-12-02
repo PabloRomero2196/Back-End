@@ -34,10 +34,10 @@
                 <!-- Elemento -->
                 <div class="element">
                     <p>Dirección</p>
-                    <form action="POST">
-                        <textarea name="" id="direccion" cols="50" rows="10">Prolongacion Paseo de la Reforma 880, Lomas de Santa Fe, Zedec Sta Fé, Álvaro Obregón, 01219 Ciudad de México, CDMX                        
-                    </textarea>
-                    </form>
+                    <div action="POST">
+                        <p name="" id="direccion" cols="50" rows="10">Prolongacion Paseo de la Reforma 880, Lomas de Santa Fe, Zedec Sta Fé, Álvaro Obregón, 01219 Ciudad de México, CDMX
+                        </p>
+                    </div>
                     <div class="contenedorIconosEditarBorrar">
                         <a onclick="editar()">
                             <figure><img src="img/edit.svg" alt=""></figure>
@@ -56,12 +56,13 @@
                     <p>Agregar Telefono</p>
                 </div>
 
-                <!-- Elemento  -->
+                <!-- Elemento -->
                 <div class="element">
-                    <p>Telefono 1</p>
-                    <form action="POST">
-                        <textarea name="" id="direccion" cols="50" rows="10">Calle Generica 123 int 456</textarea>
-                    </form>
+                    <p>Dirección</p>
+                    <div action="POST">
+                        <p name="" id="direccion" cols="50" rows="10">Prolongacion Paseo de la Reforma 880, Lomas de Santa Fe, Zedec Sta Fé, Álvaro Obregón, 01219 Ciudad de México, CDMX
+                        </p>
+                    </div>
                     <div class="contenedorIconosEditarBorrar">
                         <a onclick="editar()">
                             <figure><img src="img/edit.svg" alt=""></figure>
@@ -72,12 +73,13 @@
                     </div>
                 </div>
 
-                <!-- Elemento  -->
+                <!-- Elemento -->
                 <div class="element">
-                    <p>Telefono 2</p>
-                    <form action="POST">
-                        <textarea name="" id="direccion" cols="50" rows="10">Calle Generica 123 int 456</textarea>
-                    </form>
+                    <p>Dirección</p>
+                    <div action="POST">
+                        <p name="" id="direccion" cols="50" rows="10">Prolongacion Paseo de la Reforma 880, Lomas de Santa Fe, Zedec Sta Fé, Álvaro Obregón, 01219 Ciudad de México, CDMX
+                        </p>
+                    </div>
                     <div class="contenedorIconosEditarBorrar">
                         <a onclick="editar()">
                             <figure><img src="img/edit.svg" alt=""></figure>

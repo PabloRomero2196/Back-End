@@ -61,13 +61,15 @@
         <div class="anadirimgsucursal">
             <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
         </div>
-        <form action="">
+        <form action="agregar_sucursales_xt.php" method="POST">
 
             <p class="tituloAdquerir">Título</p>
-            <textarea placeholder="Descripción" rows="4" cols="50"> </textarea>
+            <textarea placeholder="Descripción" rows="4" cols="50" name="nombre_lugar"> </textarea>
             <p class="tituloAdquerir">Enlace de ubicación</p>
-            <textarea placeholder="Descripción" class="url" rows="4" cols="50"> </textarea>
-            <p class="save"><i class="far fa-save"></i></p>
+            <textarea placeholder="Descripción" class="url" rows="4" cols="50" name="hipervinculo"> </textarea>
+            <button class="save">
+                <p><i class="far fa-save"></i></p>
+            </button>
         </form>
     </div>
 
