@@ -25,7 +25,7 @@
 
         <div class="tab-content">
 
-            <!-- Dirección  -->
+            <!--*********************** Direccion ***********************-->
             <div class="contenedor" id="direccion" data-tab-content class="active">
                 <div class="anadir">
                     <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="cerrarModalDireccion()" class="manita"></figure>
@@ -49,7 +49,7 @@
                 </div>
             </div>
 
-            <!-- Teléfono  -->
+            <!--*********************** Teléfono ***********************-->
             <div class="contenedor" id="telefono" data-tab-content class="active">
                 <div class="anadir">
                     <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="cerrarModalTelefono()" class="manita"></figure>
@@ -57,7 +57,7 @@
                 </div>
 
                 <!-- Elemento -->
-                <div class="element">
+                <!-- <div class="element">
                     <p>Dirección</p>
                     <div action="POST">
                         <p name="" id="direccion" cols="50" rows="10">Prolongacion Paseo de la Reforma 880, Lomas de Santa Fe, Zedec Sta Fé, Álvaro Obregón, 01219 Ciudad de México, CDMX
@@ -71,13 +71,12 @@
                             <figure><img src="img/trash.svg" alt=""></figure>
                         </a>
                     </div>
-                </div>
+                </div> -->
 
-                <!-- Elemento -->
-                <div class="element">
+                `<div class="element">
                     <p>Dirección</p>
                     <div action="POST">
-                        <p name="" id="direccion" cols="50" rows="10">Prolongacion Paseo de la Reforma 880, Lomas de Santa Fe, Zedec Sta Fé, Álvaro Obregón, 01219 Ciudad de México, CDMX
+                        <p name="" id="direccion" cols="50" rows="10">`variable_direccion`
                         </p>
                     </div>
                     <div class="contenedorIconosEditarBorrar">
@@ -88,10 +87,9 @@
                             <figure><img src="img/trash.svg" alt=""></figure>
                         </a>
                     </div>
-                </div>
+                </div>`
+
             </div>
-
-        </div>
 
     </section>
     <!-- Modal -->
@@ -100,12 +98,14 @@
             <p class="cerrar"><i class="far fa-times-circle"></i></p>
         </div>
         <h2>Nueva Dirección</h2>
-        <form action="">
+        <form action="agregar_direccion_xt.php" method="POST">
             <p class="tituloubicacion">Nombre de la ubicación</p>
             <textarea placeholder="Descripción" rows="4" cols="50"> </textarea>
             <p class="tituloenlace">Enlace de ubicación</p>
-            <textarea placeholder="Link de ubicación" class="url" rows="4" cols="50"> </textarea>
-            <p class="save"><i class="far fa-save"></i></p>
+            <textarea placeholder="Link de ubicación" class="url" rows="4" cols="50" name="direccion"> </textarea>
+            <button class="save">
+                <p><i class="far fa-save"></i></p>
+            </button>
         </form>
     </div>
     <!-- Telefono -->
@@ -114,10 +114,12 @@
             <p class="cerrar"><i class="far fa-times-circle"></i></p>
         </div>
         <h2>Nueva Teléfono</h2>
-        <form action="">
+        <form action="agregar_telefono_xt.php" method="POST">
             <p class="titulonum">Número de Teléfono</p>
-            <textarea placeholder="Descripción" rows="4" cols="50"> </textarea>
-            <p class="save"><i class="far fa-save"></i></p>
+            <textarea placeholder="Descripción" rows="4" cols="50" name="telefono"> </textarea>
+            <button class="save">
+                <p><i class="far fa-save"></i></p>
+            </button>
         </form>
     </div>
 </body>
