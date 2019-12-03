@@ -30,7 +30,15 @@
                     <p>Agregar Sucursales</p>
                 </div>
                 <!-- Elemento -->
-                <div class="element">
+                <?php
+                include "conexion.php";
+
+                $sql = "SELECT FROM * equipo4_sucursales";
+                $rs = ejecutar($sql);
+
+                while ($datos = mysql_fetch_array($sql)) {
+                    echo '
+                    <div class="element">
                     <figure><img src="img/sucursal_Amazon.png" alt="amazon"></figure>
                     <div>
                         <p>Amazon</p>
@@ -43,7 +51,12 @@
                             <figure><img src="img/trash.svg" alt=""></figure>
                         </a>
                     </div>
-                </div>
+                    </div>
+                    ';
+                }
+
+
+                ?>
             </div>
         </div>
 
@@ -53,13 +66,13 @@
     <!-- MODALES -->
 
     <div id="modalSucursales" class="modalAdquerirProducto">
-        <div onclick="cerrarModalLineadelTiempo()" class="manita">
+        <div onclick="abrirModalSucursales()" class="manita">
             <p class="cerrar"><i class="far fa-times-circle"></i></p>
         </div>
         <h2>DÓNDE ADQUIRIR NUESTRO PRODUCTO</h2>
         <p class="parrafoAdquerir"> AGREGAR NUEVO LUGAR </p>
         <div class="anadirimgsucursal">
-            <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
+            <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="cerrarModalSucursales()" class="manita"></figure>
         </div>
         <form action="agregar_sucursales_xt.php" method="POST">
 

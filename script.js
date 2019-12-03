@@ -71,6 +71,17 @@ function abrirModalEliminaUnaCategoria() {
     document.getElementById('modalEliminaUnaCategoria').style.display = 'block'
 }
 
+// Sucursales
+function abrirModalSucursales() {
+    document.getElementById('modalSucursales').style.display = 'block'
+}
+
+// Colaboradores
+function abrirModalColaboradores() {
+    document.getElementById('modalColaboradores').style.display = 'block'
+}
+
+
 
 //------------------------------------ Cerrar Modales ------------------------------------
 // index
@@ -133,6 +144,17 @@ function abrirModalCertifiaciones() {
 function cerrarModalCertificacion() {
     document.getElementById('modalcertificaciones').style.display = 'none'
 }
+
+// Sucursales
+function cerrarModalSucursales() {
+    document.getElementById('modalSucursales').style.display = 'none'
+}
+
+// Colaboradores
+function cerrarModalColaboradores() {
+    document.getElementById('modalColaboradores').style.display = 'none'
+}
+
 
 
 // ***************************** Imprimir Telefono *****************************

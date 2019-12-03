@@ -75,8 +75,8 @@
 
                 `<div class="element">
                     <p>Dirección</p>
-                    <div action="POST">
-                        <p name="" id="direccion" cols="50" rows="10">`variable_direccion`
+                    <div>
+                        <p name="" id="direccion">variable_direccion
                         </p>
                     </div>
                     <div class="contenedorIconosEditarBorrar">

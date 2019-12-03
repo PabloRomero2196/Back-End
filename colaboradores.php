@@ -30,7 +30,7 @@
                     <p>Agregar Colaboradores</p>
                 </div>
                 <!-- Elemento -->
-                <div class="element">
+                <!-- <div class="element">
                     <figure><img src="img/sucursal_Amazon.png" alt="amazon"></figure>
                     <div>
                         <p>Amazon</p>
@@ -43,7 +43,7 @@
                             <figure><img src="img/trash.svg" alt=""></figure>
                         </a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -52,6 +52,25 @@
     </section>
     <!-- MODALES -->
 
+    <div id="modalColaboradores" class="modalCertificaciones">
+        <div onclick="cerrarModalColaboradores()" class="manita">
+            <p class="cerrar"><i class="far fa-times-circle"></i></p>
+        </div>
+        <h2>Certificaciones</h2>
+        <p class="parrafoAdquerir">AGREGA IMÁGEN DE LA NUEVA CERTIFICACIÓN</p>
+        <div class="anadircert">
+            <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalColaboradores()" class="manita"></figure>
+        </div>
+        <form action="agregar_colaboradores_xt.php" method="POST">
+            <p class="titulocert">Insertar Nombre de colaborador</p>
+            <textarea placeholder="Nombre de certifación" rows="4" cols="50" name="nombre_certificacion" class="nombre_certificacion"> </textarea>
+            <p class="linkcert">Insertar Link de colaborador</p>
+            <textarea placeholder="URL" rows="4" cols="50" name="link_certificacion" class="link_certificacion"> </textarea>
+            <button type="submit" target="_self" class="save">
+                <p><i class="far fa-save"></i></p>
+            </button>
+        </form>
+    </div>
 
 </body>
 

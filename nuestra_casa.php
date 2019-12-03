@@ -152,26 +152,27 @@
                             </div>';
                 }
                 ?>
-
-                <!-- Trabajadores y Familas  -->
-                <div class="contenedor" id="trabajadoresYfamilias" data-tab-content class="active">
-
-                    <form action="">
-                        <p>Trabajadores y Familias</p>
-                        <br>
-                        <p>Familias productoras</p>
-                        <input type="number" value="29">
-
-                        <p>Trabajadores</p>
-                        <input type="number" value="3">
-                        <button type="submit" target="_self" class="save">
-                            <p><i class="far fa-save"></i></p>
-                        </button>
-                    </form>
-                </div>
-
-
             </div>
+
+            <!-- Trabajadores y Familas  -->
+            <div class="contenedor" id="trabajadoresYfamilias" data-tab-content class="active">
+
+                <form action="">
+                    <p>Trabajadores y Familias</p>
+                    <br>
+                    <p>Familias productoras</p>
+                    <input type="number" value="29">
+
+                    <p>Trabajadores</p>
+                    <input type="number" value="3">
+                    <button type="submit" target="_self" class="save">
+                        <p><i class="far fa-save"></i></p>
+                    </button>
+                </form>
+            </div>
+
+
+        </div>
 
     </section>
     <!-- MODALES -->
