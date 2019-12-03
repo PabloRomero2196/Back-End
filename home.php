@@ -20,14 +20,15 @@ session_start();
 
     <section class="paginaHome">
 
-        <h2>Bienvenido</h2>
+        <h2>BIENVENIDO</h2>
 
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus adipisci officiis, aut vel possimus dolore praesentium. Quis velit sapiente harum, perspiciatis dolorum nobis hic explicabo repudiandae laborum ipsum quasi dolore!</p>
+        <p class="bienvenido">Bienvenido al administrador de contenido de Chabtic, donde podrás editar, borrar, y actualizar la información de ciertas secciones del sitio web</p>
 
         <div>
-            <p>Descarga el manual de usabilidad aqui</p>
-
-            <button>Descargar</button>
+            <p class="descarga">Descarga el manual de usabilidad aqui</p>
+            <p class="btndescargar">
+                <a class="letra">Descargar</a>
+            </p>
         </div>
 
     </section>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600,700&display=swap');
+
 @font-face {
     font-family: 'Whitney';
     src: url('fonts/Whitney-Medium.eot');
@@ -223,7 +225,7 @@ header h1 {
 
 header nav {
     align-self: center;
-    width: 71%;
+    width: 91%;
 }
 
 header ul {
@@ -432,10 +434,6 @@ h2 {
 
 .paginaHome {
     text-align: center;
-}
-
-.paginaHome p:nth-child(2) {
-    margin: 5em;
 }
 
 /*----------------------------------------MODALES----------------------------------------*/
@@ -1089,4 +1087,35 @@ div.element>div.contenedorIconosEditarBorrar>a:nth-child(1)>figure {
 
 .tabActivado {
     display: grid;
+}
+
+nav ul {
+    width: 100%;
+}
+
+.bienvenido {
+    width: 49%;
+    margin: auto;
+    font-size: 1.2em;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.descarga {
+    font-size: 1.2em;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: bold;
+    margin-top: 28px;
+}
+
+.btndescargar {
+    border-radius: 22px;
+    background-color: #ffdd55;
+    width: 9%;
+    margin: auto;
+    margin-top: 20px
+}
+
+.letra {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
 }
