@@ -8,9 +8,11 @@ while ($datos = mysqli_fetch_array($rs)) {
                             <div class="element">
                                 <figure><img src="img/retrato1.jpg" alt="amazon"></figure>
                                 <div>
-                                    <p>Nombre Trabajador:</p>
+                                    <p><b>Nombre Trabajador:</b></p>
                                     <p>' . $datos["nombre_trabajador"] . '</p>
-                                    <p>Descripción:</p>
+                                    <p><b>Puesto Trabajador:</b></p>
+                                    <p>' . $datos["puesto"] . '</p>
+                                    <p><b>Descripción:</b></p>
                                     <p>' . $datos["descripcion_trabajador"] . '</p>
                                 </div>
                                 <div class="contenedorIconosEditarBorrar">
