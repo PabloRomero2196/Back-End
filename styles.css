@@ -55,7 +55,7 @@ body {
     background-color: #fff;
     width: 35vw;
     /* height: 40vw; */
-    overflow: auto;
+    /* overflow: auto; */
     display: none;
     border: solid;
 }
@@ -507,7 +507,7 @@ h2 {
     background-color: #fff;
     width: 50vw;
     /* height: 64vw; */
-    overflow: auto;
+    /* overflow: auto; */
     border: solid 0.8px;
 }
 
@@ -604,7 +604,7 @@ textarea {
     background-color: #fff;
     width: 47vw;
     /* height: 30vw; */
-    overflow: auto;
+    /* overflow: auto; */
     border: solid;
 }
 
@@ -695,7 +695,7 @@ textarea {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255);
-    overflow: auto;
+    /* overflow: auto; */
     width: 40vw;
     /* height: 38vw; */
     border: solid;
@@ -737,7 +737,7 @@ textarea {
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255);
     width: 47vw;
-    overflow: auto;
+    /* overflow: auto; */
     /* height: 40vw; */
     border: solid;
 }
@@ -814,7 +814,7 @@ textarea {
     background-color: rgb(255, 255, 255);
     width: 43vw;
     /* height: 51vw; */
-    overflow: auto;
+    /* overflow: auto; */
     border: solid;
 }
 
@@ -885,7 +885,7 @@ textarea {
     background-color: rgb(255, 255, 255);
     width: 43vw;
     /* height: 51vw; */
-    overflow: auto;
+    /* overflow: auto; */
     border: solid;
 }
 
@@ -931,7 +931,7 @@ textarea {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255);
-    overflow: auto;
+    /* overflow: auto; */
     width: 40vw;
     border: solid;
 }
@@ -998,7 +998,7 @@ textarea {
     background-color: rgb(255, 255, 255);
     width: 43vw;
     /* height: 51vw; */
-    overflow: auto;
+    /* overflow: auto; */
     border: solid;
 }
 
@@ -1034,7 +1034,7 @@ textarea {
     background-color: rgb(255, 255, 255);
     width: 43vw;
     /* height: 51vw; */
-    overflow: auto;
+    /* overflow: auto; */
     border: solid;
 }
 

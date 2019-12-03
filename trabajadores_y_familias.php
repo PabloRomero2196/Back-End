@@ -77,7 +77,7 @@
                 <textarea placeholder="Descripción" rows="4" cols="50" id="descripcion_trabajador" name="descripcion_trabajador"> </textarea>
             </div>
             <button type="submit" target="_self" class="save">
-                <p><i class="far fa-save"></i></p>
+                <figure><img src="img/save.svg" alt=""></figure>
             </button>
         </form>
     </div>

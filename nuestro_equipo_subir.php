@@ -17,7 +17,7 @@ while ($datos = mysqli_fetch_array($rs)) {
                                     <a onclick="editar()">
                                         <figure><img src="img/edit.svg" alt=""></figure>
                                     </a>
-                                    <a onclick="borrar()">
+                                    <a onclick="eliminarIntegrante()">
                                         <figure><img src="img/trash.svg" alt=""></figure>
                                     </a>
                                 </div>    

@@ -40,21 +40,8 @@
                     <p>Agregar Integrante</p>
                 </div>
 
-                <div class="element">
-                    <figure><img src="img/retrato1.jpg" alt="amazon"></figure>
-                    <div>
-                        <p>Nombre Trabajador:</p>
-                        <p>Descripción:</p>
-                    </div>
-                    <div class="contenedorIconosEditarBorrar">
-                        <a onclick="editar()">
-                            <figure><img src="img/edit.svg" alt=""></figure>
-                        </a>
-                        <a onclick="borrar()">
-                            <figure><img src="img/trash.svg" alt=""></figure>
-                        </a>
-                    </div>
-                </div>
+                <?php include "nuestro_equipo_subir.php" ?>
+
             </div>
 
 
@@ -88,7 +75,7 @@
                 <p class="titulodescrip">Descripción</p>
                 <textarea placeholder="Descripción" rows="4" cols="50" id="descripcion_trabajador" name="descripcion_trabajador"> </textarea>
             </div>
-            <button type="submit" target="_self" class="save">
+            <button class="save">
                 <p><i class="far fa-save"></i></p>
             </button>
         </form>

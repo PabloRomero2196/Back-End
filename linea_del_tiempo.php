@@ -33,7 +33,32 @@
         <div class="tab-content">
 
             <!-- Linea del Tiempo -->
-        </div>
+            <div class="contenedor" id="lineaDelTiempo" data-tab-content class="active">
+                <div class="anadir">
+                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
+                    <p>Agregar Evento</p>
+                </div>
+
+                <!-- Element -->
+                <!-- <div class="element">
+                    <p>2001</p>
+                    <p>Acontecimiento</p>
+                    <form method="POST" action="">
+                        <textarea name="" id="direccion" cols="50" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</textarea>
+                    </form>
+                    <div class="contenedorIconosEditarBorrar">
+                        <a onclick="editar()">
+                            <figure><img src="img/edit.svg" alt=""></figure>
+                        </a>
+                        <a onclick="borrar()">
+                            <figure><img src="img/trash.svg" alt=""></figure>
+                        </a>
+                    </div>
+                </div> -->
+
+                <?php include "linea_del_tiempo_subir.php" ?>
+
+            </div>
     </section>
     <!-- MODALES -->
 
@@ -43,7 +68,7 @@
             <p class="cerrar"><i class="far fa-times-circle"></i></p>
         </div>
         <h2>Línea del tiempo</h2>
-        <form method="POST" action="">
+        <form method="POST" action="linea_del_tiempo_xt.php">
             <p>Año:</p>
             <input type="number" name="ano_linea" id="ano_linea" min="1" max="2100" placeholder="Año">
 
