@@ -762,7 +762,7 @@ textarea {
 .modalimgproductos {
     position: absolute;
     display: none;
-    top: 78%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255);
@@ -926,7 +926,7 @@ textarea {
 .modalDireccion {
     display: none;
     position: absolute;
-    top: 75%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255);
@@ -967,7 +967,7 @@ textarea {
 .modalTelefono {
     position: absolute;
     display: none;
-    top: 75%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255);

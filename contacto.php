@@ -28,7 +28,7 @@
             <!--*********************** Direccion ***********************-->
             <div class="contenedor" id="direccion" data-tab-content class="active">
                 <div class="anadir">
-                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="cerrarModalDireccion()" class="manita"></figure>
+                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalDireccion()" class="manita"></figure>
                     <p>Agregar Dirección</p>
                 </div>
                 <!-- Elemento -->
@@ -52,15 +52,15 @@
             <!--*********************** Teléfono ***********************-->
             <div class="contenedor" id="telefono" data-tab-content class="active">
                 <div class="anadir">
-                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="cerrarModalTelefono()" class="manita"></figure>
+                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalTelefono()" class="manita"></figure>
                     <p>Agregar Telefono</p>
                 </div>
 
                 <!-- Elemento -->
-                <!-- <div class="element">
-                    <p>Dirección</p>
+                <div class="element">
+                    <p>Télefono</p>
                     <div action="POST">
-                        <p name="" id="direccion" cols="50" rows="10">Prolongacion Paseo de la Reforma 880, Lomas de Santa Fe, Zedec Sta Fé, Álvaro Obregón, 01219 Ciudad de México, CDMX
+                        <p name="" id="direccion" cols="50" rows="10">555-53545-45
                         </p>
                     </div>
                     <div class="contenedorIconosEditarBorrar">
@@ -71,24 +71,7 @@
                             <figure><img src="img/trash.svg" alt=""></figure>
                         </a>
                     </div>
-                </div> -->
-
-                `<div class="element">
-                    <p>Dirección</p>
-                    <div>
-                        <p name="" id="direccion">variable_direccion
-                        </p>
-                    </div>
-                    <div class="contenedorIconosEditarBorrar">
-                        <a onclick="editar()">
-                            <figure><img src="img/edit.svg" alt=""></figure>
-                        </a>
-                        <a onclick="borrar()">
-                            <figure><img src="img/trash.svg" alt=""></figure>
-                        </a>
-                    </div>
-                </div>`
-
+                </div>
             </div>
 
     </section>
@@ -113,7 +96,7 @@
         <div onclick="cerrarModalTelefono()" class="manita">
             <p class="cerrar"><i class="far fa-times-circle"></i></p>
         </div>
-        <h2>Nueva Teléfono</h2>
+        <h2>Agrega Teléfono</h2>
         <form action="agregar_telefono_xt.php" method="POST">
             <p class="titulonum">Número de Teléfono</p>
             <textarea placeholder="Descripción" rows="4" cols="50" name="telefono"> </textarea>

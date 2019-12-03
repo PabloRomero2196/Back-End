@@ -122,19 +122,19 @@ function cerrarModalEliminaUnaCategoria() {
 
 // Direccion
 function abrirModalDireccion() {
-    document.getElementById('modaldireccion').style.display = 'block'
+    document.getElementById('modalDireccion').style.display = 'block'
 }
 
 function cerrarModalDireccion() {
-    document.getElementById('modaldireccion').style.display = 'none'
+    document.getElementById('modalDireccion').style.display = 'none'
 }
 // Telefono
 function abrirModalTelefono() {
-    document.getElementById('modaltelefono').style.display = 'block'
+    document.getElementById('modalTelefono').style.display = 'block'
 }
 
 function cerrarModalTelefono() {
-    document.getElementById('modaltelefono').style.display = 'none'
+    document.getElementById('modalTelefono').style.display = 'none'
 }
 // Certifiaciones
 function abrirModalCertifiaciones() {
