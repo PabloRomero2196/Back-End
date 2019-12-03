@@ -81,11 +81,11 @@
             <p class="cerrar"><i class="far fa-times-circle"></i></p>
         </div>
         <h2>Nueva Dirección</h2>
-        <form action="agregar_direccion_xt.php" method="POST">
+        <form action="agregar_contacto_direccion_xt.php" method="POST">
             <p class="tituloubicacion">Nombre de la ubicación</p>
-            <textarea placeholder="Descripción" rows="4" cols="50"> </textarea>
+            <textarea placeholder="Descripción" rows="4" cols="50" name="direccion"> </textarea>
             <p class="tituloenlace">Enlace de ubicación</p>
-            <textarea placeholder="Link de ubicación" class="url" rows="4" cols="50" name="direccion"> </textarea>
+            <textarea placeholder="Link de ubicación" class="url" rows="4" cols="50" name="correo"> </textarea>
             <button class="save">
                 <p><i class="far fa-save"></i></p>
             </button>
@@ -97,7 +97,7 @@
             <p class="cerrar"><i class="far fa-times-circle"></i></p>
         </div>
         <h2>Agrega Teléfono</h2>
-        <form action="agregar_telefono_xt.php" method="POST">
+        <form action="agregar_contacto_telefono_xt.php" method="POST">
             <p class="titulonum">Número de Teléfono</p>
             <textarea placeholder="Descripción" rows="4" cols="50" name="telefono"> </textarea>
             <button class="save">
