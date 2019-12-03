@@ -156,39 +156,14 @@ function cerrarModalColaboradores() {
 }
 
 
+function eliminarIntegrante(index) {
+    var r = confirm("¿Desear eliminar este integrante?");
+    if (r) {
+        //corremos una página en PHP para eliminar el contacto
+        window.location.assign("eliminarIntegrante_xt.php?id=" + index);
+    }
 
-// ***************************** Imprimir Telefono *****************************
 
-function renderearTelefono(telefono, index) {
-    var contenedor = document.getElementById("contactos");
-    contenedor.insertAdjacentHTML('beforeend', `
-    <!-- Elemento -->
-    <!-- <div class="element">
-        <p>Dirección</p>
-        <div action="POST">
-            <p name="" id="direccion" >` + variableTelefono + `
-            </p>
-        </div>
-        <div class="contenedorIconosEditarBorrar">
-            <a onclick="editar()">
-                <figure><img src="img/edit.svg" alt=""></figure>
-            </a>
-            <a onclick="borrar()">
-                <figure><img src="img/trash.svg" alt=""></figure>
-            </a>
-        </div>
-    </div> -->
-    `);
+    /*contactos.splice(index, 1);
+    renderearTodosLosContactos();*/
 }
-
-function renderearTodosLosTelefonos() {
-    document.getElementById("telefonos").innerHTML = "";
-
-    telefonos.forEach(
-        function (telefono, index) {
-            renderearContacto(telefono, index);
-        }
-    );
-}
-
-renderearTodosLosContactos();
