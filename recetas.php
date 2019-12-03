@@ -58,8 +58,8 @@
                 <div class="element">
                     <p>Categoria</p>
                     <form action="POST">
-                        <textarea name="" id="direccion" cols="50" rows="10">Recetas de la abuela
-                    </textarea>
+                        <p id="direccion">Recetas de la abuela
+                        </p>
                     </form>
                     <div class="contenedorIconosEditarBorrar">
                         <a onclick="editar()">
@@ -76,8 +76,8 @@
                 <div class="element">
                     <p>Categoria</p>
                     <form action="POST">
-                        <textarea name="" id="direccion" cols="50" rows="10">Recetas de la abuela
-                                    </textarea>
+                        <p id="direccion">Recetas de la abuela
+                        </p>
                     </form>
                     <div class="contenedorIconosEditarBorrar">
                         <a onclick="editar()">
@@ -93,8 +93,8 @@
                 <div class="element">
                     <p>Categoria</p>
                     <form action="POST">
-                        <textarea name="" id="direccion" cols="50" rows="10">Picar la dieta
-                    </textarea>
+                        <p id="direccion">Picar la dieta
+                        </p>
                     </form>
                     <div class="contenedorIconosEditarBorrar">
                         <a onclick="editar()">
@@ -157,10 +157,10 @@
         </div>
         <h2 class="">Agrega Categoría</h2>
         <p class="parrafoCategoria"> Agrega un título a tu nueva sección </p>
-        <form action="">
+        <form action="agregar_categoria_xt.php" method="POST">
 
             <p class="tituloCategoria">Título</p>
-            <input type="text" placeholder="Título">
+            <input type="text" name="nombre" placeholder="Categoria">
 
             <button type="submit" target="_self" class="save">
                 <p><i class="far fa-save"></i></p>
