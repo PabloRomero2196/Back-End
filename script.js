@@ -167,3 +167,13 @@ function eliminarIntegrante(index) {
     /*contactos.splice(index, 1);
     renderearTodosLosContactos();*/
 }
+
+function renderearTodosLosContactos() {
+    document.getElementById("contactos").innerHTML = "";
+
+    contactos.forEach(
+        function (contacto, index) {
+            renderearContacto(contacto, index);
+        }
+    );
+}

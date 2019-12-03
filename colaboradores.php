@@ -61,7 +61,9 @@
         <h2>Colaboradores</h2>
         <p class="parrafoAdquerir">AGREGA IMÁGEN DEL COLABORADOR</p>
         <div class="anadircert">
-            <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalColaboradores()" class="manita"></figure>
+            <input type="file" name="/archivo">
+            <i class="fas fa-plus"></i>
+            </button>
         </div>
         <form action="agregar_colaboradores_xt.php" method="POST">
             <p class="titulocert">Insertar Nombre de colaborador</p>
