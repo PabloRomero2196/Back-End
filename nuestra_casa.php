@@ -29,99 +29,6 @@
             <!-- Linea del Tiempo -->
             <div class="contenedor" id="lineaDelTiempo" data-tab-content class="active">
                 <div class="anadir">
-                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalLineadelTiempo()" class="manita"></figure>
-                    <p>Agregar Evento</p>
-                </div>
-                <!-- Element -->
-                <div class="element">
-                    <p>2001</p>
-                    <p>Acontecimiento</p>
-                    <form method="POST" action="">
-                        <textarea name="" id="direccion" cols="50" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</textarea>
-                    </form>
-                    <div class="contenedorIconosEditarBorrar">
-                        <a onclick="editar()">
-                            <figure><img src="img/edit.svg" alt=""></figure>
-                        </a>
-                        <a onclick="borrar()">
-                            <figure><img src="img/trash.svg" alt=""></figure>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Element -->
-                <div class="element">
-                    <p>2001</p>
-                    <p>Acontecimiento</p>
-                    <form action="POST">
-                        <textarea name="" id="direccion" cols="50" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</textarea>
-                    </form>
-                    <div class="contenedorIconosEditarBorrar">
-                        <a onclick="editar()">
-                            <figure><img src="img/edit.svg" alt=""></figure>
-                        </a>
-                        <a onclick="borrar()">
-                            <figure><img src="img/trash.svg" alt=""></figure>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Element -->
-                <div class="element">
-                    <p>2001</p>
-                    <p>Acontecimiento</p>
-                    <form action="POST">
-                        <textarea name="" id="direccion" cols="50" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</textarea>
-                    </form>
-                    <div class="contenedorIconosEditarBorrar">
-                        <a onclick="editar()">
-                            <figure><img src="img/edit.svg" alt=""></figure>
-                        </a>
-                        <a onclick="borrar()">
-                            <figure><img src="img/trash.svg" alt=""></figure>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Element -->
-                <div class="element">
-                    <p>2001</p>
-                    <p>Acontecimiento</p>
-                    <form action="POST">
-                        <textarea name="" id="direccion" cols="50" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</textarea>
-                    </form>
-                    <div class="contenedorIconosEditarBorrar">
-                        <a onclick="editar()">
-                            <figure><img src="img/edit.svg" alt=""></figure>
-                        </a>
-                        <a onclick="borrar()">
-                            <figure><img src="img/trash.svg" alt=""></figure>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Element -->
-                <div class="element">
-                    <p>2001</p>
-                    <p>Acontecimiento</p>
-                    <form action="POST">
-                        <textarea name="" id="direccion" cols="50" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui obcaecati rem exercitationem iure! Cum nihil perferendis recusandae tempore. Facere nobis alias rerum architecto neque incidunt quidem numquam necessitatibus sint!</textarea>
-                    </form>
-                    <div class="contenedorIconosEditarBorrar">
-                        <a onclick="editar()">
-                            <figure><img src="img/edit.svg" alt=""></figure>
-                        </a>
-                        <a onclick="borrar()">
-                            <figure><img src="img/trash.svg" alt=""></figure>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Nuestro Equipo  -->
-            <div class="contenedor" id="nuestroEquipo" data-tab-content class="active">
-
-                <div class="anadir">
                     <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalequipo()" class="manita"></figure>
                     <p>Agregar Integrante</p>
                 </div>
@@ -152,27 +59,62 @@
                             </div>';
                 }
                 ?>
-            </div>
-
-            <!-- Trabajadores y Familas  -->
-            <div class="contenedor" id="trabajadoresYfamilias" data-tab-content class="active">
-
-                <form action="">
-                    <p>Trabajadores y Familias</p>
-                    <br>
-                    <p>Familias productoras</p>
-                    <input type="number" value="29">
-
-                    <p>Trabajadores</p>
-                    <input type="number" value="3">
-                    <button type="submit" target="_self" class="save">
-                        <p><i class="far fa-save"></i></p>
-                    </button>
-                </form>
-            </div>
 
 
-        </div>
+                <!-- Nuestro Equipo  -->
+                <div class="contenedor" id="nuestroEquipo" data-tab-content class="active">
+
+                    <div class="anadir">
+                        <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalequipo()" class="manita"></figure>
+                        <p>Agregar Integrante</p>
+                    </div>
+
+                    <?php
+                    include "conexion.php";
+                    $sql = "select * from equipo4_nuestraCasa_equipo_trabajo";
+                    $rs = ejecutar($sql);
+
+                    while ($datos = mysqli_fetch_array($rs)) {
+                        echo '
+                            <div class="element">
+                                <figure><img src="img/retrato1.jpg" alt="amazon"></figure>
+                                <div>
+                                    <p>Nombre Trabajador:</p>
+                                    <p>' . $datos["nombre_trabajador"] . '</p>
+                                    <p>Descripción:</p>
+                                    <p>' . $datos["descripcion_trabajador"] . '</p>
+                                </div>
+                                <div class="contenedorIconosEditarBorrar">
+                                    <a onclick="editar()">
+                                        <figure><img src="img/edit.svg" alt=""></figure>
+                                    </a>
+                                    <a onclick="borrar()">
+                                        <figure><img src="img/trash.svg" alt=""></figure>
+                                    </a>
+                                </div>    
+                            </div>';
+                    }
+                    ?>
+
+                    <!-- Trabajadores y Familas  -->
+                    <div class="contenedor" id="trabajadoresYfamilias" data-tab-content class="active">
+
+                        <form action="">
+                            <p>Trabajadores y Familias</p>
+                            <br>
+                            <p>Familias productoras</p>
+                            <input type="number" value="29">
+
+                            <p>Trabajadores</p>
+                            <input type="number" value="3">
+                            <button type="submit" target="_self" class="save">
+                                <p><i class="far fa-save"></i></p>
+                            </button>
+                        </form>
+                    </div>
+
+
+                </div>
 
     </section>
     <!-- MODALES -->
