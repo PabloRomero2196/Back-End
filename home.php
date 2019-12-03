@@ -43,10 +43,11 @@ session_start();
 </body>
 <?php
 //cheamos si existe la sesión de administrador (admin)
-if (isset($_SESSION["usuario"])){
-    echo "<div class='usuario'>Bienvenido(a) ".$_SESSION["usuario"];
+if (isset($_SESSION["usuario"])) {
+    echo "<div class='usuario'>Bienvenido(a) " . $_SESSION["usuario"];
     echo " - ";
     echo "<a href='log-in.php'>Logout</a></div>";
 }
-?> 
+?>
+
 </html>

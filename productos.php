@@ -17,9 +17,11 @@
 
     <section>
 
-        <h2>Pagina de Productos</h2>
+        <h2>Productos</h2>
         <ul class="tabs">
-            <li data-tab-target="#anadirProductos" class="tab">Añadir Productos</li>
+            <a href="productos.php" class="activado">
+                <li class="tab">Productos</li>
+            </a>
         </ul>
 
         <div class="tab-content">

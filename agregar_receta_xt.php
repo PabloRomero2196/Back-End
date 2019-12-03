@@ -29,11 +29,11 @@
 
         ejecutar($sql);
         echo "<script language = 'javascript'>";
-        echo "window.location.assign('index.php');";
+        echo "window.location.assign('recetas.php');";
         echo "</script>";
     } else {
         echo "<script language = 'javascript'>";
-        echo "window.location.assign('index.php');";
+        echo "window.location.assign('recetas.php');";
         echo "</script>";
     }
     ?>

@@ -17,12 +17,12 @@
 
     <section>
 
-        <h2>Teléfono</h2>
+        <h2>Contacto</h2>
         <ul class="tabs">
-            <a href="contacto.php" class="activado">
+            <a href="contacto.php">
                 <li class="tab">Télefono</li>
             </a>
-            <a href="direccion.php">
+            <a href="direccion.php" class="activado">
                 <li class="tab">Dirección</li>
             </a>
         </ul>
@@ -32,14 +32,14 @@
             <!--*********************** Direccion ***********************-->
             <div class="contenedor" id="direccion" data-tab-content class="active">
                 <div class="anadir">
-                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalTelefono()" class="manita"></figure>
-                    <p>Agregar Télefono</p>
+                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalDireccion()" class="manita"></figure>
+                    <p>Agregar Dirección</p>
                 </div>
                 <!-- Elemento -->
                 <div class="element">
                     <p>Dirección</p>
                     <div action="POST">
-                        <p name="" id="direccion" cols="50" rows="10">555-555-555
+                        <p name="" id="direccion" cols="50" rows="10">Prolongacion Paseo de la Reforma 880, Lomas de Santa Fe, Zedec Sta Fé, Álvaro Obregón, 01219 Ciudad de México, CDMX
                         </p>
                     </div>
                     <div class="contenedorIconosEditarBorrar">
@@ -54,15 +54,17 @@
             </div>
 
     </section>
-    <!-- Telefono -->
-    <div id="modalTelefono" class="modalTelefono">
-        <div onclick="cerrarModalTelefono()" class="manita">
+    <!-- Modal -->
+    <div id="modalDireccion" class="modalDireccion">
+        <div onclick="cerrarModalDireccion()" class="manita">
             <p class="cerrar"><i class="far fa-times-circle"></i></p>
         </div>
-        <h2>Agrega Teléfono</h2>
-        <form action="agregar_telefono_xt.php" method="POST">
-            <p class="titulonum">Número de Teléfono</p>
-            <textarea placeholder="Descripción" rows="4" cols="50" name="telefono"> </textarea>
+        <h2>Nueva Dirección</h2>
+        <form action="agregar_direccion_xt.php" method="POST">
+            <p class="tituloubicacion">Nombre de la ubicación</p>
+            <textarea placeholder="Descripción" rows="4" cols="50"> </textarea>
+            <p class="tituloenlace">Enlace de ubicación</p>
+            <textarea placeholder="Link de ubicación" class="url" rows="4" cols="50" name="direccion"> </textarea>
             <button class="save">
                 <p><i class="far fa-save"></i></p>
             </button>

@@ -22,8 +22,12 @@
 
         <h2>Pagina de Inicio</h2>
         <ul class="tabs">
-            <li data-tab-target="#carruselHome" class="tab">Carrusel de Imagenes</li>
-            <li data-tab-target="#certificaciones" class="tab">Certificaciones</li>
+            <a href="index_carrusel.php" class="activado">
+                <li class="tab">Carrusel de Imagenes</li>
+            </a>
+            <a href="index_certificaciones.php">
+                <li class="tab">Certificaciones</li>
+            </a>
         </ul>
 
         <div class="tab-content">

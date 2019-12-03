@@ -19,47 +19,35 @@
 
         <h2>Nuestra Equipo</h2>
         <ul class="tabs">
-            <a href="nuestro_casa.php" class="activado">
+            <a href="nuestro_casa.php">
                 <li class="tab">Nuestro Equipo</li>
             </a>
             <a href="linea_del_tiempo.php">
                 <li class="tab">Línea del Tiempo</li>
             </a>
-            <a href="trabajadores_y_familias.php">
+            <a href="trabajadores_y_familias.php" class="activado">
                 <li class="tab">Trabajadores y Familias</li>
             </a>
         </ul>
 
         <div class="tab-content">
 
-            <!-- Nuestro Equipo  -->
-            <div class="contenedor" id="nuestroEquipo" data-tab-content class="active">
+            <!-- Trabajadores y Familas  -->
+            <div class="contenedor" id="trabajadoresYfamilias" data-tab-content class="active">
 
-                <div class="anadir">
-                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalequipo()" class="manita"></figure>
-                    <p>Agregar Integrante</p>
-                </div>
+                <form action="">
+                    <p>Trabajadores y Familias</p>
+                    <br>
+                    <p>Familias productoras</p>
+                    <input type="number" value="29">
 
-                <div class="element">
-                    <figure><img src="img/retrato1.jpg" alt="amazon"></figure>
-                    <div>
-                        <p>Nombre Trabajador:</p>
-                        <p>Descripción:</p>
-                    </div>
-                    <div class="contenedorIconosEditarBorrar">
-                        <a onclick="editar()">
-                            <figure><img src="img/edit.svg" alt=""></figure>
-                        </a>
-                        <a onclick="borrar()">
-                            <figure><img src="img/trash.svg" alt=""></figure>
-                        </a>
-                    </div>
-                </div>
+                    <p>Trabajadores</p>
+                    <input type="number" value="3">
+                    <button type="submit" target="_self" class="save">
+                        <p><i class="far fa-save"></i></p>
+                    </button>
+                </form>
             </div>
-
-
-        </div>
-
     </section>
     <!-- MODALES -->
 
@@ -95,5 +83,3 @@
     </div>
 
 </body>
-
-</html>
