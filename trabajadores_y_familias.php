@@ -19,34 +19,35 @@
 
         <h2>Nuestra Equipo</h2>
         <ul class="tabs">
-            <a href="nuestro_casa.php" class="activado">
+            <a href="nuestro_casa.php">
                 <li class="tab">Nuestro Equipo</li>
             </a>
             <a href="linea_del_tiempo.php">
                 <li class="tab">Línea del Tiempo</li>
             </a>
-            <a href="trabajadores_y_familias.php">
+            <a href="trabajadores_y_familias.php" class="activado">
                 <li class="tab">Trabajadores y Familias</li>
             </a>
         </ul>
 
         <div class="tab-content">
 
-            <!-- Nuestro Equipo  -->
-            <div class="contenedor" id="nuestroEquipo" data-tab-content class="active">
+            <!-- Trabajadores y Familas  -->
+            <div class="contenedor" id="trabajadoresYfamilias" data-tab-content class="active">
 
-                <div class="anadir">
-                    <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalequipo()" class="manita"></figure>
-                    <p>Agregar Integrante</p>
-                </div>
+                <form action="">
+                    <p>Trabajadores y Familias</p>
+                    <br>
+                    <p>Familias productoras</p>
+                    <input type="number" value="29">
 
-                <?php include "nuestro_equipo_subir.php" ?>
-
+                    <p>Trabajadores</p>
+                    <input type="number" value="3">
+                    <button type="submit" target="_self" class="save">
+                        <p><i class="far fa-save"></i></p>
+                    </button>
+                </form>
             </div>
-
-
-        </div>
-
     </section>
     <!-- MODALES -->
 
@@ -75,12 +76,10 @@
                 <p class="titulodescrip">Descripción</p>
                 <textarea placeholder="Descripción" rows="4" cols="50" id="descripcion_trabajador" name="descripcion_trabajador"> </textarea>
             </div>
-            <button class="save">
-                <p><i class="far fa-save"></i></p>
+            <button type="submit" target="_self" class="save">
+                <figure><img src="img/save.svg" alt=""></figure>
             </button>
         </form>
     </div>
 
 </body>
-
-</html>

@@ -19,7 +19,9 @@
 
         <h2>Colaboradores</h2>
         <ul class="tabs">
-            <li data-tab-target="#colaboradores" class="tab">Colaboradores</li>
+            <a href="colaboradores.php" class="activado">
+                <li class="tab">Colaboradores</li>
+            </a>
         </ul>
 
         <div class="tab-content">
@@ -30,7 +32,7 @@
                     <p>Agregar Colaboradores</p>
                 </div>
                 <!-- Elemento -->
-                <!-- <div class="element">
+                <div class="element">
                     <figure><img src="img/sucursal_Amazon.png" alt="amazon"></figure>
                     <div>
                         <p>Amazon</p>
@@ -43,7 +45,7 @@
                             <figure><img src="img/trash.svg" alt=""></figure>
                         </a>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
 
@@ -56,8 +58,8 @@
         <div onclick="cerrarModalColaboradores()" class="manita">
             <p class="cerrar"><i class="far fa-times-circle"></i></p>
         </div>
-        <h2>Certificaciones</h2>
-        <p class="parrafoAdquerir">AGREGA IMÁGEN DE LA NUEVA CERTIFICACIÓN</p>
+        <h2>Colaboradores</h2>
+        <p class="parrafoAdquerir">AGREGA IMÁGEN DEL COLABORADOR</p>
         <div class="anadircert">
             <figure><img src="img/anadir.svg" alt="añadir elemento" onclick="abrirModalColaboradores()" class="manita"></figure>
         </div>

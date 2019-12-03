@@ -4,7 +4,7 @@
     <nav>
         <ul>
             <li><a id="headerHome" href="home.php" onclick="headerHome()">Bienvenida</a></li>
-            <li><a id="headerInicio" href="index.php" onclick="headerInicio()">Inicio</a></li>
+            <li><a id="headerInicio" href="index_carrusel.php" onclick="headerInicio()">Inicio</a></li>
             <li><a id="headerNuestraCasa" href="nuestra_casa.php" onclick="headerNuestraCasa()">Nuestra Casa</a></li>
             <li><a id="headerProductos" href="productos.php" onclick="headerProductos()">Productos</a></li>
             <li><a id="headerRecetas" href="Recetas.php" onclick="headerRecetas()">Recetas</a></li>

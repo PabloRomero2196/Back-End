@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600,700&display=swap');
+
 @font-face {
     font-family: 'Whitney';
     src: url('fonts/Whitney-Medium.eot');
@@ -55,7 +57,7 @@ body {
     background-color: #fff;
     width: 35vw;
     /* height: 40vw; */
-    overflow: auto;
+    /* overflow: auto; */
     display: none;
     border: solid;
 }
@@ -223,7 +225,7 @@ header h1 {
 
 header nav {
     align-self: center;
-    width: 69%;
+    width: 91%;
 }
 
 header ul {
@@ -364,24 +366,24 @@ h2 {
     font-size: 14px;
 }
 
-[data-tab-content] {
+/* [data-tab-content] {
     display: none;
-}
+} */
 
-.active {
+/* .active {
     display: grid;
 }
 
 .active[data-tab-content] {
     display: grid;
-}
+} */
 
 
 .tabs :hover {
     cursor: pointer;
 }
 
-.tabs li {
+.tabs a {
     color: #000;
     border-radius: 25px 25px 0 0;
     border-style: solid solid none solid;
@@ -391,25 +393,31 @@ h2 {
     padding: 1vw 4vw;
     list-style: none;
     font-family: 'Whitney';
+    text-decoration: none;
 }
 
-.tabs :hover {
-    color: #fff;
-    background-color: #000;
-
+.tabs a:hover {
+    background: #FCDF5F;
 }
+
+.activado {
+    background: #FCDF5F;
+}
+
+
+
 
 .tab {
     cursor: pointer;
-    padding: 10px;
+    /* padding: 10px; */
+    margin: 0 1em;
 }
 
 
-.tab.active {
+/* .tab .active {
     background-color: #FCDF5F;
     color: #000;
-
-}
+} */
 
 
 
@@ -426,10 +434,6 @@ h2 {
 
 .paginaHome {
     text-align: center;
-}
-
-.paginaHome p:nth-child(2) {
-    margin: 5em;
 }
 
 /*----------------------------------------MODALES----------------------------------------*/
@@ -501,7 +505,7 @@ h2 {
     background-color: #fff;
     width: 50vw;
     /* height: 64vw; */
-    overflow: auto;
+    /* overflow: auto; */
     border: solid 0.8px;
 }
 
@@ -598,7 +602,7 @@ textarea {
     background-color: #fff;
     width: 47vw;
     /* height: 30vw; */
-    overflow: auto;
+    /* overflow: auto; */
     border: solid;
 }
 
@@ -685,11 +689,11 @@ textarea {
 .modalAdquerirProducto {
     position: absolute;
     display: none;
-    top: 78%;
+    top: 59%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255);
-    overflow: auto;
+    /* overflow: auto; */
     width: 40vw;
     /* height: 38vw; */
     border: solid;
@@ -731,7 +735,7 @@ textarea {
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255);
     width: 47vw;
-    overflow: auto;
+    /* overflow: auto; */
     /* height: 40vw; */
     border: solid;
 }
@@ -808,7 +812,7 @@ textarea {
     background-color: rgb(255, 255, 255);
     width: 43vw;
     /* height: 51vw; */
-    overflow: auto;
+    /* overflow: auto; */
     border: solid;
 }
 
@@ -879,7 +883,7 @@ textarea {
     background-color: rgb(255, 255, 255);
     width: 43vw;
     /* height: 51vw; */
-    overflow: auto;
+    /* overflow: auto; */
     border: solid;
 }
 
@@ -916,6 +920,25 @@ textarea {
     margin-left: 31%;
     height: 110px;
     width: 40%;
+}
+
+.modalSucursales {
+    position: absolute;
+    display: none;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    /* overflow: auto; */
+    width: 40vw;
+    border: solid;
+}
+
+.modalSucursales h2 {
+    font-size: 2vw;
+    text-align: center;
+    margin: 2vw;
+    font-family: 'Whitney'
 }
 
 .save {
@@ -973,7 +996,7 @@ textarea {
     background-color: rgb(255, 255, 255);
     width: 43vw;
     /* height: 51vw; */
-    overflow: auto;
+    /* overflow: auto; */
     border: solid;
 }
 
@@ -1009,7 +1032,7 @@ textarea {
     background-color: rgb(255, 255, 255);
     width: 43vw;
     /* height: 51vw; */
-    overflow: auto;
+    /* overflow: auto; */
     border: solid;
 }
 
@@ -1060,4 +1083,39 @@ textarea {
 
 div.element>div.contenedorIconosEditarBorrar>a:nth-child(1)>figure {
     height: 100%;
+}
+
+.tabActivado {
+    display: grid;
+}
+
+nav ul {
+    width: 100%;
+}
+
+.bienvenido {
+    width: 49%;
+    margin: auto;
+    font-size: 1.2em;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.descarga {
+    font-size: 1.2em;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: bold;
+    margin-top: 28px;
+}
+
+.btndescargar {
+    border-radius: 22px;
+    background-color: #ffdd55;
+    width: 9%;
+    margin: auto;
+    margin-top: 20px
+}
+
+.letra {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
 }
